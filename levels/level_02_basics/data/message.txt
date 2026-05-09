@@ -1,0 +1,2 @@
+Rust is a language for explicit responsibility.
+Errors are part of the design.

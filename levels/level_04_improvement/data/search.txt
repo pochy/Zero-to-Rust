@@ -1,0 +1,4 @@
+Rust makes ownership explicit.
+Errors should be handled as values.
+Rust code should make failure visible.
+Design is more important than memorizing APIs.
