@@ -121,3 +121,20 @@ Path と String の使い分けを説明できる
 - std::fs: https://doc.rust-lang.org/std/fs/
 - std::path: https://doc.rust-lang.org/std/path/
 - std::io::BufRead: https://doc.rust-lang.org/std/io/trait.BufRead.html
+
+## Rust らしさをさらに深掘りする
+
+検索 CLI は、Iterator、借用、部分失敗、表示分離をまとめて学べる題材です。`Vec<MatchLine>` を返す設計は、検索結果を表示から独立させ、テスト可能なデータに変えます。
+
+追加で読む箇所:
+
+- [Iterator、pattern、macro](../../appendices/03_iterators_patterns_macros.md)
+- [エラー、テスト、品質](../../appendices/04_error_testing_quality.md)
+
+次の問いを追加で考えてください。
+
+```text
+read_to_string はどの規模や入力で限界になるか
+Path と PathBuf の違いは所有権でどう説明できるか
+検索結果 0 件を Result::Err にしない理由は何か
+```

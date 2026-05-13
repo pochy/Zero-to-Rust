@@ -40,3 +40,15 @@ fn print_user_name(name: &str) {}
 関数シグネチャを見て、その関数が所有するのか借りるのかを説明できるか？
 コンパイルエラーを clone で消す前に、所有権の設計を考えられるか？
 ```
+
+## 追加演習: API を設計する
+
+次の 3 つの関数について、引数を `String` にするか `&str` にするか決め、理由を書いてください。
+
+```rust
+fn validate_user_name(/* ? */) -> bool
+fn save_user_name(/* ? */)
+fn render_user_name(/* ? */) -> String
+```
+
+戻り値が所有型になる理由も説明してください。

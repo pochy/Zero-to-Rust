@@ -2,7 +2,7 @@
 
 ## 1. 所有権キャンバスを埋める
 
-[examples/ownership_canvas.md](/Users/pochy/Projects/Zero-to-Rust/levels/level_00_philosophy/examples/ownership_canvas.md) を読み、`ファイルを読み込んで表示する CLI` を題材にして各問いへ答えてください。
+[examples/ownership_canvas.md](examples/ownership_canvas.md) を読み、`ファイルを読み込んで表示する CLI` を題材にして各問いへ答えてください。
 
 ## 2. 出力ではなく責任を比較する
 
@@ -35,4 +35,16 @@ fn consume(value: String) {
 ```text
 所有権、借用、Result を「文法」ではなく「責任の表現」として説明できるか？
 Rust のコンパイルエラーを設計のヒントとして読めるか？
+```
+
+## 追加演習: Rust を学ぶ理由を書く
+
+他の言語でも同じ CLI は作れます。それでも Rust で作る意味を、次の観点で 5 行以上書いてください。
+
+```text
+所有権:
+失敗:
+共有状態:
+復旧:
+将来の保守:
 ```

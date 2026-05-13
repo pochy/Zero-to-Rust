@@ -146,3 +146,22 @@ std-only の価値と限界を説明できる
 - std::cell::RefCell: https://doc.rust-lang.org/std/cell/struct.RefCell.html
 - std::sync::Condvar: https://doc.rust-lang.org/std/sync/struct.Condvar.html
 - Unsafe Rust: https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html
+
+## Rust らしさをさらに深掘りする
+
+プロフェッショナルな Rust は、難しい型をたくさん使うことではありません。`Box`、`Rc`、`Arc`、`Mutex`、`RefCell`、`unsafe`、外部クレートを、必要な場面だけ理由つきで選ぶことです。
+
+追加で読む箇所:
+
+- [unsafe、FFI、no_std、performance](../../appendices/07_unsafe_ffi_performance.md)
+- [async、thread、Send/Sync](../../appendices/06_async_concurrency.md)
+- [Professional Rust Map](../../appendices/08_professional_rust_map.md)
+
+Level 9 の後は、次の Cargo project へ進みます。
+
+```bash
+cargo test -p kvs_std
+cargo test -p kvs_ecosystem
+```
+
+`kvs_std` では自分で責任を持つ範囲を確認します。`kvs_ecosystem` では、どこから crate に任せるべきかを確認します。

@@ -38,3 +38,16 @@ Option<String>
 構造体がデータを所有することの意味を説明できるか？
 API の引数と戻り値から、所有と借用の境界を読めるか？
 ```
+
+## 追加演習: trait 導入の是非
+
+`Store` trait を作るべきか判断してください。
+
+```rust
+trait Store {
+    fn set(&mut self, key: String, value: String);
+    fn get(&self, key: &str) -> Option<&str>;
+}
+```
+
+今すぐ導入する場合、導入しない場合、将来 WAL や remote store が出た場合で判断を書いてください。

@@ -100,3 +100,20 @@ A. まずはコアロジック、パース、境界値、不正入力を押さ�
 - Writing Automated Tests: https://doc.rust-lang.org/book/ch11-00-testing.html
 - Result: https://doc.rust-lang.org/std/result/
 - std::panic: https://doc.rust-lang.org/std/panic/
+
+## Rust らしさをさらに深掘りする
+
+Rust のテストは、メモリ安全性の確認ではなく仕様の固定です。コンパイラが守ることと、テストが守ることを分けると、過信も過小評価も避けられます。
+
+追加で読む箇所:
+
+- [エラー、テスト、品質](../../appendices/04_error_testing_quality.md)
+- [Cargo、workspace、ecosystem](../../appendices/05_cargo_ecosystem.md)
+
+次の問いを追加で考えてください。
+
+```text
+panic すべき失敗と Result で返す失敗は何が違うか
+String エラーから enum エラーへ変えるタイミングはいつか
+テスト名は仕様として読めるか
+```

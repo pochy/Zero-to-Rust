@@ -39,7 +39,7 @@ Rust は、後から事故になる曖昧さを早い段階で表面化させま
 
 ## 手順 1: 所有権キャンバスを書く
 
-[examples/ownership_canvas.md](/Users/pochy/Projects/Zero-to-Rust/levels/level_00_philosophy/examples/ownership_canvas.md) を開き、そこにある問いを 1 つずつ読んでください。
+[examples/ownership_canvas.md](examples/ownership_canvas.md) を開き、そこにある問いを 1 つずつ読んでください。
 
 最初は正解を書こうとしなくて構いません。大事なのは、Rust のコードを書く前に次の問いがあると知ることです。
 
@@ -120,3 +120,20 @@ clone と unwrap を判断として使うとはどういうことか
 - The Rust Programming Language: Ownership: https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html
 - The Rust Programming Language: Error Handling: https://doc.rust-lang.org/book/ch09-00-error-handling.html
 - Rust Standard Library: https://doc.rust-lang.org/std/
+
+## Rust らしさをさらに深掘りする
+
+Rust を学ぶ意味は、構文を覚えることではなく、曖昧な責任をコードの形に変えることです。所有権はメモリだけでなく、API、スレッド、エラー、復旧にも広がります。
+
+この Level の後で、次の補講を読んでください。
+
+- [所有権、借用、ライフタイム完全補講](../../appendices/01_ownership_lifetimes.md)
+- [Professional Rust Map](../../appendices/08_professional_rust_map.md)
+
+特に意識する問い:
+
+```text
+型に書かれていない責任はどこに残っているか
+clone や unwrap は設計判断として説明できるか
+後で並行化したとき、何が共有状態になるか
+```

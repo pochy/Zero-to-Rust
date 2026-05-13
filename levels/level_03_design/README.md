@@ -117,3 +117,20 @@ main と store を分ける理由を説明できる
 - Defining and Instantiating Structs: https://doc.rust-lang.org/book/ch05-01-defining-structs.html
 - Enums and Pattern Matching: https://doc.rust-lang.org/book/ch06-00-enums.html
 - std::collections: https://doc.rust-lang.org/std/collections/
+
+## Rust らしさをさらに深掘りする
+
+Rust の `struct` は、単なるデータの箱ではなく所有境界です。`Store` が `HashMap<String, String>` を所有することで、呼び出し元の文字列寿命から独立します。
+
+追加で読む箇所:
+
+- [所有権、借用、ライフタイム完全補講](../../appendices/01_ownership_lifetimes.md)
+- [trait、generics、抽象化](../../appendices/02_traits_generics.md)
+
+次の問いを追加で考えてください。
+
+```text
+Store に &str を保存すると、誰の寿命に依存するか
+get が Option<&String> を返すと、呼び出し側は何を所有しないか
+HashMap を public にしたとき、どの不変条件が壊れやすいか
+```

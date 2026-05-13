@@ -99,3 +99,20 @@ unwrap を使う前に失敗の扱いを考えられる
 - Recoverable Errors with Result: https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html
 - std::fs: https://doc.rust-lang.org/std/fs/
 - std::io: https://doc.rust-lang.org/std/io/
+
+## Rust らしさをさらに深掘りする
+
+Rust では、失敗は例外として隠すものではなく、戻り値の型に含める設計要素です。`Result<T, E>` を見ると、呼び出し側は「成功値」と「失敗理由」の両方を意識できます。
+
+追加で読む箇所:
+
+- [エラー、テスト、品質](../../appendices/04_error_testing_quality.md)
+- [Cargo、workspace、ecosystem](../../appendices/05_cargo_ecosystem.md)
+
+この Level のコードを、次の観点で見直します。
+
+```text
+io::Error を String に変換すると何を失うか
+main が Result を返すと、誰が失敗を表示するか
+expect のメッセージは復旧可能性を増やすか
+```

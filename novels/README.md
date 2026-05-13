@@ -50,6 +50,23 @@ Rust も同じです。曖昧な所有権、握りつぶしたエラー、巨大
 
 この小説版では、それらをテンペスト建国の事件として扱います。
 
+## 増補版との対応
+
+増補版では、本編の外に `appendices/` と `projects/` が追加されています。小説本文は既存の Level 0-10 の理解を助ける読み物として残し、深掘りは補講で確認してください。
+
+| 読みたい内容 | 対応する補講 / project |
+| --- | --- |
+| 所有権、借用、ライフタイムを完全に整理したい | `appendices/01_ownership_lifetimes.md` |
+| `trait`、generics、抽象化の時期を知りたい | `appendices/02_traits_generics.md` |
+| Iterator、closure、macro を読みたい | `appendices/03_iterators_patterns_macros.md` |
+| テスト、panic、独自エラーを深めたい | `appendices/04_error_testing_quality.md` |
+| Cargo、workspace、crate 採用判断を学びたい | `appendices/05_cargo_ecosystem.md` |
+| thread と async を比較したい | `appendices/06_async_concurrency.md` |
+| unsafe、FFI、no_std、性能を扱いたい | `appendices/07_unsafe_ffi_performance.md` |
+| 実務版 KVS を動かしたい | `projects/kvs_std`、`projects/kvs_ecosystem` |
+
+小説版の役割は、概念を記憶に残すことです。補講と project の役割は、概念を設計判断とコードに戻すことです。
+
 ## 増補版の読み方
 
 この `novels/` は、教材本文を置き換えるものではありません。

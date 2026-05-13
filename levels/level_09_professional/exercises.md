@@ -42,3 +42,17 @@ std-only では不足する本番要件は何か
 低レイヤー処理で境界チェックが必要な理由を説明できるか？
 最終課題の所有、失敗、共有、復旧、運用を自分の設計として説明できるか？
 ```
+
+## 追加演習: std-only と ecosystem を比較する
+
+`projects/kvs_std` と `projects/kvs_ecosystem` を読み、次を比較してください。
+
+```text
+serde に任せた責任
+clap に任せた責任
+thiserror と anyhow の役割の違い
+tracing を使うと println と何が変わるか
+tokio を使う理由が今回の小さい例で本当にあるか
+```
+
+採用した crate と採用しなかった crate の両方に理由を書いてください。

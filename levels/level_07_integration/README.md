@@ -119,3 +119,20 @@ Arc と Mutex の役割を分けて説明できる
 - std::thread: https://doc.rust-lang.org/std/thread/
 - std::sync: https://doc.rust-lang.org/std/sync/
 - std::sync::mpsc: https://doc.rust-lang.org/std/sync/mpsc/
+
+## Rust らしさをさらに深掘りする
+
+Rust の並行処理では、共有することより、共有しない設計を先に考えます。`Arc<Mutex<T>>` は便利ですが、所有権を channel で移せるならその方が単純な場合があります。
+
+追加で読む箇所:
+
+- [async、thread、Send/Sync](../../appendices/06_async_concurrency.md)
+- [Professional Rust Map](../../appendices/08_professional_rust_map.md)
+
+次の問いを追加で考えてください。
+
+```text
+Job に Send + 'static が必要な理由は何か
+Arc は共有所有、Mutex は排他制御だと分けて説明できるか
+channel で所有権を渡す設計に変えると何が単純になるか
+```

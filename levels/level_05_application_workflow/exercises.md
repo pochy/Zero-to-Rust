@@ -48,3 +48,18 @@ parse_command が Response::Error を直接返す
 TCP 層、プロトコル層、Store 層の責任を分けて説明できるか？
 文字列を早めに enum へ変換する理由を説明できるか？
 ```
+
+## 追加演習: wire format を設計する
+
+今の text protocol を JSON protocol に変える場合、どの層を変更すべきか書いてください。
+
+```text
+parse_command
+Command enum
+Store
+Response
+to_wire
+TCP 層
+```
+
+`Store` を変更せずに済む設計になっているか確認してください。

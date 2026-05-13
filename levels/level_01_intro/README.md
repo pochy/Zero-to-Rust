@@ -109,3 +109,20 @@ String と &str の違い
 - Hello, World: https://doc.rust-lang.org/book/ch01-02-hello-world.html
 - Ownership: https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
 - String: https://doc.rust-lang.org/std/string/struct.String.html
+
+## Rust らしさをさらに深掘りする
+
+`String` と `&str` の違いは、Rust の最初の壁であり、最後まで使う判断軸です。`String` は所有、`&str` は借用です。この違いが読めると、関数シグネチャが設計書として見えるようになります。
+
+追加で読む箇所:
+
+- [所有権、借用、ライフタイム完全補講](../../appendices/01_ownership_lifetimes.md)
+- [Iterator、pattern、macro](../../appendices/03_iterators_patterns_macros.md)
+
+次の観点で `hello_ownership.rs` を読み直してください。
+
+```text
+borrow_name はなぜ &str でよいか
+take_name が String を受け取る設計は本当に必要か
+move した値を使えないことは、どの事故を防いでいるか
+```

@@ -133,3 +133,20 @@ Store が TcpStream を知らない設計の利点を説明できる
 - std::net: https://doc.rust-lang.org/std/net/
 - std::io::BufRead: https://doc.rust-lang.org/std/io/trait.BufRead.html
 - enum: https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html
+
+## Rust らしさをさらに深掘りする
+
+プロトコルを文字列のまま処理し続けると、失敗と状態が曖昧になります。Rust では、早めに `Command` と `Response` へ変換し、その後の層では型付きの状態だけを扱います。
+
+追加で読む箇所:
+
+- [trait、generics、抽象化](../../appendices/02_traits_generics.md)
+- [Iterator、pattern、macro](../../appendices/03_iterators_patterns_macros.md)
+
+次の問いを追加で考えてください。
+
+```text
+parse_command が Result<Command, E> を返す理由は何か
+Response enum を String に変換する場所はどこがよいか
+Store が TcpStream を知らないことで、何をテストしやすくなるか
+```

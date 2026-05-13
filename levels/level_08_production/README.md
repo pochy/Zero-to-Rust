@@ -108,3 +108,21 @@ std-only でできることと厳しいことを分けて説明できる
 - std::env: https://doc.rust-lang.org/std/env/
 - std::fs::OpenOptions: https://doc.rust-lang.org/std/fs/struct.OpenOptions.html
 - std::time: https://doc.rust-lang.org/std/time/
+
+## Rust らしさをさらに深掘りする
+
+本番設計では、型で守れる範囲と運用で守る範囲を分けます。Rust は不正な借用やデータ競合を防ぎますが、WAL の書き込み順序、ログの粒度、復旧手順までは自動で決めません。
+
+追加で読む箇所:
+
+- [Cargo、workspace、ecosystem](../../appendices/05_cargo_ecosystem.md)
+- [エラー、テスト、品質](../../appendices/04_error_testing_quality.md)
+- [Professional Rust Map](../../appendices/08_professional_rust_map.md)
+
+次の問いを追加で考えてください。
+
+```text
+WAL に書く前に OK を返すと、どの障害で説明できなくなるか
+設定読み込み失敗は起動前に止めるべきか、既定値で進むべきか
+std-only で学ぶ部分と crate に任せる部分はどこか
+```

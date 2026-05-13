@@ -52,3 +52,19 @@ Rust も同じです。曖昧な所有権、握りつぶしたエラー、巨大
 
 このストーリーボードでは、それらを火星の事故として扱います。
 
+## 増補版との対応
+
+増補版では、ストーリーボード本文は既存 Level の導入として残し、深掘りは `appendices/` と `projects/` で扱います。
+
+| 火星での問題 | 深掘り先 |
+| --- | --- |
+| 物資の所有者が曖昧 | `appendices/01_ownership_lifetimes.md` |
+| 修理手順を抽象化しすぎる | `appendices/02_traits_generics.md` |
+| ログ探索や報告が読みにくい | `appendices/03_iterators_patterns_macros.md` |
+| 「動いた」を信用しすぎる | `appendices/04_error_testing_quality.md` |
+| 補給品を自作するか外部に任せるか | `appendices/05_cargo_ecosystem.md` |
+| 複数作業をどう並行するか | `appendices/06_async_concurrency.md` |
+| 危険な近道を使うべきか | `appendices/07_unsafe_ffi_performance.md` |
+| 救出計画を実装へ落とす | `projects/kvs_std`、`projects/kvs_ecosystem` |
+
+火星編は「なぜそれを学ぶのか」をつかむ入口です。最終的な説明責任は、本編 README、補講、Cargo project で確認してください。
