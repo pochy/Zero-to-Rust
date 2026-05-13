@@ -91,3 +91,26 @@ projects/kvs_std と projects/kvs_ecosystem を比較し、どの責任を crate
 7. tokio や axum に移すなら、どの責任を移しますか。
 8. unsafe はこの project に必要ですか。不要ならなぜですか。
 ```
+
+## Advanced Track へ進む条件
+
+[ADVANCED_TRACK.md](ADVANCED_TRACK.md) へ進む前に、次を 1 つ選んで理由を書いてください。
+
+```text
+async Web service へ進む
+advanced types / lifetimes へ進む
+procedural macro へ進む
+unsafe / FFI へ進む
+embedded / no_std へ進む
+performance profiling へ進む
+data systems へ進む
+library design へ進む
+```
+
+選んだ領域について、次を説明できれば Advanced Track へ進めます。
+
+```text
+本編で学んだどの判断を使い回せるか
+新しく学ぶ必要がある責任は何か
+どの品質ゲートを追加すべきか
+```

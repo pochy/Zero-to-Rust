@@ -97,3 +97,18 @@ serde、clap、thiserror、anyhow、tracing、tokio に任せる責任を説明�
 外部クレートを採用しない場合の保守責任も説明できる
 projects/kvs_std と projects/kvs_ecosystem の差分を責任の移動として説明できる
 ```
+
+## Phase 6: advanced track を選ぶ
+
+```text
+ASSESSMENT.md
+ADVANCED_TRACK.md
+```
+
+完了条件:
+
+```text
+自分が次に進む Rust 領域を 1 つ選べる
+その領域で新しく背負う責任を説明できる
+本編で学んだ所有、失敗、共有、復旧、依存採用の判断を応用できる
+```

@@ -14,6 +14,7 @@
 | 用語を確認したい | [glossary.md](glossary.md) |
 | Level ごとの進級条件を見たい | [CHECKPOINTS.md](CHECKPOINTS.md) |
 | 学習記録を書きたい | [STUDY_JOURNAL.md](STUDY_JOURNAL.md) |
+| 完走後の発展学習を選びたい | [ADVANCED_TRACK.md](ADVANCED_TRACK.md) |
 
 ## Rust の中心概念
 
@@ -69,3 +70,4 @@
 | 完走後の口頭試問をする | [ASSESSMENT.md](ASSESSMENT.md) |
 | professional map を読む | [appendices/08_professional_rust_map.md](appendices/08_professional_rust_map.md) |
 | std-only から production ecosystem へ移る判断を読む | [appendices/09_from_std_to_production_ecosystem.md](appendices/09_from_std_to_production_ecosystem.md) |
+| 完走後の Advanced Track を選ぶ | [ADVANCED_TRACK.md](ADVANCED_TRACK.md) |
