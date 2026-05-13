@@ -1,6 +1,6 @@
 # START HERE
 
-このファイルは、今日なにから始めればよいかを示す入口です。Rust が完全に初めてでも、順番に進めれば Level 9 の最終課題までつながるように構成しています。
+このファイルは、今日なにから始めればよいかを示す入口です。Rust が完全に初めてでも、順番に進めれば Level 9、補講、Cargo project の実務演習までつながるように構成しています。
 
 ## 今日やること
 
@@ -51,6 +51,7 @@ owned: Rust
 演習で少し変える
 進級チェックで説明する
 公式 docs で確認する
+appendices で必要な深掘りを読む
 ```
 
 Rust は「なんとなく動いた」を許しにくい言語です。その代わり、曖昧な所有、失敗、共有状態を早い段階で見つけてくれます。
@@ -70,6 +71,34 @@ Rust は「なんとなく動いた」を許しにくい言語です。その代
 | 8 | WAL、設定、ログ、復旧を設計する | 障害時の復旧手順を説明できる |
 | 9 | バイナリ処理と最終課題に取り組む | std-only と外部クレート利用の判断を説明できる |
 
+## 補講とプロジェクトの進め方
+
+Level 0-9 は本編です。本編を進める途中で、次のように補講を読みます。
+
+| タイミング | 読むもの |
+| --- | --- |
+| Level 1-3 で所有権が曖昧なとき | `appendices/01_ownership_lifetimes.md` |
+| Level 3-5 で抽象化に迷うとき | `appendices/02_traits_generics.md` |
+| Level 4-6 で処理の書き方を広げたいとき | `appendices/03_iterators_patterns_macros.md` |
+| Level 6 以降で品質を上げたいとき | `appendices/04_error_testing_quality.md` |
+| Level 8-9 で実務構成へ進むとき | `appendices/05_cargo_ecosystem.md` 以降 |
+
+Level 9 まで終えたら、次の順番で Cargo project を動かします。
+
+```bash
+cargo test -p kvs_std
+cargo test -p kvs_ecosystem
+cargo test -p final_kvs_server
+```
+
+`kvs_std` は標準ライブラリだけで責任を抱える練習です。`kvs_ecosystem` は、同じ責任の一部を成熟した crate に任せる判断を学ぶ練習です。`final_kvs_server` は、TCP、TTL、WAL、admin HTTP、metrics を 1 つに統合する最終成果物です。
+
+最終課題へ入る前に、[FINAL_PROJECT_SPEC.md](FINAL_PROJECT_SPEC.md) と [REVIEW_CHECKLIST.md](REVIEW_CHECKLIST.md) を読んでください。
+
+最後に [ASSESSMENT.md](ASSESSMENT.md) の口頭試問へ答え、Rust の判断を自分の言葉で説明できるか確認します。
+
+演習に取り組んだ後は、[solutions](solutions/README.md) で回答例と比較してください。先に読まず、自分の判断を書いてから読む方が効果的です。
+
 ## 目安時間
 
 | 範囲 | 目安 |
@@ -79,6 +108,7 @@ Rust は「なんとなく動いた」を許しにくい言語です。その代
 | Level 5-6 | 1 週間 |
 | Level 7-8 | 1 週間から 2 週間 |
 | Level 9 と最終課題 | 1 週間以上 |
+| 補講と projects | 2 週間以上 |
 
 急ぐより、各 Level の進級チェックを言語化することを優先してください。
 
@@ -104,3 +134,5 @@ Rust は「なんとなく動いた」を許しにくい言語です。その代
 コンパイルエラーが出た場合は、エラーメッセージを最初から最後まで読んでください。Rust のエラーは、単なる失敗通知ではなく、設計のどこが曖昧かを教える教材です。
 
 `unwrap()` を使いたくなった場合は、まず「この失敗は本当に起きないと言えるか」を書いてください。言えないなら `Result` で返す設計を選びます。
+
+`cargo test -p kvs_ecosystem` で依存クレートの取得に失敗する場合は、ネットワークに接続できる環境で再実行してください。本編の `levels/` は外部クレートなしで進められるため、先に本編を完走できます。

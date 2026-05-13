@@ -1631,6 +1631,125 @@ Arc/Mutexは共有と排他を明示する仕組み
 
 **誰が何を所有し、どこで失敗し、どのように復旧し、どこまで安全に並行実行できるかを設計できるエンジニアになること**です。
 
+---
+
+# 増補版: Rust 全体を理解するための追加ロードマップ
+
+この教材は、Level 0-9 の本編を残したまま、補講と実務プロジェクトを追加します。
+
+```text
+levels/
+小さく動かし、Rust の哲学と設計判断を体験する。
+
+appendices/
+Rust の全体地図を補完する。trait、async、unsafe、Cargo、性能まで扱う。
+
+projects/
+Cargo workspace で実務に近い crate を作る。std-only 版と ecosystem 版を比較する。
+```
+
+## 本編と補講の対応
+
+| 本編 | 補講 | 深める判断 |
+| --- | --- | --- |
+| Level 0-3 | `appendices/01_ownership_lifetimes.md` | 所有型、借用、ライフタイム、clone の判断 |
+| Level 3-5 | `appendices/02_traits_generics.md` | trait、generics、dyn trait、抽象化の時期 |
+| Level 4-6 | `appendices/03_iterators_patterns_macros.md` | iterator、closure、match、macro の読み方 |
+| Level 6 | `appendices/04_error_testing_quality.md` | エラー分類、panic、テスト、品質ゲート |
+| Level 7-9 | `appendices/06_async_concurrency.md` | thread、channel、async、Send/Sync |
+| Level 9 | `appendices/07_unsafe_ffi_performance.md` | unsafe、FFI、no_std、performance |
+| 最終課題 | `appendices/08_professional_rust_map.md` | 実務レビューと採用判断 |
+
+## Cargo project の役割
+
+`projects/kvs_std` は、標準ライブラリだけで KVS を crate としてまとめます。
+
+```text
+Command:
+wire text を型に変換したもの。
+
+Store:
+key/value、TTL、状態を所有する。
+
+Response:
+表示前の結果。CLI や TCP とは分ける。
+
+WAL:
+状態変更だけを記録し、復旧可能性を設計に入れる。
+```
+
+`projects/kvs_ecosystem` は、同じ題材で主要 crate を採用します。
+
+```text
+serde:
+JSON の parse と serialize を任せる。
+
+clap:
+CLI 引数と help を任せる。
+
+thiserror:
+分類可能な library error を保つ。
+
+anyhow:
+binary の上位で文脈つきエラーを扱う。
+
+tracing:
+構造化ログを扱う。
+
+tokio:
+async runtime を使う構成に入る。
+```
+
+ここで重要なのは、std-only を卒業することではありません。
+
+```text
+std で理解する。
+crate に任せる理由を書く。
+任せた責任と残った責任を分ける。
+```
+
+この 3 つを説明できる状態が、実務 Rust への入口です。
+
+`projects/final_kvs_server` は、最終課題の統合実装です。
+
+```text
+TCP command server:
+複数クライアントから SET/GET/DEL/TTL を受ける。
+
+WAL:
+状態変更を追記し、起動時に復旧する。
+
+TTL:
+期限切れを読み取り時に片付ける。
+
+admin HTTP:
+/health、/metrics、/keys を返す。
+
+shared state:
+Arc<Mutex<AppState>> で Store と metrics を守る。
+```
+
+この project は、完全な本番サーバーではありません。むしろ、std-only で自分が背負う責任を見える化し、どこから `tokio`、`hyper`、`axum`、`tracing`、`clap`、`serde` に任せるべきかを判断する教材です。
+
+最終的な自己評価には `ASSESSMENT.md` を使います。Rust の理解は、暗記量ではなく、所有、失敗、共有、復旧、抽象化、依存採用をコード参照つきで説明できるかで測ります。
+
+## 追加された完了条件
+
+増補版の完了条件は、次を自分の言葉で説明できることです。
+
+```text
+所有権、借用、ライフタイムを API の形で説明できる。
+trait と generics を、変更軸が見えた場所で導入できる。
+Iterator と closure を、所有権の流れとして読める。
+Result、panic、独自エラー、テストを失敗分類として扱える。
+Cargo workspace、edition、feature、crate 採用判断を説明できる。
+thread と async の違い、Send/Sync、lock と await の危険を説明できる。
+unsafe を避ける理由、使う場合の safety 条件を説明できる。
+FFI、no_std、性能改善を、責任境界として扱える。
+```
+
+この状態になれば、Rust の全 API を暗記していなくても、新しい crate やフレームワークに出会ったときに「何を所有し、何を借り、どこで失敗し、どの責任を外部へ任せているのか」を読めます。それが、このチュートリアルでいう「Rust を理解した」状態です。
+
 [1]: https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html?utm_source=chatgpt.com "What is Ownership? - The Rust Programming Language"
 [2]: https://doc.rust-lang.org/std/?utm_source=chatgpt.com "Crate std - Rust Standard Library"
 [3]: https://doc.rust-lang.org/cargo/?search=edition&utm_source=chatgpt.com "Introduction - The Cargo Book"
