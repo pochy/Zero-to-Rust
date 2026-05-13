@@ -33,3 +33,24 @@ cargo test -p kvs_ecosystem
 ## std-only と比べる
 
 std-only 版では、wire text、エラー文字列、ログ出力を自分で持ちます。この版では、それらの一部を crate に任せます。実務ではこの判断が重要です。自作すると学べますが、保守責任も背負います。
+
+## コードを読む順番
+
+```text
+Cargo.toml:
+どの責任を crate に任せたかを見る。
+
+CommandRequest / ResponseBody:
+serde で JSON と Rust の型を対応させる境界。
+
+AppError:
+thiserror で分類可能な失敗を保つ場所。
+
+Store:
+crate を使っても残る、所有と状態管理の中心。
+
+main.rs:
+clap、anyhow、tracing、tokio を binary の入口で統合する場所。
+```
+
+`kvs_std` と行単位で比較するより、責任単位で比較してください。詳しい比較観点は [../PROJECT_WALKTHROUGH.md](../PROJECT_WALKTHROUGH.md) にあります。

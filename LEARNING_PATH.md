@@ -86,6 +86,7 @@ runbook に障害時の検知方法と復旧方法を書ける
 ```text
 projects/kvs_std
 projects/kvs_ecosystem
+projects/PROJECT_WALKTHROUGH.md
 REVIEW_CHECKLIST.md
 ```
 

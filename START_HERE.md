@@ -97,6 +97,8 @@ cargo test -p final_kvs_server
 
 `kvs_std` は標準ライブラリだけで責任を抱える練習です。`kvs_ecosystem` は、同じ責任の一部を成熟した crate に任せる判断を学ぶ練習です。`final_kvs_server` は、TCP、TTL、WAL、admin HTTP、metrics を 1 つに統合する最終成果物です。
 
+コードを読む順番は [projects/PROJECT_WALKTHROUGH.md](projects/PROJECT_WALKTHROUGH.md) を使ってください。最初から `src/lib.rs` を上から読むより、`Command`、`Response`、`Store`、`AppState`、server の順に責任境界で読む方が理解しやすくなります。
+
 最終課題へ入る前に、[FINAL_PROJECT_SPEC.md](FINAL_PROJECT_SPEC.md) と [REVIEW_CHECKLIST.md](REVIEW_CHECKLIST.md) を読んでください。
 
 最後に [ASSESSMENT.md](ASSESSMENT.md) の口頭試問へ答え、Rust の判断を自分の言葉で説明できるか確認します。

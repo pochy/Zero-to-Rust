@@ -54,6 +54,8 @@ Level 9 まで終えたら、Cargo workspace の実務演習へ進みます。
 | `projects/kvs_ecosystem` | `serde`、`clap`、`thiserror`、`anyhow`、`tracing`、`tokio` の採用判断を学ぶ |
 | `projects/final_kvs_server` | TCP、WAL、TTL、admin HTTP、metrics を統合した最終成果物 |
 
+project の読む順番と本編 Level との対応は [projects/PROJECT_WALKTHROUGH.md](projects/PROJECT_WALKTHROUGH.md) にまとめています。
+
 各 Level の終わりでは [CHECKPOINTS.md](CHECKPOINTS.md) を使って、次へ進んでよいかを判断します。迷った点は [STUDY_JOURNAL.md](STUDY_JOURNAL.md) に残してください。
 
 最終課題の自己レビューには [REVIEW_CHECKLIST.md](REVIEW_CHECKLIST.md) を使います。

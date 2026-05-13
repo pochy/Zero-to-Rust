@@ -49,11 +49,39 @@ cargo test -p final_kvs_server
 ```text
 README.md
 DESIGN.md
+../PROJECT_WALKTHROUGH.md
+src/lib.rs
+src/main.rs
 RUNBOOK.md
 EXERCISES.md
 ```
 
 `DESIGN.md` はコードを責任境界として読むための文書です。`RUNBOOK.md` は障害を観察するための手順です。`EXERCISES.md` は、最終課題を自分の設計へ拡張するための演習です。
+
+`src/lib.rs` は、次の順で読むと本編とのつながりが見えます。
+
+```text
+Command / Response / ParseError:
+Level 5 と Level 6。文字列、正常な結果、入力エラーを分ける。
+
+Store / Entry:
+Level 3 と Level 8。key/value と TTL を所有する。
+
+Metrics:
+Level 8。運用で観察する値を持つ。
+
+AppState:
+Level 7 と Level 8。共有する実行時状態をまとめる。
+
+parse_command:
+Level 2 と Level 5。&str を借り、Command を返す。
+
+run_tcp_server / run_admin_server:
+Level 7 と Level 8。外側の I/O と中心ロジックをつなぐ。
+
+tests:
+Level 6。責任境界が壊れていないか確認する。
+```
 
 ## 設計判断
 

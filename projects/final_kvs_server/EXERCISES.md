@@ -90,3 +90,16 @@ WAL、TTL、metrics、admin HTTP を責任境界として説明できるか
 ロック範囲の限界を説明できるか
 std-only から ecosystem へ移る理由を説明できるか
 ```
+
+## 学習記録
+
+[../../STUDY_JOURNAL.md](../../STUDY_JOURNAL.md) に、次を書いてください。
+
+```text
+final_kvs_server で自分が最も納得した設計判断
+final_kvs_server で実務投入前に変える設計
+kvs_std / kvs_ecosystem / final_kvs_server の違い
+次に crate に任せたい責任と、その理由
+```
+
+[../PROJECT_WALKTHROUGH.md](../PROJECT_WALKTHROUGH.md) の完了条件にも答えてください。

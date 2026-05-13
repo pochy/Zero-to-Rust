@@ -28,6 +28,30 @@ Response は表示前の結果で、CLI 表示とは分ける。
 WAL は状態変更だけを記録する。
 ```
 
+## コードを読む順番
+
+```text
+Command:
+入力を型に変換した結果。
+
+Response:
+Store の結果。表示文字列とは分ける。
+
+ParseError:
+入力が正しくない理由。
+
+Store:
+HashMap、value、TTL を所有する境界。
+
+parse_command:
+&str を借りて、Command を所有型として返す境界。
+
+tests:
+所有、TTL、WAL の判断が壊れていないか確認する場所。
+```
+
+より詳しい読み方は [../PROJECT_WALKTHROUGH.md](../PROJECT_WALKTHROUGH.md) を参照してください。
+
 ## std-only の限界
 
 標準ライブラリだけでも、所有権、TTL、WAL、テストは学べます。一方で、実務 CLI、JSON、構造化ログ、非同期 TCP、堅牢 HTTP は外部クレートを検討する領域です。次の `kvs_ecosystem` は、その採用判断を学ぶための対比です。

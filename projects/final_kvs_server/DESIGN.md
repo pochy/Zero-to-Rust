@@ -164,3 +164,19 @@ Store は TcpStream を知らないか
 Arc<Mutex<AppState>> の lock 範囲は説明できるか
 admin HTTP の制限を README に明記しているか
 ```
+
+## Connection To The Tutorial
+
+この project は、各 Level の判断を次のように統合しています。
+
+| Code area | Tutorial level | 判断 |
+| --- | --- | --- |
+| `Command` / `Response` | Level 5 | wire text を早めに型へ変換する |
+| `ParseError` | Level 2, 6 | 入力エラーを状態結果から分ける |
+| `Store` / `Entry` | Level 3, 8 | 状態と TTL を所有する境界を作る |
+| WAL append / restore | Level 8 | 状態変更を操作ログとして保存する |
+| `Arc<Mutex<AppState>>` | Level 7 | 共有状態を明示し、lock 範囲を説明する |
+| admin HTTP | Level 8 | health、metrics、keys を運用入口にする |
+| std-only scope | Level 9 | 自作する責任と crate に任せる責任を判断する |
+
+コードレビューでは、行数や機能数よりも、この対応が崩れていないかを確認してください。
