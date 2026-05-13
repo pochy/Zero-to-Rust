@@ -5,6 +5,61 @@
 このチュートリアルは、いただいた「単なる使い方ではなく、その技術で何を設計し、何を判断できるようになるべきか」を中心にする構成テンプレートをベースにしています。
 テーマは **Rust を外部クレートに頼らず、`std` 中心で深く学ぶ** ことに絞ります。
 
+## この文書の使い方
+
+`TUTORIAL.md` は、教材全体の設計思想をまとめた長い背景文書です。毎日の学習で最初から最後まで通読する必要はありません。
+
+実際の学習では、次を正本として使います。
+
+| 目的 | 正本 |
+| --- | --- |
+| 今日なにをするか | [START_HERE.md](START_HERE.md) |
+| 目的別に場所を探す | [INDEX.md](INDEX.md) |
+| Level ごとの学習 | `levels/level_*/README.md` と `levels/level_*/exercises.md` |
+| 進級判断 | [CHECKPOINTS.md](CHECKPOINTS.md) |
+| 学習記録 | [STUDY_JOURNAL.md](STUDY_JOURNAL.md) |
+| Rust 全体の補講 | [appendices/README.md](appendices/README.md) |
+| Cargo project の読み方 | [projects/PROJECT_WALKTHROUGH.md](projects/PROJECT_WALKTHROUGH.md) |
+| 最終課題 | [FINAL_PROJECT_SPEC.md](FINAL_PROJECT_SPEC.md) |
+
+この文書は、次のタイミングで読むと役に立ちます。
+
+```text
+Level 0 の前:
+Rust をなぜ学ぶのか、何を判断できるようになるべきかを読む。
+
+Level 3-5 の途中:
+小さい CLI からアプリケーション境界へ進む理由を確認する。
+
+Level 8-9 の前:
+運用、WAL、並行処理、std-only の限界を俯瞰する。
+
+完走後:
+自分が説明できるようになった判断を振り返る。
+```
+
+## 重複の扱い
+
+この文書には、現在の `levels/`、`appendices/`、`projects/` と重なる説明があります。これは削除せず、設計背景として残しています。
+
+学習中に内容が重複して見える場合は、次のように扱ってください。
+
+```text
+TUTORIAL.md:
+なぜその Level があるのか、設計思想を確認する場所。
+
+levels/:
+実際に手を動かす場所。
+
+appendices/:
+詰まった概念を深掘りする場所。
+
+projects/:
+実務に近い crate 構成で責任境界を読む場所。
+```
+
+矛盾して見える場合は、より具体的なファイルを優先します。たとえば、Level の手順は `levels/level_*/README.md`、最終課題の仕様は [FINAL_PROJECT_SPEC.md](FINAL_PROJECT_SPEC.md)、実装の読み方は [projects/PROJECT_WALKTHROUGH.md](projects/PROJECT_WALKTHROUGH.md) を優先してください。
+
 ---
 
 ## 全体方針

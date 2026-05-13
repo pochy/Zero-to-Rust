@@ -9,7 +9,7 @@
 | 目的 | 読む場所 |
 | --- | --- |
 | 今日なにから始めるか知りたい | [START_HERE.md](START_HERE.md) |
-| 全体の思想を知りたい | [TUTORIAL.md](TUTORIAL.md) |
+| 全体の思想と設計背景を知りたい | [TUTORIAL.md](TUTORIAL.md) |
 | 学習順を確認したい | [LEARNING_PATH.md](LEARNING_PATH.md) |
 | 用語を確認したい | [glossary.md](glossary.md) |
 | Level ごとの進級条件を見たい | [CHECKPOINTS.md](CHECKPOINTS.md) |
