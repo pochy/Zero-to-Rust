@@ -1,0 +1,12 @@
+[workspace]
+resolver = "3"
+members = [
+    "projects/kvs_std",
+    "projects/kvs_ecosystem",
+    "projects/final_kvs_server",
+]
+
+[workspace.package]
+edition = "2024"
+license = "MIT OR Apache-2.0"
+publish = false
