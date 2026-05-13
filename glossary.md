@@ -241,3 +241,39 @@ Rust の代表的な async runtime です。非同期 I/O、task、timer など�
 ## ecosystem
 
 標準ライブラリ以外の成熟した crate や周辺ツール全体です。使うこと自体が目的ではなく、どの責任を任せるかを判断する対象です。
+
+## Rust Reference
+
+Rust 言語の規則を確認するための仕様寄りの文書です。学習向けの説明ではなく、構文、型、trait、unsafe などの規則を確認する場所です。
+
+## RFC
+
+Request for Comments の略です。Rust の機能や設計変更が、なぜ導入されたかを議論・記録する文書です。
+
+## rustc
+
+Rust compiler です。Rust のコードを解析し、型検査し、MIR や LLVM を経由して実行可能な形へ変換します。
+
+## HIR
+
+High-level Intermediate Representation の略です。Rust のソースコードを compiler が扱いやすい形へ下げた中間表現です。
+
+## MIR
+
+Mid-level Intermediate Representation の略です。borrow checker や最適化で使われる中間表現です。所有権や制御フローを理解する入口になります。
+
+## borrow checker
+
+所有権、借用、ライフタイムの規則を検査する compiler の仕組みです。値が使える範囲、可変借用の排他、参照の有効性などを確認します。
+
+## trait solver
+
+どの型がどの trait bound を満たすかを解決する compiler の仕組みです。generic code、associated type、where clause の理解に関わります。
+
+## coherence
+
+trait implementation が一貫して一意に決まるようにする規則の考え方です。複数の crate が矛盾する impl を定義できないようにします。
+
+## orphan rule
+
+trait impl を定義できる場所を制限する Rust の規則です。基本的には、trait か型の少なくとも一方が自分の crate に属している必要があります。

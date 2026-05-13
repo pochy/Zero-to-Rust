@@ -71,3 +71,4 @@
 | professional map を読む | [appendices/08_professional_rust_map.md](appendices/08_professional_rust_map.md) |
 | std-only から production ecosystem へ移る判断を読む | [appendices/09_from_std_to_production_ecosystem.md](appendices/09_from_std_to_production_ecosystem.md) |
 | 完走後の Advanced Track を選ぶ | [ADVANCED_TRACK.md](ADVANCED_TRACK.md) |
+| compiler / language internals へ進む | [ADVANCED_TRACK.md](ADVANCED_TRACK.md) |

@@ -370,6 +370,90 @@ feature flag で依存をどう分けるか
 public API の所有型、借用型、error type を理由つきで選べる
 ```
 
+## Track 9: Compiler And Language Internals
+
+目的:
+
+```text
+rustc、Rust Reference、RFC、MIR、borrow checker、trait solver を通じて、Rust の言語仕様と実装モデルを読む力を身につける。
+```
+
+この track は、Rust を使って設計する力から、Rust という言語そのものを理解する方向へ進むためのものです。compiler contributor になることだけが目的ではありません。実務で遭遇する難しいエラー、unsafe の議論、macro 展開、型推論の限界を、より正確に説明できるようにします。
+
+学ぶこと:
+
+```text
+Rust Reference の読み方
+RFC と edition の役割
+rustc-dev-guide の読み方
+parse / AST / HIR / MIR / LLVM の流れ
+macro expansion
+name resolution
+type inference
+trait solver
+coherence
+orphan rule
+borrow checker
+non-lexical lifetimes
+Polonius の入口
+const eval
+unsafe memory model の仕様レベル
+diagnostics がどう作られるか
+```
+
+作るもの:
+
+```text
+小さな Rust コードを題材に、コンパイル過程で何が起きるかを説明する notebook。
+
+観察対象:
+ownership move
+trait bound error
+lifetime error
+macro expansion
+async lowering
+const eval error
+unsafe precondition violation
+```
+
+設計課題:
+
+```text
+コンパイラが拒否しているのは構文か、型か、所有関係か、trait 制約かを分類する。
+Rust Reference、The Book、rustc-dev-guide、RFC の役割を分ける。
+言語仕様、compiler implementation、ecosystem convention を混同しない。
+unsafe の議論で「実装上たまたま動く」と「仕様上保証される」を分ける。
+```
+
+読む一次情報:
+
+```text
+Rust Reference:
+言語仕様に近い規則を確認する。
+
+The Rust Programming Language:
+学習者向けの説明で概念を確認する。
+
+rustc-dev-guide:
+compiler implementation の流れを確認する。
+
+RFC:
+なぜその機能が導入されたか、設計議論を確認する。
+
+Unsafe Code Guidelines:
+unsafe memory model の議論を確認する。
+```
+
+完了条件:
+
+```text
+代表的なコンパイルエラーを compiler phase と責任境界で説明できる
+Rust Reference / RFC / rustc-dev-guide を読み分けられる
+borrow checker と trait solver を高レベルに説明できる
+coherence と orphan rule が API 設計へ与える影響を説明できる
+unsafe の議論で「仕様上保証されること」と「今の実装で動くこと」を分けられる
+```
+
 ## 進め方
 
 全部を順番にやる必要はありません。目的に応じて選びます。
@@ -386,6 +470,12 @@ Track 2 -> Track 8 -> Track 3
 
 データ基盤へ進みたい:
 Track 6 -> Track 7 -> Track 1
+
+Rust 言語そのものを深く理解したい:
+Track 2 -> Track 4 -> Track 9
+
+compiler / language design へ進みたい:
+Track 9 -> Track 3 -> Track 8
 ```
 
 ## Advanced Completion Criteria
@@ -399,6 +489,8 @@ async、thread、lock、channel の選択理由を説明できる
 unsafe を safe abstraction に閉じ込められる
 測定に基づいて性能改善を判断できる
 運用上の保証と保証しないことを文書化できる
+Rust Reference、RFC、compiler internals を必要に応じて読める
+compiler error を構文、型、所有、trait、unsafe guarantee に分類できる
 ```
 
 ここまで来ると、「Rust のすべてを知っている」ではなく、「未知の Rust 領域を自分で読み、設計し、検証できる」と言えます。

@@ -111,4 +111,5 @@ ADVANCED_TRACK.md
 自分が次に進む Rust 領域を 1 つ選べる
 その領域で新しく背負う責任を説明できる
 本編で学んだ所有、失敗、共有、復旧、依存採用の判断を応用できる
+Rust の仕様、compiler implementation、ecosystem convention を区別できる
 ```

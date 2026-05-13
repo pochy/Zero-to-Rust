@@ -105,6 +105,7 @@ embedded / no_std へ進む
 performance profiling へ進む
 data systems へ進む
 library design へ進む
+compiler / language internals へ進む
 ```
 
 選んだ領域について、次を説明できれば Advanced Track へ進めます。

@@ -142,4 +142,4 @@ thread、channel、Arc/Mutex、async runtime の選択理由を説明できる
 unsafe、FFI、no_std、性能改善の責任を説明できる
 ```
 
-完走後にさらに進む場合は [ADVANCED_TRACK.md](ADVANCED_TRACK.md) を使います。async Web、advanced types、procedural macro、unsafe/FFI、no_std、performance、data systems、library design へ分岐できます。
+完走後にさらに進む場合は [ADVANCED_TRACK.md](ADVANCED_TRACK.md) を使います。async Web、advanced types、procedural macro、unsafe/FFI、no_std、performance、data systems、library design、compiler / language internals へ分岐できます。
