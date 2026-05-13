@@ -59,6 +59,18 @@ python3 tools/check_links.py
 
 この 4 つは最低限です。`unsafe`、FFI、parser、バイナリ処理が増える場合は Miri、fuzzing、property test も検討します。
 
+## Learning Gate
+
+教材としてレビューする場合は、コード品質だけでは不十分です。
+
+```text
+START_HERE.md から迷わず最初の実行まで進めるか
+各 Level の README、examples、exercises、CHECKPOINTS が対応しているか
+STUDY_JOURNAL.md に書くべき判断が各 Level で発生しているか
+appendices への参照が、詰まった時点で自然に見つかるか
+solutions が先回りした暗記ではなく、比較材料として機能しているか
+```
+
 ## Solution Review
 
 演習回答を確認するときは [solutions](solutions/README.md) と [TEACHER_GUIDE.md](TEACHER_GUIDE.md) を使います。

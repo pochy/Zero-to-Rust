@@ -2,7 +2,7 @@
 
 Rust を `std` 中心の基礎から実務 crate の採用判断まで、Level 0 から Level 9、補講、実務プロジェクトで段階的に学ぶチュートリアルです。
 
-最初に読むファイルは [START_HERE.md](START_HERE.md) です。全体設計の背景は [TUTORIAL.md](TUTORIAL.md) にあります。全体の進行表は [LEARNING_PATH.md](LEARNING_PATH.md)、最終課題の仕様は [FINAL_PROJECT_SPEC.md](FINAL_PROJECT_SPEC.md) です。
+最初に読むファイルは [START_HERE.md](START_HERE.md) です。全体設計の背景は [TUTORIAL.md](TUTORIAL.md) にあります。全体の進行表は [LEARNING_PATH.md](LEARNING_PATH.md)、進級判断は [CHECKPOINTS.md](CHECKPOINTS.md)、学習記録は [STUDY_JOURNAL.md](STUDY_JOURNAL.md)、最終課題の仕様は [FINAL_PROJECT_SPEC.md](FINAL_PROJECT_SPEC.md) です。
 
 ## このチュートリアルの目的
 
@@ -54,6 +54,8 @@ Level 9 まで終えたら、Cargo workspace の実務演習へ進みます。
 | `projects/kvs_ecosystem` | `serde`、`clap`、`thiserror`、`anyhow`、`tracing`、`tokio` の採用判断を学ぶ |
 | `projects/final_kvs_server` | TCP、WAL、TTL、admin HTTP、metrics を統合した最終成果物 |
 
+各 Level の終わりでは [CHECKPOINTS.md](CHECKPOINTS.md) を使って、次へ進んでよいかを判断します。迷った点は [STUDY_JOURNAL.md](STUDY_JOURNAL.md) に残してください。
+
 最終課題の自己レビューには [REVIEW_CHECKLIST.md](REVIEW_CHECKLIST.md) を使います。
 
 完走後の理解確認には [ASSESSMENT.md](ASSESSMENT.md) を使います。
@@ -94,6 +96,8 @@ examples/ を実行する
 出力を観察する
 exercises.md に取り組む
 進級チェックに自分の言葉で答える
+CHECKPOINTS.md で A/B/C 判定をする
+STUDY_JOURNAL.md に判断を書く
 公式 docs で一次情報を確認する
 必要なら appendices/ で深掘りする
 ```

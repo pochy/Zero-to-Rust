@@ -1,4 +1,6 @@
-# Rust 標準ライブラリ中心チュートリアル案
+# Rust 標準ライブラリ中心チュートリアル
+
+このファイルは、Zero to Rust の設計意図と全体像を説明する文書です。実際に学習を始めるときは [START_HERE.md](START_HERE.md)、進行表は [LEARNING_PATH.md](LEARNING_PATH.md)、各 Level 後の自己判定は [CHECKPOINTS.md](CHECKPOINTS.md)、判断の記録は [STUDY_JOURNAL.md](STUDY_JOURNAL.md) を使ってください。
 
 このチュートリアルは、いただいた「単なる使い方ではなく、その技術で何を設計し、何を判断できるようになるべきか」を中心にする構成テンプレートをベースにしています。
 テーマは **Rust を外部クレートに頼らず、`std` 中心で深く学ぶ** ことに絞ります。
