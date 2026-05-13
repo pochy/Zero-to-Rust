@@ -630,3 +630,213 @@ WAL、snapshot、replication、recovery、consistency を failure test で検証
 ```
 
 ここから先の学習は、Rust だけでなくドメインそのものの学習になります。Rust の強みは、そのドメイン知識を所有、失敗、共有、unsafe boundary、public API としてコードに落とせることです。
+
+## Advanced Track の次にやること
+
+Advanced Track まで本当に完了したら、次は教材を増やすより、制約のある実戦へ入ります。
+
+おすすめ順は次です。
+
+## 1. 実プロダクトを 1 つ作る
+
+教材のコードではなく、利用者、運用、変更、障害を持つ成果物を作ります。
+
+候補:
+
+```text
+Rust 製 HTTP API
+KVS / queue / job runner
+CLI developer tool
+proxy / gateway
+small database / storage engine
+no_std embedded tool
+WebAssembly plugin runtime
+```
+
+見るべき点:
+
+```text
+仕様変更に耐えられる public API か
+error は運用者と利用者の両方に説明できるか
+ログ、metrics、health check は十分か
+障害時にどこまで復旧できるか
+依存 crate の更新方針を説明できるか
+```
+
+## 2. OSS crate に貢献する
+
+小さな typo 修正だけでなく、test 追加、小さい bug fix、documentation 改善、diagnostic 改善に進みます。
+
+経験できること:
+
+```text
+他人が読む public API
+semver の重み
+MSRV の制約
+feature flag の互換性
+CI matrix
+review comment への対応
+release note
+```
+
+OSS では、正しいコードを書くだけでは不十分です。保守者、既存利用者、将来の変更に対して説明できる設計が必要になります。
+
+## 3. 専門領域を 1 つ選ぶ
+
+Advanced Track のすべてを浅く続けるより、1 つの領域を深く選びます。
+
+```text
+Web backend:
+tokio、axum、tower、hyper、tracing、metrics。
+
+systems:
+unsafe、FFI、memory layout、Miri、sanitizer、fuzzing。
+
+embedded:
+no_std、HAL、interrupt、panic handler、heapless。
+
+compiler:
+rustc、MIR、diagnostics、borrow checker、trait solver。
+
+data systems:
+WAL、snapshot、replication、compaction、recovery。
+
+library design:
+public API、semver、MSRV、docs.rs、feature flag。
+```
+
+選ぶ基準:
+
+```text
+自分が作りたいものに直結するか
+今後の仕事や研究に必要か
+Rust の強みが出る領域か
+継続的に触れる codebase があるか
+```
+
+## 4. 既存の大きな Rust codebase を読む
+
+全部理解しようとしないでください。目的は、設計判断を抜き出すことです。
+
+候補:
+
+```text
+ripgrep:
+CLI、検索、性能、エラー処理。
+
+tokio:
+async runtime、task、I/O、feature flag。
+
+serde:
+trait、derive、data model、ecosystem の中心設計。
+
+hyper:
+HTTP、async I/O、protocol boundary。
+
+rust-analyzer:
+compiler-like architecture、incremental analysis、large codebase。
+
+uv / ruff:
+高速 tooling、Python ecosystem との境界、performance-oriented Rust。
+
+deno:
+runtime、JavaScript/TypeScript 境界、V8 integration。
+
+wasmtime:
+WebAssembly runtime、sandbox、systems boundary。
+```
+
+読むときの問い:
+
+```text
+crate はどこで分割されているか
+public API と internal API はどう分けているか
+error type はどう設計されているか
+feature flag は何を切り替えているか
+unsafe はどこに閉じ込められているか
+test は責任境界を守っているか
+```
+
+## 5. 自分の crate を公開する
+
+公開すると、API 設計の重みが一気に現実になります。
+
+最低限用意するもの:
+
+```text
+README
+examples
+docs.rs 向け documentation
+unit tests
+integration tests
+CI
+license
+changelog
+semver policy
+MSRV policy
+feature flag policy
+```
+
+公開前に答える問い:
+
+```text
+この crate は何をしないか
+public error type は将来拡張できるか
+依存 crate を利用者に押し付けていないか
+feature flag の組み合わせはテストされているか
+breaking change の基準は何か
+```
+
+## 推奨実戦課題: final_kvs_server を production-ish にする
+
+この教材から最も自然につながる実戦課題は、`final_kvs_server` を発展させることです。
+
+目的:
+
+```text
+教材用 std-only server を、運用を意識した Rust service へ近づける。
+```
+
+追加候補:
+
+```text
+axum + tokio 化
+HTTP JSON API
+structured tracing
+prometheus metrics
+config file
+graceful shutdown
+request size limit
+WAL compaction
+snapshot
+integration tests
+load test
+Docker image
+CI
+README / runbook / release notes
+```
+
+この課題で確認する判断:
+
+```text
+std-only で持っていた責任を、どの crate に移すか
+domain logic と transport layer を分けられているか
+AppState の lock 設計を変えるべきか
+WAL writer を同期にするか非同期にするか
+shutdown 時にどこまで完了を待つか
+metrics は利用者行動と内部状態の両方を観察できるか
+load test で何を測るか
+```
+
+完了条件:
+
+```text
+README だけで起動、操作、停止、復旧ができる
+runbook に代表的な障害と確認手順がある
+CI で test、fmt、clippy が通る
+integration test が主要 API と復旧を確認している
+load test の結果をもとに限界を説明できる
+本番投入しない場合でも、何が不足しているかを明記できる
+```
+
+ここまでやると、Rust の知識は教材の理解から、制約のある成果物を運用できる設計へ変わります。次にやるべきことは、学習テーマを増やすことではなく、責任ある成果物を作り、その変更と運用に向き合うことです。
