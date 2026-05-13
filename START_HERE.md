@@ -62,6 +62,67 @@ STUDY_JOURNAL.md に迷った点を書く
 
 Rust は「なんとなく動いた」を許しにくい言語です。その代わり、曖昧な所有、失敗、共有状態を早い段階で見つけてくれます。
 
+## Rust が使われる領域
+
+Rust は万能言語というより、性能、安全性、並行性、低レイヤー制御を同時に求める領域で採用されやすい言語です。
+
+主な採用領域:
+
+```text
+システムプログラミング:
+OS 周辺、runtime、driver、file system、network stack。
+
+クラウドインフラ:
+proxy、load balancer、service mesh、high-performance backend、infrastructure tool。
+
+ネットワーク / セキュリティ:
+TLS 周辺、packet processing、外部入力を大量に扱う daemon。
+
+組み込み / no_std:
+microcontroller、firmware、bootloader、sensor、IoT。
+
+WebAssembly:
+browser 上の高性能処理、plugin runtime、sandboxed execution。
+
+CLI / 開発者ツール:
+検索、formatter、linter、package tool、build tool、single binary 配布。
+
+データ基盤:
+KVS、storage engine、query engine、WAL、compaction、data pipeline。
+
+ブロックチェーン:
+node、runtime、暗号処理、tooling。
+
+AI / ML 周辺インフラ:
+inference server、data pipeline、vector database、model serving 周辺。
+```
+
+Rust が強いのは、次の条件が重なる場所です。
+
+```text
+速くしたい
+メモリ安全にしたい
+GC pause を避けたい
+並行処理を安全にしたい
+C/C++ に近い制御がほしい
+長期保守したい
+障害時の責任境界を明確にしたい
+```
+
+Rust の強みは「速い」だけではありません。より正確には、C/C++ に近い性能と制御を持ちながら、所有権、借用、型システムで多くの事故をコンパイル時に防げることです。
+
+一方で、次のような用途では Rust が重い選択になることがあります。
+
+```text
+単純な CRUD Web application
+短期間で作る社内 tool
+仕様変更が激しい prototype
+処理性能が問題にならない automation
+チーム全体が Rust 未経験で納期が短い project
+```
+
+このチュートリアルでは、Rust の得意分野に合わせて、所有、失敗、共有、WAL、TTL、metrics、runbook、crate 採用判断を扱います。他の言語でも作れるものを Rust で書くだけではなく、Rust だから早い段階で説明できる責任を学ぶためです。
+
 ## Level 別の進め方
 
 | Level | 何をするか | 次に進む条件 |
