@@ -41,6 +41,18 @@ fn print_user_name(name: &str) {}
 コンパイルエラーを clone で消す前に、所有権の設計を考えられるか？
 ```
 
+## 学習記録
+
+[CHECKPOINTS.md](../../CHECKPOINTS.md) の Level 1 を A/B/C で自己評価してください。
+
+[STUDY_JOURNAL.md](../../STUDY_JOURNAL.md) には、次を書きます。
+
+```text
+String を受け取る関数にした理由
+&str を受け取る関数にした理由
+コンパイラに止められて設計を変えた場所
+```
+
 ## 追加演習: API を設計する
 
 次の 3 つの関数について、引数を `String` にするか `&str` にするか決め、理由を書いてください。

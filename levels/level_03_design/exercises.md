@@ -39,6 +39,18 @@ Option<String>
 API の引数と戻り値から、所有と借用の境界を読めるか？
 ```
 
+## 学習記録
+
+[CHECKPOINTS.md](../../CHECKPOINTS.md) の Level 3 を A/B/C で自己評価してください。
+
+[STUDY_JOURNAL.md](../../STUDY_JOURNAL.md) には、次を書きます。
+
+```text
+Store が所有する値
+呼び出し元から借りるだけでよい値
+trait を導入する理由、またはまだ導入しない理由
+```
+
 ## 追加演習: trait 導入の是非
 
 `Store` trait を作るべきか判断してください。

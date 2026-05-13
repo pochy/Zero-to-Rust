@@ -52,6 +52,18 @@ Store は更新し WARNING を出す
 復旧性と可用性のトレードオフを説明できるか？
 ```
 
+## 学習記録
+
+[CHECKPOINTS.md](../../CHECKPOINTS.md) の Level 8 を A/B/C で自己評価してください。
+
+[STUDY_JOURNAL.md](../../STUDY_JOURNAL.md) には、次を書きます。
+
+```text
+WAL 書き込み失敗時の方針
+Rust の型で守る範囲
+runbook や運用手順で守る範囲
+```
+
 ## 追加演習: 運用 runbook を書く
 
 次の障害が起きたときの確認手順を 5 手順以内で書いてください。

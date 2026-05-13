@@ -42,6 +42,18 @@ fn load(path: &str) -> Result<String, String>
 ? と unwrap の違いを、実行時の振る舞いで説明できるか？
 ```
 
+## 学習記録
+
+[CHECKPOINTS.md](../../CHECKPOINTS.md) の Level 2 を A/B/C で自己評価してください。
+
+[STUDY_JOURNAL.md](../../STUDY_JOURNAL.md) には、次を書きます。
+
+```text
+Result で返した失敗
+Option で表した「ない」
+panic / unwrap / expect を使ってよいと判断した根拠
+```
+
 ## 追加演習: エラー分類を増やす
 
 `mini_cat.rs` の失敗を、次に分類してください。

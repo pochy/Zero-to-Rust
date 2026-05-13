@@ -36,6 +36,18 @@ Arc<RwLock<Store>>
 共有状態を小さくし、ロック範囲を短くする設計を説明できるか？
 ```
 
+## 学習記録
+
+[CHECKPOINTS.md](../../CHECKPOINTS.md) の Level 7 を A/B/C で自己評価してください。
+
+[STUDY_JOURNAL.md](../../STUDY_JOURNAL.md) には、次を書きます。
+
+```text
+Arc が共有している所有権
+Mutex が守っている変更可能性
+ロック中に実行しないようにした処理
+```
+
 ## 追加演習: channel 設計と比較する
 
 共有 Store を `Arc<Mutex<Store>>` で守る設計と、Store 専用スレッドへ channel で `Command` を送る設計を比較してください。

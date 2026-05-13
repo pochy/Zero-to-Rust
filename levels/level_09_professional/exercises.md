@@ -43,6 +43,18 @@ std-only では不足する本番要件は何か
 最終課題の所有、失敗、共有、復旧、運用を自分の設計として説明できるか？
 ```
 
+## 学習記録
+
+[CHECKPOINTS.md](../../CHECKPOINTS.md) の Level 9 と Projects Checkpoint を A/B/C で自己評価してください。
+
+[STUDY_JOURNAL.md](../../STUDY_JOURNAL.md) には、次を書きます。
+
+```text
+unsafe を使わない理由、または使う場合の safety 条件
+std-only で自分が持つ責任
+外部 crate に任せる責任
+```
+
 ## 追加演習: std-only と ecosystem を比較する
 
 `projects/kvs_std` と `projects/kvs_ecosystem` を読み、次を比較してください。

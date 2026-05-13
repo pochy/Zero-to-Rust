@@ -49,6 +49,18 @@ TCP 層、プロトコル層、Store 層の責任を分けて説明できるか�
 文字列を早めに enum へ変換する理由を説明できるか？
 ```
 
+## 学習記録
+
+[CHECKPOINTS.md](../../CHECKPOINTS.md) の Level 5 を A/B/C で自己評価してください。
+
+[STUDY_JOURNAL.md](../../STUDY_JOURNAL.md) には、次を書きます。
+
+```text
+parse、execute、format の責任分担
+Command と Response を enum にする理由
+wire format を変更しても Store を変えないための境界
+```
+
 ## 追加演習: wire format を設計する
 
 今の text protocol を JSON protocol に変える場合、どの層を変更すべきか書いてください。

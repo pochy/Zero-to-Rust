@@ -39,6 +39,18 @@
 I/O、検索、表示を分けて説明できるか？
 ```
 
+## 学習記録
+
+[CHECKPOINTS.md](../../CHECKPOINTS.md) の Level 4 を A/B/C で自己評価してください。
+
+[STUDY_JOURNAL.md](../../STUDY_JOURNAL.md) には、次を書きます。
+
+```text
+検索処理が所有する値
+Iterator で流すだけの値
+表示責任を検索責任から分ける理由
+```
+
 ## 追加演習: Iterator で読み直す
 
 `mini_grep.rs` の検索処理を、`for` ループ版と iterator chain 版で比較してください。

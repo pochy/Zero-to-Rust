@@ -37,6 +37,17 @@ fn consume(value: String) {
 Rust のコンパイルエラーを設計のヒントとして読めるか？
 ```
 
+## 学習記録
+
+[CHECKPOINTS.md](../../CHECKPOINTS.md) の Level 0 を A/B/C で自己評価してください。
+
+[STUDY_JOURNAL.md](../../STUDY_JOURNAL.md) には、次を書きます。
+
+```text
+Rust を他の言語と同じように書こうとすると、どの責任が曖昧になるか
+clone や unwrap を使う前に、自分は何を確認するか
+```
+
 ## 追加演習: Rust を学ぶ理由を書く
 
 他の言語でも同じ CLI は作れます。それでも Rust で作る意味を、次の観点で 5 行以上書いてください。
