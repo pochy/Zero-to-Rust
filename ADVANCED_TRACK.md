@@ -494,3 +494,139 @@ compiler error を構文、型、所有、trait、unsafe guarantee に分類で�
 ```
 
 ここまで来ると、「Rust のすべてを知っている」ではなく、「未知の Rust 領域を自分で読み、設計し、検証できる」と言えます。
+
+## Advanced Track まで終えたら何が言えるか
+
+Advanced Track まで完了した状態は、一般的な入門や中級教材の完了とはかなり違います。
+
+この段階では、Rust を単に「書ける」だけではなく、次の層をまたいで考えられる状態を目指します。
+
+```text
+language:
+所有権、借用、ライフタイム、型、trait、unsafe の規則を理解する。
+
+library:
+public API、error type、feature flag、semver、documentation test を設計する。
+
+runtime:
+thread、channel、lock、async runtime、task、shutdown を選択する。
+
+systems:
+FFI、no_std、performance、memory model、profiling を責任として扱う。
+
+operations:
+logging、metrics、health check、runbook、backpressure、failure mode を設計する。
+
+compiler:
+Rust Reference、RFC、rustc-dev-guide を読み、compiler error を分類する。
+```
+
+そのため、Advanced Track まで完了したなら、次のように言うのが正確です。
+
+```text
+Rust の全 API を暗記したわけではない。
+Rust ecosystem の全 crate を知っているわけでもない。
+しかし、Rust の主要領域を経験し、未知の Rust コード、crate、仕様、compiler 周辺の議論に自力で入っていける。
+```
+
+これは実務上はかなり高い到達点です。新しい crate や framework に出会ったときも、「使い方」だけでなく、次の問いで読めるようになります。
+
+```text
+この crate はどの責任を引き受けているか
+どの型が所有し、どの API が借用しているか
+失敗は public error としてどう表されているか
+feature flag はどの依存や機能を切り替えているか
+async runtime へ依存しているか
+unsafe を使っている場合、safe abstraction はどこか
+performance claim は測定で確認できるか
+ドキュメントに書かれていない運用上の責任は何か
+```
+
+## 「Rust の全て」と言い切れない理由
+
+Advanced Track は Rust の広い領域を扱いますが、それでも「Rust の全てを完全に理解した」とは言いません。
+
+理由は、Rust が単一の固定された知識ではなく、複数の深い専門領域と進化する ecosystem から成るためです。
+
+```text
+rustc:
+compiler implementation は変わり続ける。
+
+language design:
+RFC、edition、unstable feature、trait solver などは継続的に進化する。
+
+unsafe memory model:
+実務上の best practice と仕様上の保証を慎重に分ける必要がある。
+
+async ecosystem:
+tokio、tower、hyper、axum などは version と設計慣習が変わる。
+
+embedded / no_std:
+target、HAL、interrupt、memory layout によって判断が変わる。
+
+performance:
+CPU、allocator、I/O、lock contention、workload によって最適解が変わる。
+
+domain:
+database、compiler、network proxy、game engine、browser、kernel、ML runtime では、それぞれ別の制約がある。
+```
+
+したがって、到達点は次のように表現します。
+
+```text
+誤解を招く表現:
+Rust の全てを理解した。
+
+より正確な表現:
+Rust の全体地図を持ち、主要領域を経験し、未知の領域を自力で読み解ける。
+
+実務的な表現:
+Rust で設計し、実装し、レビューし、性能・安全性・運用・公開 API まで含めて判断できる。
+```
+
+## Advanced Completion Self Review
+
+Advanced Track を完了したかどうかは、読んだ文書量ではなく、次の問いへ答えられるかで判断します。
+
+```text
+1. async Web service を作るとき、tokio、axum、tower、hyper はそれぞれ何を担当しますか。
+2. public API で String を受け取るべき場所と &str を受け取るべき場所を説明できますか。
+3. borrowed parser と owned parser の tradeoff を説明できますか。
+4. procedural macro を導入すべき重複と、導入すべきでない複雑さを分けられますか。
+5. unsafe block ごとに safety invariant を書けますか。
+6. FFI 境界で allocate、free、panic、null、buffer length をどう扱うか説明できますか。
+7. no_std で std がないことを API 設計へ反映できますか。
+8. benchmark の改善前後を数値で示し、測定の限界も説明できますか。
+9. snapshot、WAL compaction、replication log の違いを説明できますか。
+10. semver、MSRV、feature flag が public crate の利用者へ与える影響を説明できますか。
+11. Rust Reference、The Book、RFC、rustc-dev-guide を目的別に読み分けられますか。
+12. compiler error を構文、型、所有、trait、unsafe guarantee の観点で分類できますか。
+```
+
+すべてに自分のコードや読んだ crate を参照しながら答えられるなら、この教材の Advanced Track は完了です。
+
+## 次に残る学び方
+
+Advanced Track の後は、教材を増やすより、実際の専門領域へ入る方が効果的です。
+
+```text
+production service:
+実トラフィック、監視、障害対応、SLO、deploy、security review を経験する。
+
+open source crate:
+issue、PR、semver、MSRV、docs、release を経験する。
+
+compiler / language:
+rustc-dev-guide を読み、small diagnostic improvement や documentation PR から入る。
+
+unsafe / systems:
+Miri、sanitizer、fuzzing、FFI boundary、memory layout を実例で検証する。
+
+embedded:
+実 target、HAL、interrupt、panic handler、memory constraints を扱う。
+
+data systems:
+WAL、snapshot、replication、recovery、consistency を failure test で検証する。
+```
+
+ここから先の学習は、Rust だけでなくドメインそのものの学習になります。Rust の強みは、そのドメイン知識を所有、失敗、共有、unsafe boundary、public API としてコードに落とせることです。
