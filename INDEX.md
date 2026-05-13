@@ -1,0 +1,71 @@
+# Zero to Rust Index
+
+この索引は、目的別に読む場所を探すための入口です。
+
+最初から順に学ぶ場合は [START_HERE.md](START_HERE.md) を使ってください。このファイルは、学習途中で「この話はどこにあるか」を探すために使います。
+
+## はじめに読む
+
+| 目的 | 読む場所 |
+| --- | --- |
+| 今日なにから始めるか知りたい | [START_HERE.md](START_HERE.md) |
+| 全体の思想を知りたい | [TUTORIAL.md](TUTORIAL.md) |
+| 学習順を確認したい | [LEARNING_PATH.md](LEARNING_PATH.md) |
+| 用語を確認したい | [glossary.md](glossary.md) |
+| Level ごとの進級条件を見たい | [CHECKPOINTS.md](CHECKPOINTS.md) |
+| 学習記録を書きたい | [STUDY_JOURNAL.md](STUDY_JOURNAL.md) |
+
+## Rust の中心概念
+
+| 概念 | 本編 | 補講 |
+| --- | --- | --- |
+| 所有権、借用、ライフタイム | [Level 0](levels/level_00_philosophy/README.md), [Level 1](levels/level_01_intro/README.md) | [appendices/01_ownership_lifetimes.md](appendices/01_ownership_lifetimes.md) |
+| `String` と `&str` | [Level 1](levels/level_01_intro/README.md) | [appendices/01_ownership_lifetimes.md](appendices/01_ownership_lifetimes.md) |
+| `Result`、`Option`、`?` | [Level 2](levels/level_02_basics/README.md) | [appendices/04_error_testing_quality.md](appendices/04_error_testing_quality.md) |
+| `struct`、`enum`、責任境界 | [Level 3](levels/level_03_design/README.md), [Level 5](levels/level_05_application_workflow/README.md) | [appendices/02_traits_generics.md](appendices/02_traits_generics.md) |
+| iterator、closure、pattern | [Level 4](levels/level_04_improvement/README.md) | [appendices/03_iterators_patterns_macros.md](appendices/03_iterators_patterns_macros.md) |
+| テスト、品質、失敗分類 | [Level 6](levels/level_06_evaluation/README.md) | [appendices/04_error_testing_quality.md](appendices/04_error_testing_quality.md) |
+| スレッド、`Arc`、`Mutex` | [Level 7](levels/level_07_integration/README.md) | [appendices/06_async_concurrency.md](appendices/06_async_concurrency.md) |
+| WAL、復旧、運用 | [Level 8](levels/level_08_production/README.md) | [appendices/05_cargo_ecosystem.md](appendices/05_cargo_ecosystem.md) |
+| `unsafe`、FFI、性能 | [Level 9](levels/level_09_professional/README.md) | [appendices/07_unsafe_ffi_performance.md](appendices/07_unsafe_ffi_performance.md) |
+
+## 演習と解答
+
+| 目的 | 読む場所 |
+| --- | --- |
+| Level 0-4 の回答例を見る | [solutions/levels_00_04.md](solutions/levels_00_04.md) |
+| Level 5-9 の回答例を見る | [solutions/levels_05_09.md](solutions/levels_05_09.md) |
+| 最終課題の回答例を見る | [solutions/final_project.md](solutions/final_project.md) |
+| 理解確認の回答例を見る | [solutions/assessment_answers.md](solutions/assessment_answers.md) |
+| 教える側の観点を見る | [TEACHER_GUIDE.md](TEACHER_GUIDE.md) |
+
+## Projects
+
+| 目的 | 読む場所 |
+| --- | --- |
+| project の読む順番を知る | [projects/PROJECT_WALKTHROUGH.md](projects/PROJECT_WALKTHROUGH.md) |
+| std-only KVS を読む | [projects/kvs_std/README.md](projects/kvs_std/README.md) |
+| ecosystem 版と比較する | [projects/kvs_ecosystem/README.md](projects/kvs_ecosystem/README.md) |
+| 最終サーバーを動かす | [projects/final_kvs_server/README.md](projects/final_kvs_server/README.md) |
+| 最終サーバーの設計を読む | [projects/final_kvs_server/DESIGN.md](projects/final_kvs_server/DESIGN.md) |
+| 最終サーバーの障害確認をする | [projects/final_kvs_server/RUNBOOK.md](projects/final_kvs_server/RUNBOOK.md) |
+| 最終サーバーを拡張する | [projects/final_kvs_server/EXERCISES.md](projects/final_kvs_server/EXERCISES.md) |
+
+## 品質確認
+
+| 目的 | コマンドまたは文書 |
+| --- | --- |
+| Markdown link を確認する | `python3 tools/check_links.py` |
+| Rust の formatting を確認する | `cargo fmt --all --check` |
+| workspace の test を実行する | `cargo test --workspace` |
+| clippy で lint を見る | `cargo clippy --workspace --all-targets` |
+| レビュー観点を見る | [REVIEW_CHECKLIST.md](REVIEW_CHECKLIST.md) |
+
+## 最終確認
+
+| 目的 | 読む場所 |
+| --- | --- |
+| 最終課題仕様を見る | [FINAL_PROJECT_SPEC.md](FINAL_PROJECT_SPEC.md) |
+| 完走後の口頭試問をする | [ASSESSMENT.md](ASSESSMENT.md) |
+| professional map を読む | [appendices/08_professional_rust_map.md](appendices/08_professional_rust_map.md) |
+| std-only から production ecosystem へ移る判断を読む | [appendices/09_from_std_to_production_ecosystem.md](appendices/09_from_std_to_production_ecosystem.md) |

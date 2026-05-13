@@ -2,7 +2,7 @@
 
 Rust を `std` 中心の基礎から実務 crate の採用判断まで、Level 0 から Level 9、補講、実務プロジェクトで段階的に学ぶチュートリアルです。
 
-最初に読むファイルは [START_HERE.md](START_HERE.md) です。全体設計の背景は [TUTORIAL.md](TUTORIAL.md) にあります。全体の進行表は [LEARNING_PATH.md](LEARNING_PATH.md)、進級判断は [CHECKPOINTS.md](CHECKPOINTS.md)、学習記録は [STUDY_JOURNAL.md](STUDY_JOURNAL.md)、最終課題の仕様は [FINAL_PROJECT_SPEC.md](FINAL_PROJECT_SPEC.md) です。
+最初に読むファイルは [START_HERE.md](START_HERE.md) です。目的別に探す場合は [INDEX.md](INDEX.md) を使ってください。全体設計の背景は [TUTORIAL.md](TUTORIAL.md) にあります。全体の進行表は [LEARNING_PATH.md](LEARNING_PATH.md)、進級判断は [CHECKPOINTS.md](CHECKPOINTS.md)、学習記録は [STUDY_JOURNAL.md](STUDY_JOURNAL.md)、最終課題の仕様は [FINAL_PROJECT_SPEC.md](FINAL_PROJECT_SPEC.md) です。
 
 ## このチュートリアルの目的
 

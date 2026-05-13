@@ -146,10 +146,98 @@ Foreign Function Interface の略です。Rust と C など別言語の境界を
 
 Write-Ahead Log の略です。状態を直接保存する前に操作ログを追記し、障害後にログを再生して復旧する考え方です。
 
+## TTL
+
+Time To Live の略です。値が有効でいられる期限です。この教材では期限切れを読み取り時に片付ける lazy expiration を扱います。
+
+## lazy expiration
+
+期限切れを専用の掃除処理で即座に消すのではなく、読み取りや一覧取得のタイミングで片付ける設計です。実装は単純になりますが、期限切れデータが一時的に内部へ残ることがあります。
+
 ## プロトコル
 
 通信で使う約束です。たとえば `SET key value` を受け取ったら `OK` を返す、というようにリクエストとレスポンスの形を定めます。
 
+## wire text
+
+通信や CLI 入力として実際に流れる文字列です。`SET name Rust` のような wire text を、早い段階で `Command` のような型へ変換します。
+
+## `Command`
+
+入力文字列を Rust の型に変換した操作要求です。文字列のまま処理を続けず、`Set`、`Get`、`Delete` のような状態に分けます。
+
+## `Response`
+
+処理結果を表す型です。TCP や CLI に書き出す文字列とは分けておくと、テストや HTTP 化がしやすくなります。
+
+## `Store`
+
+KVS の状態を所有する構造体です。`HashMap`、値、期限などをどこが持つかを明確にする境界です。
+
+## `AppState`
+
+サーバー実行中に共有する状態をまとめた構造体です。この教材では `Store`、metrics、WAL path をまとめ、`Arc<Mutex<AppState>>` で守ります。
+
+## metrics
+
+処理件数、エラー数、起動時刻など、システムの状態を数値やテキストで観察するための情報です。
+
+## health check
+
+プロセスが応答できるかを外から確認する入口です。本格的な正常性保証ではなく、運用で最初に見る信号です。
+
 ## 可観測性
 
 システムの状態を外から確認できる性質です。ログ、メトリクス、health check などで実現します。
+
+## runbook
+
+障害時に何を確認し、どう判断し、どう復旧するかを書いた手順書です。Rust の型だけでは守れない運用上の責任を扱います。
+
+## quality gate
+
+変更を完了とみなす前に通す確認です。この教材では `cargo fmt --all --check`、`cargo test --workspace`、`cargo clippy --workspace --all-targets`、`python3 tools/check_links.py` を基本にします。
+
+## `cargo fmt`
+
+Rust コードの formatting を整える Cargo サブコマンドです。レビューで本質ではない差分を減らします。
+
+## clippy
+
+Rust の lint ツールです。動くコードに対して、より読みやすい書き方や危険な習慣を指摘します。
+
+## crate
+
+Rust のコンパイル単位です。library crate や binary crate があり、Cargo package は 1 つ以上の crate を持てます。
+
+## package
+
+Cargo が扱う配布・ビルド単位です。`Cargo.toml` を持ち、依存関係や binary/library の設定を書きます。
+
+## `serde`
+
+Rust の値と JSON などの形式を変換するためによく使われる crate です。serialize / deserialize の責任を任せます。
+
+## `clap`
+
+CLI 引数解析と help 生成を任せる crate です。手書きの `std::env::args` より実務的な CLI を作りやすくなります。
+
+## `thiserror`
+
+library 側の分類可能なエラー型を定義しやすくする crate です。
+
+## `anyhow`
+
+application binary の上位で、文脈つきのエラーを扱いやすくする crate です。library の public error を曖昧にする用途には向きません。
+
+## `tracing`
+
+構造化ログや span を扱うための crate です。`println!` より、後から検索・集計しやすい観測情報を残せます。
+
+## `tokio`
+
+Rust の代表的な async runtime です。非同期 I/O、task、timer などを提供します。
+
+## ecosystem
+
+標準ライブラリ以外の成熟した crate や周辺ツール全体です。使うこと自体が目的ではなく、どの責任を任せるかを判断する対象です。

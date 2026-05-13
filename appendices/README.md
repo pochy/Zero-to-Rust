@@ -20,6 +20,8 @@ Send/Sync、async、unsafe、FFI、パフォーマンスを読む。
 professional map と projects/ を読み、採用判断を書く。
 ```
 
+projects 側の読み方は [../projects/PROJECT_WALKTHROUGH.md](../projects/PROJECT_WALKTHROUGH.md) にあります。補講で概念を確認し、project で実装上の責任境界を読みます。
+
 ## 補講一覧
 
 | ファイル | 目的 |
