@@ -2,7 +2,7 @@
 
 Rust を `std` 中心の基礎から実務 crate の採用判断まで、Level 0 から Level 9、補講、実務プロジェクトで段階的に学ぶチュートリアルです。
 
-最初に読むファイルは [START_HERE.md](START_HERE.md) です。目的別に探す場合は [INDEX.md](INDEX.md) を使ってください。全体設計の背景は [TUTORIAL.md](TUTORIAL.md) にあります。全体の進行表は [LEARNING_PATH.md](LEARNING_PATH.md)、進級判断は [CHECKPOINTS.md](CHECKPOINTS.md)、学習記録は [STUDY_JOURNAL.md](STUDY_JOURNAL.md)、最終課題の仕様は [FINAL_PROJECT_SPEC.md](FINAL_PROJECT_SPEC.md)、完走後の発展学習は [ADVANCED_TRACK.md](ADVANCED_TRACK.md) です。
+最初に読むファイルは [START_HERE.md](START_HERE.md) です。目的別に探す場合は [INDEX.md](INDEX.md) を使ってください。全体設計の背景は [TUTORIAL.md](TUTORIAL.md) にあります。全体の進行表は [LEARNING_PATH.md](LEARNING_PATH.md)、進級判断は [CHECKPOINTS.md](CHECKPOINTS.md)、学習記録は [STUDY_JOURNAL.md](STUDY_JOURNAL.md)、最終課題の仕様は [FINAL_PROJECT_SPEC.md](FINAL_PROJECT_SPEC.md)、完走後の発展学習は [ADVANCED_TRACK.md](ADVANCED_TRACK.md)、今後注目される Rust 領域は [FUTURE_RUST_DOMAINS.md](FUTURE_RUST_DOMAINS.md) です。
 
 ## このチュートリアルの目的
 
@@ -143,3 +143,5 @@ unsafe、FFI、no_std、性能改善の責任を説明できる
 ```
 
 完走後にさらに進む場合は [ADVANCED_TRACK.md](ADVANCED_TRACK.md) を使います。async Web、advanced types、procedural macro、unsafe/FFI、no_std、performance、data systems、library design、compiler / language internals へ分岐できます。
+
+どの領域へ進むか迷う場合は [FUTURE_RUST_DOMAINS.md](FUTURE_RUST_DOMAINS.md) を読んでください。Cloud Native、Data Systems、WebAssembly / Edge、Systems / Security、Embedded、CLI、AI / ML infrastructure と Rust の相性を整理しています。

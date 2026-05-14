@@ -15,6 +15,7 @@
 | Level ごとの進級条件を見たい | [CHECKPOINTS.md](CHECKPOINTS.md) |
 | 学習記録を書きたい | [STUDY_JOURNAL.md](STUDY_JOURNAL.md) |
 | 完走後の発展学習を選びたい | [ADVANCED_TRACK.md](ADVANCED_TRACK.md) |
+| 今後注目される Rust 領域を知りたい | [FUTURE_RUST_DOMAINS.md](FUTURE_RUST_DOMAINS.md) |
 
 ## Rust の中心概念
 
@@ -72,3 +73,4 @@
 | std-only から production ecosystem へ移る判断を読む | [appendices/09_from_std_to_production_ecosystem.md](appendices/09_from_std_to_production_ecosystem.md) |
 | 完走後の Advanced Track を選ぶ | [ADVANCED_TRACK.md](ADVANCED_TRACK.md) |
 | compiler / language internals へ進む | [ADVANCED_TRACK.md](ADVANCED_TRACK.md) |
+| 今後注目される分野と Rust の相性を見る | [FUTURE_RUST_DOMAINS.md](FUTURE_RUST_DOMAINS.md) |
