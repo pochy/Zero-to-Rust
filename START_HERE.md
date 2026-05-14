@@ -1,6 +1,6 @@
 # START HERE
 
-このファイルは、今日なにから始めればよいかを示す入口です。Rust が完全に初めてでも、順番に進めれば Level 9、補講、Cargo project の実務演習までつながるように構成しています。
+このファイルは、今日なにから始めればよいかを示す入口です。Rust が完全に初めてでも、順番に進めれば Level 9、補講、Cargo project の実務演習までつながるように構成しています。Rust のあとに Computer Science を体系的に学ぶ入口は [COMPUTER_SCIENCE_TRACK.md](COMPUTER_SCIENCE_TRACK.md) です。
 
 学習途中で目的別に場所を探したい場合は [INDEX.md](INDEX.md) を使ってください。
 
@@ -61,6 +61,33 @@ STUDY_JOURNAL.md に迷った点を書く
 ```
 
 Rust は「なんとなく動いた」を許しにくい言語です。その代わり、曖昧な所有、失敗、共有状態を早い段階で見つけてくれます。
+
+## Rust のあとに CS を学ぶ
+
+Rust 本編を進めると、所有権、借用、失敗、共有、復旧の判断が見えるようになります。その次に Computer Science を学ぶと、次の問いに答えやすくなります。
+
+```text
+なぜこの data structure を選ぶのか
+なぜこの処理は O(n^2) になって遅いのか
+なぜ String clone で memory が増えるのか
+なぜ large file は streaming するべきなのか
+なぜ HTTP error と TCP error は別物なのか
+なぜ DB index は read を速くし write を重くし得るのか
+```
+
+CS Track は [COMPUTER_SCIENCE_TRACK.md](COMPUTER_SCIENCE_TRACK.md) から始めます。最初の 3 か月だけを見たい場合は [computer_science/THREE_MONTH_PLAN.md](computer_science/THREE_MONTH_PLAN.md)、外部教材の使い分けを見たい場合は [computer_science/RESOURCE_GUIDE.md](computer_science/RESOURCE_GUIDE.md) を使ってください。
+
+Rust 本編と CS Track の接続:
+
+| Rust 本編 | CS Track |
+| --- | --- |
+| Level 3 HashMap KVS | CS 1 data structures |
+| Level 4 mini grep | CS 2 algorithms, CS 4 CLI/I/O |
+| Level 5 TCP KVS | CS 5 networking |
+| Level 7 thread pool | CS 4 process/thread, CS 7 OS |
+| Level 8 WAL | CS 6 databases |
+| Level 9 binary processing | CS 3 computer systems |
+| PERFORMANCE_LAB.md | CS 1-4 performance reasoning |
 
 ## Rust が使われる領域
 

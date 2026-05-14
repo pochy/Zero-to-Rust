@@ -15,6 +15,9 @@
 | Level ごとの進級条件を見たい | [CHECKPOINTS.md](CHECKPOINTS.md) |
 | 学習記録を書きたい | [STUDY_JOURNAL.md](STUDY_JOURNAL.md) |
 | 完走後の発展学習を選びたい | [ADVANCED_TRACK.md](ADVANCED_TRACK.md) |
+| Rust で Computer Science を学びたい | [COMPUTER_SCIENCE_TRACK.md](COMPUTER_SCIENCE_TRACK.md) |
+| CS の 3 か月プランを見たい | [computer_science/THREE_MONTH_PLAN.md](computer_science/THREE_MONTH_PLAN.md) |
+| CS 外部教材の使い分けを知りたい | [computer_science/RESOURCE_GUIDE.md](computer_science/RESOURCE_GUIDE.md) |
 | 今後注目される Rust 領域を知りたい | [FUTURE_RUST_DOMAINS.md](FUTURE_RUST_DOMAINS.md) |
 | Python と Rust の速度・メモリ差を体感したい | [PERFORMANCE_LAB.md](PERFORMANCE_LAB.md) |
 
@@ -54,6 +57,26 @@
 | 最終サーバーの障害確認をする | [projects/final_kvs_server/RUNBOOK.md](projects/final_kvs_server/RUNBOOK.md) |
 | 最終サーバーを拡張する | [projects/final_kvs_server/EXERCISES.md](projects/final_kvs_server/EXERCISES.md) |
 
+## Computer Science Track
+
+| 目的 | 読む場所 |
+| --- | --- |
+| CS Track の全体像を見る | [COMPUTER_SCIENCE_TRACK.md](COMPUTER_SCIENCE_TRACK.md) |
+| CS 教材本体の入口へ進む | [computer_science/README.md](computer_science/README.md) |
+| 3 か月プランを見る | [computer_science/THREE_MONTH_PLAN.md](computer_science/THREE_MONTH_PLAN.md) |
+| CS 用語を確認する | [computer_science/glossary.md](computer_science/glossary.md) |
+| 外部教材を選ぶ | [computer_science/RESOURCE_GUIDE.md](computer_science/RESOURCE_GUIDE.md) |
+| CS 0: Orientation | [computer_science/levels/cs_00_orientation/README.md](computer_science/levels/cs_00_orientation/README.md) |
+| CS 1: Data Structures | [computer_science/levels/cs_01_data_structures/README.md](computer_science/levels/cs_01_data_structures/README.md) |
+| CS 2: Algorithms | [computer_science/levels/cs_02_algorithms/README.md](computer_science/levels/cs_02_algorithms/README.md) |
+| CS 3: Computer Systems | [computer_science/levels/cs_03_computer_systems/README.md](computer_science/levels/cs_03_computer_systems/README.md) |
+| CS 4: OS, CLI, I/O | [computer_science/levels/cs_04_os_cli_io/README.md](computer_science/levels/cs_04_os_cli_io/README.md) |
+| CS 5: Networking And Web | [computer_science/levels/cs_05_networking_web/README.md](computer_science/levels/cs_05_networking_web/README.md) |
+| CS 6: Databases | [computer_science/levels/cs_06_databases/README.md](computer_science/levels/cs_06_databases/README.md) |
+| CS 7: Operating Systems | [computer_science/levels/cs_07_operating_systems/README.md](computer_science/levels/cs_07_operating_systems/README.md) |
+| CS 8: Languages And Compilers | [computer_science/levels/cs_08_languages_compilers/README.md](computer_science/levels/cs_08_languages_compilers/README.md) |
+| CS 9: Capstone | [computer_science/levels/cs_09_capstone/README.md](computer_science/levels/cs_09_capstone/README.md) |
+
 ## 品質確認
 
 | 目的 | コマンドまたは文書 |
@@ -74,5 +97,6 @@
 | std-only から production ecosystem へ移る判断を読む | [appendices/09_from_std_to_production_ecosystem.md](appendices/09_from_std_to_production_ecosystem.md) |
 | 完走後の Advanced Track を選ぶ | [ADVANCED_TRACK.md](ADVANCED_TRACK.md) |
 | compiler / language internals へ進む | [ADVANCED_TRACK.md](ADVANCED_TRACK.md) |
+| Rust で CS を学ぶ | [COMPUTER_SCIENCE_TRACK.md](COMPUTER_SCIENCE_TRACK.md) |
 | 今後注目される分野と Rust の相性を見る | [FUTURE_RUST_DOMAINS.md](FUTURE_RUST_DOMAINS.md) |
 | Python vs Rust performance lab を実行する | [PERFORMANCE_LAB.md](PERFORMANCE_LAB.md) |

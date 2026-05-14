@@ -103,6 +103,7 @@ projects/kvs_std と projects/kvs_ecosystem の差分を責任の移動として
 ```text
 ASSESSMENT.md
 ADVANCED_TRACK.md
+COMPUTER_SCIENCE_TRACK.md
 ```
 
 完了条件:
@@ -112,4 +113,34 @@ ADVANCED_TRACK.md
 その領域で新しく背負う責任を説明できる
 本編で学んだ所有、失敗、共有、復旧、依存採用の判断を応用できる
 Rust の仕様、compiler implementation、ecosystem convention を区別できる
+```
+
+## Phase 7: Computer Science を Rust で学ぶ
+
+```text
+COMPUTER_SCIENCE_TRACK.md
+computer_science/README.md
+computer_science/THREE_MONTH_PLAN.md
+computer_science/levels/cs_00_orientation
+computer_science/levels/cs_01_data_structures
+computer_science/levels/cs_02_algorithms
+computer_science/levels/cs_03_computer_systems
+computer_science/levels/cs_04_os_cli_io
+computer_science/levels/cs_05_networking_web
+computer_science/levels/cs_06_databases
+computer_science/levels/cs_07_operating_systems
+computer_science/levels/cs_08_languages_compilers
+computer_science/levels/cs_09_capstone
+```
+
+完了条件:
+
+```text
+代表的な data structure を用途、計算量、memory の観点で説明できる
+Big-O と実測の両方で performance を説明できる
+large file を streaming し、buffering の意味を説明できる
+HTTP、TCP、DNS、TLS、Cookie、Session の責任を分けて説明できる
+DB index、transaction、lock、WAL の tradeoff を説明できる
+lexer、parser、AST、VM、compiler の流れを説明できる
+小さな system を CS 観点で設計、実装、測定、レビューできる
 ```
