@@ -145,3 +145,5 @@ unsafe、FFI、no_std、性能改善の責任を説明できる
 完走後にさらに進む場合は [ADVANCED_TRACK.md](ADVANCED_TRACK.md) を使います。async Web、advanced types、procedural macro、unsafe/FFI、no_std、performance、data systems、library design、compiler / language internals へ分岐できます。
 
 どの領域へ進むか迷う場合は [FUTURE_RUST_DOMAINS.md](FUTURE_RUST_DOMAINS.md) を読んでください。Cloud Native、Data Systems、WebAssembly / Edge、Systems / Security、Embedded、CLI、AI / ML infrastructure と Rust の相性を整理しています。
+
+Rust の速度やメモリ効率を Python と比較して体感したい場合は [PERFORMANCE_LAB.md](PERFORMANCE_LAB.md) を使ってください。大量 JSONL ログ処理を Python と Rust で実装し、実行時間、最大 RSS、処理行数/秒を測ります。

@@ -639,6 +639,8 @@ Advanced Track まで本当に完了したら、次は教材を増やすより�
 
 どの実戦領域を選ぶか迷う場合は、[FUTURE_RUST_DOMAINS.md](FUTURE_RUST_DOMAINS.md) も読んでください。Cloud Native、Data Systems、WebAssembly / Edge、Systems / Security、Embedded、CLI、AI / ML infrastructure と Rust の相性を整理しています。
 
+Rust の速度やメモリ効率を Python と比較して体感したい場合は、[PERFORMANCE_LAB.md](PERFORMANCE_LAB.md) を先に実行してください。大量 JSONL ログ処理を題材に、streaming、allocation、GC、GIL、`BufRead`、`HashMap`、`Result` の違いを数値で確認できます。
+
 ## 1. 実プロダクトを 1 つ作る
 
 教材のコードではなく、利用者、運用、変更、障害を持つ成果物を作ります。

@@ -27,6 +27,8 @@ C/C++ に近い低レイヤー制御
 
 この教材の延長として最も自然なのは、`final_kvs_server` を cloud native な Rust service へ育てることです。
 
+Rust の速度やメモリ効率を先に体感したい場合は、[PERFORMANCE_LAB.md](PERFORMANCE_LAB.md) を使ってください。大量 JSONL ログ処理を Python と Rust で比較し、Cloud Native、Data Systems、AI / ML infrastructure に共通する data processing の基礎を測定できます。
+
 ## 1. Cloud Native / AI Infrastructure
 
 今後かなり注目度が高い領域です。

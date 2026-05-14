@@ -16,6 +16,7 @@
 | 学習記録を書きたい | [STUDY_JOURNAL.md](STUDY_JOURNAL.md) |
 | 完走後の発展学習を選びたい | [ADVANCED_TRACK.md](ADVANCED_TRACK.md) |
 | 今後注目される Rust 領域を知りたい | [FUTURE_RUST_DOMAINS.md](FUTURE_RUST_DOMAINS.md) |
+| Python と Rust の速度・メモリ差を体感したい | [PERFORMANCE_LAB.md](PERFORMANCE_LAB.md) |
 
 ## Rust の中心概念
 
@@ -74,3 +75,4 @@
 | 完走後の Advanced Track を選ぶ | [ADVANCED_TRACK.md](ADVANCED_TRACK.md) |
 | compiler / language internals へ進む | [ADVANCED_TRACK.md](ADVANCED_TRACK.md) |
 | 今後注目される分野と Rust の相性を見る | [FUTURE_RUST_DOMAINS.md](FUTURE_RUST_DOMAINS.md) |
+| Python vs Rust performance lab を実行する | [PERFORMANCE_LAB.md](PERFORMANCE_LAB.md) |

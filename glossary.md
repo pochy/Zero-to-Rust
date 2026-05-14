@@ -242,6 +242,34 @@ Rust の代表的な async runtime です。非同期 I/O、task、timer など�
 
 標準ライブラリ以外の成熟した crate や周辺ツール全体です。使うこと自体が目的ではなく、どの責任を任せるかを判断する対象です。
 
+## RSS
+
+Resident Set Size の略です。process が実メモリ上で使っている量の目安です。Performance Lab では最大 RSS を見て、Python と Rust のメモリ使用量を比較します。
+
+## throughput
+
+単位時間あたりに処理できる量です。Performance Lab では rows/sec を見て、1 秒あたり何行処理できたかを比較します。
+
+## latency
+
+1 つの処理にかかった時間です。ログ処理では `latency_ms` を集計し、平均や p95 を計算します。
+
+## streaming
+
+入力全体をメモリに載せず、少しずつ読みながら処理する設計です。大量ログ処理では、全行を `Vec` や `list` に保持せず、集計状態だけを持つことが重要です。
+
+## benchmark
+
+性能を測定するための実験です。絶対値より、同じ環境で条件を揃えて比較することが重要です。
+
+## GIL
+
+Global Interpreter Lock の略です。CPython で複数 thread が同時に Python bytecode を実行することを制限する仕組みです。CPU bound な並列処理で Rust との差を考えるときに重要です。
+
+## GC pause
+
+Garbage Collection によって application の処理が一時停止、または遅延することです。Rust は GC を持たず、所有権に基づいて値の解放タイミングを決めます。
+
 ## Rust Reference
 
 Rust 言語の規則を確認するための仕様寄りの文書です。学習向けの説明ではなく、構文、型、trait、unsafe などの規則を確認する場所です。
