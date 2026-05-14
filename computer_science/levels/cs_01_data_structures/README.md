@@ -46,6 +46,21 @@ sort 済み表示: Vec が自然
 
 Rust では、どちらが key と value を所有するかも重要です。
 
+実行:
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_01_data_structures/examples/vec_vs_hashmap.rs -o /tmp/cs_vec_vs_hashmap
+/tmp/cs_vec_vs_hashmap
+```
+
+見るべき点:
+
+```text
+Vec は全件走査で id を探す
+HashMap は key で直接探す
+名前順表示では Vec を sort する方が自然
+```
+
 ## 手順 2: stack と queue を作る
 
 Rust では `Vec<T>` で stack を表せます。
@@ -68,6 +83,21 @@ queue.push_back("job-2");
 assert_eq!(queue.pop_front(), Some("job-1"));
 ```
 
+実行:
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_01_data_structures/examples/stack_queue.rs -o /tmp/cs_stack_queue
+/tmp/cs_stack_queue
+```
+
+見るべき点:
+
+```text
+undo は最後に入れた操作から戻す
+job queue は先に入れた job から処理する
+API の形が使い方の制約になる
+```
+
 ## 手順 3: LRU Cache を設計する
 
 LRU Cache は、最近使われていない item を捨てる cache です。
@@ -86,6 +116,21 @@ capacity を超えたら一番古い key を捨てる
 HashMap だけだと lookup は速いが古さ順を持てない
 VecDeque だけだと古さ順は持てるが lookup が遅い
 両方を組み合わせると責任が分かれるが、整合性を保つ必要がある
+```
+
+実行:
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_01_data_structures/examples/lru_cache.rs -o /tmp/cs_lru_cache
+/tmp/cs_lru_cache
+```
+
+期待する観察:
+
+```text
+get a によって a が最近使われた扱いになる
+put d で capacity を超える
+b が一番古いため削除される
 ```
 
 ## TypeScript / Go ならどう見えるか
@@ -116,4 +161,3 @@ std::vec::Vec
 std::collections::HashMap
 std::collections::VecDeque
 ```
-

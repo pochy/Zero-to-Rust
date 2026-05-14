@@ -43,6 +43,21 @@ sort 済み配列で、中央を見て探索範囲を半分にします。
 中央より大きければ右へ
 ```
 
+実行:
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_02_algorithms/examples/binary_search.rs -o /tmp/cs_binary_search
+/tmp/cs_binary_search
+```
+
+見るべき点:
+
+```text
+見つかった場合は index が返る
+存在しない場合は None になる
+left..right の範囲が毎回狭くなる
+```
+
 ## 手順 2: tree を DFS / BFS で読む
 
 tree は file browser、DOM、AST、category、organization chart などに出ます。
@@ -53,6 +68,21 @@ BFS: 近い階層から見る
 ```
 
 UI の tree 表示、Markdown outline、parser では、tree traversal が頻出します。
+
+実行:
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_02_algorithms/examples/tree_walk.rs -o /tmp/cs_tree_walk
+/tmp/cs_tree_walk
+```
+
+見るべき点:
+
+```text
+DFS は root から深く潜る
+BFS は root に近い階層から順に見る
+同じ tree でも traversal で順序が変わる
+```
 
 ## 手順 3: graph を読む
 
@@ -66,6 +96,21 @@ cycle: 戻ってくる経路がある
 ```
 
 依存関係の build order、job の実行順、workflow の validation は graph の問題です。
+
+補助例として、Markdown heading parser も動かします。
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_02_algorithms/examples/heading_parser.rs -o /tmp/cs_heading_parser
+/tmp/cs_heading_parser
+```
+
+見るべき点:
+
+```text
+line を 1 行ずつ見る
+# の数を heading level に変換する
+本文行は捨てる
+```
 
 ## TypeScript / Go ならどう見えるか
 
@@ -98,4 +143,3 @@ slice::sort
 Vec
 VecDeque
 ```
-
