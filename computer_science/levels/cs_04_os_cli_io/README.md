@@ -42,6 +42,22 @@ keyword を含む行だけ出す
 
 これは `PERFORMANCE_LAB.md` の streaming 処理と同じ考え方です。
 
+実行:
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_04_os_cli_io/examples/mini_grep.rs -o /tmp/cs_mini_grep
+/tmp/cs_mini_grep Rust START_HERE.md
+```
+
+見るべき点:
+
+```text
+BufReader で 1 行ずつ読む
+一致行は stdout に出る
+matches count は stderr に出る
+file open や read の失敗は Result と exit code で扱う
+```
+
 ## 手順 2: wc を作る
 
 `wc` は単純に見えますが、何を数えるかを決める必要があります。
@@ -56,6 +72,21 @@ grapheme count
 
 実務でも「数える」ときは定義が重要です。
 
+実行:
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_04_os_cli_io/examples/mini_wc.rs -o /tmp/cs_mini_wc
+/tmp/cs_mini_wc START_HERE.md
+```
+
+見るべき点:
+
+```text
+byte count と word count は違う
+text として解釈する処理には UTF-8 の前提が入る
+line の定義には newline の扱いが関係する
+```
+
 ## 手順 3: process と thread を分ける
 
 ```text
@@ -64,6 +95,36 @@ thread: process 内の並行実行単位
 ```
 
 Rust では `std::process::Command` で process を起動し、`std::thread::spawn` で thread を作れます。
+
+process の実行:
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_04_os_cli_io/examples/process_launcher.rs -o /tmp/cs_process_launcher
+/tmp/cs_process_launcher rustc --version
+```
+
+見るべき点:
+
+```text
+外部 program は別 process として起動される
+success と exit status を確認できる
+起動失敗と program の異常終了は別の失敗である
+```
+
+thread の実行:
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_04_os_cli_io/examples/thread_counter.rs -o /tmp/cs_thread_counter
+/tmp/cs_thread_counter
+```
+
+見るべき点:
+
+```text
+thread::spawn に move で chunk の所有権を渡す
+join で thread の結果を回収する
+出力順は scheduler に依存するため固定されない
+```
 
 ## TypeScript / Go ならどう見えるか
 
@@ -96,4 +157,3 @@ std::io::BufReader
 std::process::Command
 std::thread
 ```
-
