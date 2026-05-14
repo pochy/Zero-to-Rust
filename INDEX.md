@@ -84,6 +84,7 @@
 | 目的 | コマンドまたは文書 |
 | --- | --- |
 | Markdown link を確認する | `python3 tools/check_links.py` |
+| CS examples を確認する | `python3 tools/check_cs_examples.py` |
 | Rust の formatting を確認する | `cargo fmt --all --check` |
 | workspace の test を実行する | `cargo test --workspace` |
 | clippy で lint を見る | `cargo clippy --workspace --all-targets` |

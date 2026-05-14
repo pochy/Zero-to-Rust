@@ -48,6 +48,18 @@ computer_science/glossary.md
 
 CS は暗記科目ではありません。重要なのは、問題を見たときに「どの抽象で考えるべきか」を選べることです。
 
+## Examples の検証
+
+CS Track の `examples/` は、Cargo workspace に組み込まない standalone Rust file として置いています。教材では `rustc` で 1 ファイルずつ動かし、どの概念を観察しているかを明確にするためです。
+
+まとめて compile と test を確認する場合は、次を実行します。
+
+```bash
+python3 tools/check_cs_examples.py
+```
+
+この script は全 CS examples を `rustc --edition=2021` で compile し、`#[test]` を含む file は `rustc --test` で test も実行します。server を起動する example などの `main` 実行は行いません。
+
 ## 既存 Rust 教材との接続
 
 | Zero to Rust | CS Track |
@@ -78,4 +90,3 @@ Rust 本編では「所有、失敗、共有」を学びました。CS Track で
 答えが曖昧な場合は、実装量を増やすより、同じ課題を小さく測定してください。
 
 Level ごとの具体的な合格ラインは [CHECKPOINTS.md](CHECKPOINTS.md) を使ってください。演習後の比較には [SOLUTIONS.md](SOLUTIONS.md) を使います。先に回答例を読むより、自分の説明を書いてから比較する方が効果的です。
-
