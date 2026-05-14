@@ -12,6 +12,8 @@ Rust の基礎を終えたあとに進むことを想定していますが、Rus
 COMPUTER_SCIENCE_TRACK.md
 computer_science/THREE_MONTH_PLAN.md
 computer_science/RESOURCE_GUIDE.md
+computer_science/CHECKPOINTS.md
+computer_science/SOLUTIONS.md
 computer_science/glossary.md
 ```
 
@@ -74,4 +76,6 @@ Rust 本編では「所有、失敗、共有」を学びました。CS Track で
 ```
 
 答えが曖昧な場合は、実装量を増やすより、同じ課題を小さく測定してください。
+
+Level ごとの具体的な合格ラインは [CHECKPOINTS.md](CHECKPOINTS.md) を使ってください。演習後の比較には [SOLUTIONS.md](SOLUTIONS.md) を使います。先に回答例を読むより、自分の説明を書いてから比較する方が効果的です。
 

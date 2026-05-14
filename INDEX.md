@@ -66,6 +66,8 @@
 | 3 か月プランを見る | [computer_science/THREE_MONTH_PLAN.md](computer_science/THREE_MONTH_PLAN.md) |
 | CS 用語を確認する | [computer_science/glossary.md](computer_science/glossary.md) |
 | 外部教材を選ぶ | [computer_science/RESOURCE_GUIDE.md](computer_science/RESOURCE_GUIDE.md) |
+| CS Level ごとの進級条件を見る | [computer_science/CHECKPOINTS.md](computer_science/CHECKPOINTS.md) |
+| CS 演習の回答例を見る | [computer_science/SOLUTIONS.md](computer_science/SOLUTIONS.md) |
 | CS 0: Orientation | [computer_science/levels/cs_00_orientation/README.md](computer_science/levels/cs_00_orientation/README.md) |
 | CS 1: Data Structures | [computer_science/levels/cs_01_data_structures/README.md](computer_science/levels/cs_01_data_structures/README.md) |
 | CS 2: Algorithms | [computer_science/levels/cs_02_algorithms/README.md](computer_science/levels/cs_02_algorithms/README.md) |
