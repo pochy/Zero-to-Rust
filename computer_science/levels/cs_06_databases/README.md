@@ -47,6 +47,36 @@ storage を使う
 
 index は無料ではありません。
 
+HashMap index で scan と lookup を比較します。
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_06_databases/examples/simple_index.rs -o /tmp/cs_simple_index
+/tmp/cs_simple_index
+```
+
+見るべき点:
+
+```text
+scan は rows を順番に見る
+index lookup は short_code から position を引く
+index を作るには memory と更新 cost が必要になる
+```
+
+BTreeMap で range query を見ます。
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_06_databases/examples/btree_index.rs -o /tmp/cs_btree_index
+/tmp/cs_btree_index
+```
+
+見るべき点:
+
+```text
+BTreeMap は key order を保つ
+range query は timestamp の範囲検索に向いている
+HashMap は key order を持たない
+```
+
 ## 手順 2: transaction と lock を考える
 
 transaction は複数操作をまとまりとして扱います。
@@ -59,6 +89,36 @@ COMMIT
 ```
 
 途中で失敗した場合に整合性を守るには、lock、isolation、rollback が関係します。
+
+transfer を transaction 的に扱う例を動かします。
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_06_databases/examples/transaction_sim.rs -o /tmp/cs_transaction_sim
+/tmp/cs_transaction_sim
+```
+
+見るべき点:
+
+```text
+from と to の両方を確認してから state を変更する
+途中失敗したときに片方だけ更新されると整合性が壊れる
+実際の DB transaction はこの atomicity を一般化する
+```
+
+lock contention も観察します。
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_06_databases/examples/lock_contention.rs -o /tmp/cs_lock_contention
+/tmp/cs_lock_contention
+```
+
+見るべき点:
+
+```text
+Mutex は同時に 1 つの thread だけが中に入れる
+lock を持ったまま長く処理すると他の thread が待つ
+transaction が長いと DB lock wait が増える問題と似ている
+```
 
 ## 手順 3: WAL と KVS を接続する
 
@@ -102,4 +162,3 @@ PostgreSQL EXPLAIN
 PostgreSQL Indexes
 PostgreSQL Transaction Isolation
 ```
-

@@ -45,6 +45,42 @@ HTTP: request / response の application protocol
 
 HTTP は message の意味を扱います。TCP は byte stream を届けます。HTTP error と TCP connection error は別の問題です。
 
+request line を parse します。
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_05_networking_web/examples/request_line_parser.rs -o /tmp/cs_request_line_parser
+/tmp/cs_request_line_parser
+```
+
+見るべき点:
+
+```text
+GET /hello HTTP/1.1 は method、path、version に分かれる
+不正な request line は Result の Err になる
+HTTP message の parse error と TCP connection error は別である
+```
+
+最小 HTTP response も動かします。
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_05_networking_web/examples/tiny_http_response.rs -o /tmp/cs_tiny_http_response
+/tmp/cs_tiny_http_response
+```
+
+別 terminal から:
+
+```bash
+curl -i http://127.0.0.1:7878/hello
+```
+
+見るべき点:
+
+```text
+TcpListener は connection を受け取る
+HTTP response は TCP stream へ byte として書く
+Content-Length は body の byte length と一致させる必要がある
+```
+
 ## 手順 2: DNS と TLS を障害要因として見る
 
 DNS は domain name を IP address に解決します。TLS は暗号化と相手確認を行います。
@@ -58,6 +94,21 @@ intermediate certificate が欠ける
 
 これらは application code を変更していなくても起こります。
 
+retry 方針も設計します。
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_05_networking_web/examples/retry_policy.rs -o /tmp/cs_retry_policy
+/tmp/cs_retry_policy
+```
+
+見るべき点:
+
+```text
+GET 系の read は retry しやすい
+order 作成や card 決済は重複実行が危険
+timeout は成功したが response だけ失われた可能性がある
+```
+
 ## 手順 3: Cookie と Session を分ける
 
 ```text
@@ -66,6 +117,21 @@ Session: server 側で user state を管理する仕組み
 ```
 
 Cookie に何を入れるか、server 側で何を持つかは security と scalability に直結します。
+
+Cookie header を parse します。
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_05_networking_web/examples/cookie_parser.rs -o /tmp/cs_cookie_parser
+/tmp/cs_cookie_parser
+```
+
+見るべき点:
+
+```text
+Cookie は key=value の集合として送られる
+session_id は user の認証状態そのものではなく、server side session を引く key として扱う
+Cookie に機密情報をそのまま入れない
+```
 
 ## Rust で作るもの
 
@@ -109,4 +175,3 @@ std::net::TcpStream
 std::io::Read
 std::io::Write
 ```
-
