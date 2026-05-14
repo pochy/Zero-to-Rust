@@ -4,6 +4,7 @@ members = [
     "projects/kvs_std",
     "projects/kvs_ecosystem",
     "projects/final_kvs_server",
+    "projects/perf_log_rust",
 ]
 
 [workspace.package]
