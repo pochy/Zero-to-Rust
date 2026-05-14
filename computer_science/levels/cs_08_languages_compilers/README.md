@@ -44,6 +44,21 @@ Number(1), Plus, Number(2), Star, Number(3)
 
 lexer は文字の列を意味のある単位に変換します。
 
+実行:
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_08_languages_compilers/examples/lexer.rs -o /tmp/cs_lexer
+/tmp/cs_lexer
+```
+
+見るべき点:
+
+```text
+文字列が Token の列に変換される
+空白は捨てられる
+不正な文字は lexer error になる
+```
+
 ## 手順 2: parser と AST を作る
 
 token の列から tree を作ります。
@@ -59,6 +74,22 @@ Add(
 
 operator precedence を扱うと、parser の設計が見えてきます。
 
+parser と evaluator をまとめて動かします。
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_08_languages_compilers/examples/expression_language.rs -o /tmp/cs_expression_language
+/tmp/cs_expression_language
+```
+
+見るべき点:
+
+```text
+1 + 2 * 3 は 7 になる
+(1 + 2) * 3 は 9 になる
+parser は precedence を AST の形に反映する
+syntax error と runtime error は別である
+```
+
 ## 手順 3: evaluator を作る
 
 AST を評価して結果を出します。
@@ -68,6 +99,22 @@ AST を評価して結果を出します。
 ```
 
 ここまで作ると、compiler の前段が何をしているか見えます。
+
+bytecode VM の最小例も動かします。
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_08_languages_compilers/examples/bytecode_vm.rs -o /tmp/cs_bytecode_vm
+/tmp/cs_bytecode_vm
+```
+
+見るべき点:
+
+```text
+Instruction の列を stack machine が実行する
+Push は値を stack に積む
+Add / Mul は stack から値を取り出して結果を戻す
+compiler は source code を別の表現へ変換する道具だと見える
+```
 
 ## TypeScript / Go ならどう見えるか
 
@@ -100,4 +147,3 @@ match
 Result
 Iterator
 ```
-

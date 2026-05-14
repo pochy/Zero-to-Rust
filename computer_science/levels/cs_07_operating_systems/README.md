@@ -50,6 +50,21 @@ fork / spawn
 
 Rust の `std::fs` や `std::net` は、最終的に OS の機能を使います。
 
+file open error を分類します。
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_07_operating_systems/examples/file_error_classifier.rs -o /tmp/cs_file_error_classifier
+/tmp/cs_file_error_classifier
+```
+
+見るべき点:
+
+```text
+OS が返した error は io::ErrorKind として分類できる
+存在しない file、directory、権限不足は別の失敗である
+Rust の Result は OS failure を application に伝える境界になる
+```
+
 ## 手順 2: scheduler を考える
 
 thread は同時に動いているように見えますが、CPU core より多い runnable thread は scheduler が切り替えます。
@@ -62,11 +77,55 @@ blocking: 待っている間 thread が止まる
 
 thread を増やせば速いとは限りません。
 
+CPU bound の例を動かします。
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_07_operating_systems/examples/cpu_bound_threads.rs -o /tmp/cs_cpu_bound_threads
+/tmp/cs_cpu_bound_threads
+```
+
+blocking I/O に近い待ちの例も動かします。
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_07_operating_systems/examples/blocking_io_threads.rs -o /tmp/cs_blocking_io_threads
+/tmp/cs_blocking_io_threads
+```
+
+見るべき点:
+
+```text
+CPU bound は CPU core 数や分割 overhead の影響を受ける
+blocking wait は thread を増やすと待ち時間を重ねられる場合がある
+thread の出力順は scheduler に依存する
+速くなるかどうかは workload と overhead 次第である
+```
+
 ## 手順 3: virtual memory を考える
 
 process は自分だけの memory 空間を持つように見えます。OS と CPU は virtual address を physical memory に対応づけます。
 
 これにより process 同士の保護、memory mapping、paging などが可能になります。
+
+memory 使用量を観察します。
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_07_operating_systems/examples/memory_observer.rs -o /tmp/cs_memory_observer
+/tmp/cs_memory_observer 128
+```
+
+別 terminal で:
+
+```bash
+ps -o pid,rss,command -p <printed-pid>
+```
+
+見るべき点:
+
+```text
+Vec<u8> を確保して page に触ると RSS に反映されやすい
+process id を使うと OS の monitor tool で観察できる
+Rust ownership と OS virtual memory は別の層の概念である
+```
 
 ## TypeScript / Go ならどう見えるか
 
@@ -100,4 +159,3 @@ std::thread
 std::fs
 std::net
 ```
-
