@@ -61,6 +61,20 @@ concurrency model
 測定する指標
 ```
 
+設計文書はテンプレートから始めます。
+
+```bash
+cp computer_science/levels/cs_09_capstone/templates/CAPSTONE_DESIGN_TEMPLATE.md /tmp/CAPSTONE_DESIGN.md
+```
+
+見るべき点:
+
+```text
+機能一覧より先に、data structure と failure mode を書く
+何を memory に持ち、何を file / DB に保存するか分ける
+どの操作の計算量を重視するか決める
+```
+
 ## 手順 3: 測定して説明する
 
 完成したら、速い/遅いを感想で言わず、測ります。
@@ -76,6 +90,48 @@ error rate
 ```
 
 測った数字から、data structure、I/O、network、DB、lock のどこが効いているか説明します。
+
+測定結果もテンプレートへ残します。
+
+```bash
+cp computer_science/levels/cs_09_capstone/templates/CAPSTONE_RESULTS_TEMPLATE.md /tmp/CAPSTONE_RESULTS.md
+```
+
+## 手順 4: 最小実装を動かす
+
+Redis 風 KVS の最小例:
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_09_capstone/examples/capstone_kvs.rs -o /tmp/cs_capstone_kvs
+printf 'SET name Rust\nGET name\nDELETE name\nGET name\n' | /tmp/cs_capstone_kvs /tmp/cs_capstone_kvs.wal
+```
+
+見るべき点:
+
+```text
+HashMap が memory state を持つ
+SET / DELETE は WAL に書く
+GET は state を読むだけなので WAL に書かない
+再起動時に WAL を replay して復元する
+```
+
+job queue の最小例:
+
+```bash
+rustc --edition=2021 computer_science/levels/cs_09_capstone/examples/capstone_job_queue.rs -o /tmp/cs_capstone_job_queue
+/tmp/cs_capstone_job_queue
+```
+
+見るべき点:
+
+```text
+VecDeque が ready queue を持つ
+HashMap が job id から job state を引く
+ack / retry / dead letter は state transition である
+attempts は failure handling の一部である
+```
+
+この 2 つは完成品ではありません。最終課題を作る前に、CS 1-8 の概念が 1 つの system にどう集まるかを見るための足場です。
 
 ## TypeScript / Go ならどう見えるか
 
@@ -103,6 +159,28 @@ DB や file に保存する責任を曖昧にする
 使った CS 概念を 5 つ以上説明できる
 ```
 
+最低限、次のように説明してください。
+
+```text
+Data structure:
+HashMap / VecDeque / BTreeMap / Vec のどれを使い、なぜか。
+
+Algorithm:
+lookup、scan、retry、restore の計算量はどうなるか。
+
+Memory:
+memory に置く state と file に残す state は何か。
+
+I/O:
+どの操作が file / network / stdout / stderr を使うか。
+
+Failure:
+invalid input、write failure、crash、duplicate、not found をどう扱うか。
+
+Concurrency:
+single-thread か、Mutex か、channel か。lock を持つ範囲はどこか。
+```
+
 ## 公式 docs で確認する箇所
 
 題材に応じて次を確認します。
@@ -115,4 +193,3 @@ std::thread
 PostgreSQL docs
 HTTP reference
 ```
-
