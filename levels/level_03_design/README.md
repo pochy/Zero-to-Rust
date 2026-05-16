@@ -2,7 +2,7 @@
 
 ## この Level でできるようになること
 
-`struct`、`enum`、`HashMap` を使い、インメモリ KVS のコアを設計できるようになります。
+`struct` と `HashMap` を使い、インメモリ KVS のコアを設計できるようになります。
 
 この Level の中心は、データをどこに所有させるかを決めることです。
 
@@ -12,6 +12,8 @@
 - `HashMap<K, V>`: キーと値を対応づける標準コレクション。
 - `struct`: 意味のある状態をまとめる型。
 - `impl`: 型に関数を結びつける場所。
+- `&self`: メソッドが自分の中身を読むだけの指定。
+- `&mut self`: メソッドが自分の中身を変更する指定。
 - `Option<T>`: 値があるかないかを表す型。
 - API 境界: 呼び出し側と実装側の責任が切り替わる場所。
 
@@ -65,7 +67,7 @@ exists name = false
 pub fn set(&mut self, key: String, value: String)
 ```
 
-保存する値は `Store` が所有するため、`String` を受け取ります。
+`&mut self` は、このメソッドが `Store` の中身を変更するという意味です。保存する値は `Store` が所有するため、`String` を受け取ります。
 
 `Store::get` は次の形です。
 
@@ -73,7 +75,7 @@ pub fn set(&mut self, key: String, value: String)
 pub fn get(&self, key: &str) -> Option<&String>
 ```
 
-検索キーは読むだけなので `&str` で十分です。戻り値は `Store` 内の値への参照なので、呼び出し側は値を所有しません。
+`&self` は、このメソッドが `Store` の中身を読むだけという意味です。検索キーは読むだけなので `&str` で十分です。戻り値は `Store` 内の値への参照なので、呼び出し側は値を所有しません。
 
 ## 手順 3: モジュール分割を考える
 
@@ -122,7 +124,6 @@ main と store を分ける理由を説明できる
 ## 公式 docs で確認する箇所
 
 - Defining and Instantiating Structs: https://doc.rust-lang.org/book/ch05-01-defining-structs.html
-- Enums and Pattern Matching: https://doc.rust-lang.org/book/ch06-00-enums.html
 - std::collections: https://doc.rust-lang.org/std/collections/
 
 ## Rust らしさをさらに深掘りする

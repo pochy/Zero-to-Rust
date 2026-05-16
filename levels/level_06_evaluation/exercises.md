@@ -16,6 +16,8 @@
 
 `parse_command` のエラー型を `String` にする設計と、独自 `enum ParseError` にする設計を比較してください。
 
+`enum ParseError` は、失敗の種類を `MissingKey` や `UnknownCommand` のような名前で分ける設計です。Level 6 では、まず `String` のままで十分か、種類を分ける必要が出てきたかを判断します。
+
 今の段階ではどちらを選ぶか、将来どのタイミングで変えるかを書いてください。
 
 ## 提出物

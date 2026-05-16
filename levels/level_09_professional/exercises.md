@@ -63,6 +63,16 @@ std-only で自分が持つ責任
 
 `projects/kvs_std` と `projects/kvs_ecosystem` を読み、次を比較してください。
 
+この追加演習は発展です。以下の crate 名は、実務でよく使う外部ライブラリです。今すぐ暗記せず、「標準ライブラリだけで自分が持つ責任」と「crate に任せる責任」を比較するために使います。
+
+```text
+serde: JSON などへの変換を任せる
+clap: CLI 引数の解釈を任せる
+thiserror / anyhow: エラー表現や文脈付けを任せる
+tracing: 構造化ログを任せる
+tokio: 非同期 I/O とタスク実行を任せる
+```
+
 ```text
 serde に任せた責任
 clap に任せた責任

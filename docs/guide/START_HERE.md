@@ -82,6 +82,8 @@ CS Track は [COMPUTER_SCIENCE_TRACK.md](../tracks/COMPUTER_SCIENCE_TRACK.md) �
 
 Rust 本編と CS Track の接続:
 
+表の中には後の Level で学ぶ専門語も含まれます。最初に暗記する必要はありません。それぞれの Level に到達したときに、本文と用語集で確認してください。
+
 | Rust 本編 | CS Track |
 | --- | --- |
 | Level 3 HashMap KVS | CS 1 data structures |

@@ -152,3 +152,5 @@ unsafe、FFI、no_std、性能改善の責任を説明できる
 Rust の速度やメモリ効率を Python と比較して体感したい場合は [PERFORMANCE_LAB.md](docs/labs/PERFORMANCE_LAB.md) を使ってください。大量 JSONL ログ処理を Python と Rust で実装し、実行時間、最大 RSS、処理行数/秒を測ります。
 
 Rust を使って Computer Science の基礎を固めたい場合は [COMPUTER_SCIENCE_TRACK.md](docs/tracks/COMPUTER_SCIENCE_TRACK.md) を使ってください。大学 CS をそのままなぞるのではなく、エンジニアとして効く順に data structure、algorithm、低レイヤ、OS、network、DB、compiler を学ぶ構成です。
+
+README には全体像を示すため、後半で扱う専門語も含まれます。学習中は各 Level の README を優先し、知らない語は [glossary.md](docs/reference/glossary.md) で確認してください。

@@ -16,7 +16,7 @@ Rust の最小プログラムを実行し、`String` と `&str` の違いを観�
 - `String`: 文字列データを所有する型。
 - `&str`: 文字列を借りて見る型。
 
-この Level では、ライフタイム注釈や詳しいメモリ構造を覚える必要はありません。まずは `String` は「持つ」、`&str` は「借りて読む」と考えてください。分からない語が出たら [glossary.md](../../docs/reference/glossary.md) を確認します。
+この Level では、ライフタイム注釈や詳しいメモリ構造を覚える必要はありません。まずは `String` は「持つ」、`&str` は「借りて読む」、`mut` は「同じ変数名で中身を変えてよい印」と考えてください。分からない語が出たら [glossary.md](../../docs/reference/glossary.md) を確認します。
 
 ## なぜこれを学ぶのか
 
@@ -79,6 +79,26 @@ String を受け取る:
 この関数は値を読むだけで、所有者は呼び出し元のまま。
 ```
 
+## 手順 4: `mut` は変更可能性の指定だと確認する
+
+`mut` は所有権を戻す魔法ではありません。同じ変数の中身を後で変えてよい、という指定です。
+
+```rust
+let mut label = String::from("Rust");
+label.push_str(" tutorial");
+println!("{}", label);
+```
+
+一方で、次の 2 つは別の話です。
+
+```text
+mut:
+同じ変数の中身を変えてよいか。
+
+所有権:
+値をどの関数や変数が最後まで管理するか。
+```
+
 ## よくあるつまずき
 
 ```text
@@ -119,7 +139,6 @@ String と &str の違い
 追加で読む箇所:
 
 - [所有権、借用、ライフタイム完全補講](../../appendices/01_ownership_lifetimes.md)
-- [Iterator、pattern、macro](../../appendices/03_iterators_patterns_macros.md)
 
 次の観点で `hello_ownership.rs` を読み直してください。
 

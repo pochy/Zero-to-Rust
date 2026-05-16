@@ -32,6 +32,8 @@ parse_command が Err を返す
 parse_command が Response::Error を直接返す
 ```
 
+`Err` は `Result` の失敗側です。ここでは「文字列をコマンドに変換できなかった失敗」を、パース層で止めるか、レスポンス生成まで含めるかを考えます。
+
 パース層と実行層の責任を分けて説明してください。
 
 ## 提出物
@@ -64,6 +66,8 @@ wire format を変更しても Store を変えないための境界
 ## 追加演習: wire format を設計する
 
 今の text protocol を JSON protocol に変える場合、どの層を変更すべきか書いてください。
+
+この追加演習は発展です。JSON そのものを実装する必要はありません。文字列の形式が変わっても、Store の責任を変えないことを確認します。
 
 ```text
 parse_command
