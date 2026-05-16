@@ -2,7 +2,7 @@
 
 Rust を `std` 中心の基礎から実務 crate の採用判断まで、Level 0 から Level 9、補講、実務プロジェクトで段階的に学ぶチュートリアルです。
 
-最初に読むファイルは [START_HERE.md](docs/guide/START_HERE.md) です。目的別に探す場合は [INDEX.md](docs/INDEX.md) を使ってください。全体設計の背景は [TUTORIAL.md](docs/guide/TUTORIAL.md) にあります。全体の進行表は [LEARNING_PATH.md](docs/guide/LEARNING_PATH.md)、進級判断は [CHECKPOINTS.md](docs/guide/CHECKPOINTS.md)、学習記録は [STUDY_JOURNAL.md](docs/guide/STUDY_JOURNAL.md)、最終課題の仕様は [FINAL_PROJECT_SPEC.md](docs/guide/FINAL_PROJECT_SPEC.md)、完走後の発展学習は [ADVANCED_TRACK.md](docs/tracks/ADVANCED_TRACK.md)、Computer Science の追加学習は [COMPUTER_SCIENCE_TRACK.md](docs/tracks/COMPUTER_SCIENCE_TRACK.md)、今後注目される Rust 領域は [FUTURE_RUST_DOMAINS.md](docs/tracks/FUTURE_RUST_DOMAINS.md) です。
+最初に読むファイルは [START_HERE.md](docs/guide/START_HERE.md) です。目的別に探す場合は [INDEX.md](docs/INDEX.md) を使ってください。全体設計の背景は [TUTORIAL.md](docs/guide/TUTORIAL.md) にあります。全体の進行表は [LEARNING_PATH.md](docs/guide/LEARNING_PATH.md)、進級判断は [CHECKPOINTS.md](docs/guide/CHECKPOINTS.md)、学習記録は [STUDY_JOURNAL.md](docs/guide/STUDY_JOURNAL.md)、最終課題の仕様は [FINAL_PROJECT_SPEC.md](docs/guide/FINAL_PROJECT_SPEC.md)、参考書・Web チュートリアル・動画などの外部学習リソースは [RUST_LEARNING_RESOURCES.md](docs/RUST_LEARNING_RESOURCES.md)、完走後の発展学習は [ADVANCED_TRACK.md](docs/tracks/ADVANCED_TRACK.md)、Computer Science の追加学習は [COMPUTER_SCIENCE_TRACK.md](docs/tracks/COMPUTER_SCIENCE_TRACK.md)、今後注目される Rust 領域は [FUTURE_RUST_DOMAINS.md](docs/tracks/FUTURE_RUST_DOMAINS.md) です。
 
 ## このチュートリアルの目的
 

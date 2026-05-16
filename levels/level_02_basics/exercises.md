@@ -27,6 +27,8 @@ fn load(path: &str) -> Result<String, std::io::Error>
 fn load(path: &str) -> Result<String, String>
 ```
 
+`Result<T, E>` は、成功したら `T`、失敗したら `E` を返す型です。ここでは `std::io::Error` を保つ場合と、文字列だけに変える場合で何が違うかを考えます。
+
 ## 提出物
 
 ```text
@@ -53,6 +55,8 @@ Result で返した失敗
 Option で表した「ない」
 panic / unwrap / expect を使ってよいと判断した根拠
 ```
+
+`Option` は次の Level で詳しく扱います。この Level では、「ない」と「失敗」は別のものだと意識できれば十分です。
 
 ## 追加演習: エラー分類を増やす
 

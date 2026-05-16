@@ -4,6 +4,8 @@
 
 学習途中で目的別に場所を探したい場合は [INDEX.md](../INDEX.md) を使ってください。
 
+知らない Rust 用語が出てきたら、先に進む前に [glossary.md](../reference/glossary.md) を見てください。外部の参考書、Web チュートリアル、動画を選びたい場合は [RUST_LEARNING_RESOURCES.md](../RUST_LEARNING_RESOURCES.md) にまとめています。
+
 ## 今日やること
 
 最初の日は、次の 4 つだけで十分です。
@@ -49,6 +51,7 @@ owned: Rust
 ```text
 具体的に動かす
 基本用語を押さえる
+分からない語は glossary で確認する
 メンタルモデルを作る
 小さな例を実行する
 出力を観察する

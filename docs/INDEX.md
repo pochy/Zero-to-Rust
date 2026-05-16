@@ -12,6 +12,7 @@
 | 全体の思想と設計背景を知りたい | [TUTORIAL.md](guide/TUTORIAL.md) |
 | 学習順を確認したい | [LEARNING_PATH.md](guide/LEARNING_PATH.md) |
 | 用語を確認したい | [glossary.md](reference/glossary.md) |
+| 外部の参考書・動画を選びたい | [RUST_LEARNING_RESOURCES.md](RUST_LEARNING_RESOURCES.md) |
 | Level ごとの進級条件を見たい | [CHECKPOINTS.md](guide/CHECKPOINTS.md) |
 | 学習記録を書きたい | [STUDY_JOURNAL.md](guide/STUDY_JOURNAL.md) |
 | 完走後の発展学習を選びたい | [ADVANCED_TRACK.md](tracks/ADVANCED_TRACK.md) |
