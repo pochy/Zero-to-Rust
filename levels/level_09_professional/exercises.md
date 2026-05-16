@@ -45,9 +45,9 @@ std-only では不足する本番要件は何か
 
 ## 学習記録
 
-[CHECKPOINTS.md](../../CHECKPOINTS.md) の Level 9 と Projects Checkpoint を A/B/C で自己評価してください。
+[CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md) の Level 9 と Projects Checkpoint を A/B/C で自己評価してください。
 
-[STUDY_JOURNAL.md](../../STUDY_JOURNAL.md) には、次を書きます。
+[STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md) には、次を書きます。
 
 ```text
 unsafe を使わない理由、または使う場合の safety 条件

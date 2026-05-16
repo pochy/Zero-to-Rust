@@ -1,6 +1,6 @@
 # Final Project Spec: std-only KVS Server
 
-最終課題は、標準ライブラリだけで作るマルチスレッド KVS サーバーです。実装例は [projects/final_kvs_server](projects/final_kvs_server) にあります。
+最終課題は、標準ライブラリだけで作るマルチスレッド KVS サーバーです。実装例は [projects/final_kvs_server](../../projects/final_kvs_server) にあります。
 
 ## 必須機能
 

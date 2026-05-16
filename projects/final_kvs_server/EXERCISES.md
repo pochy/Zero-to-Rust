@@ -93,7 +93,7 @@ std-only から ecosystem へ移る理由を説明できるか
 
 ## 学習記録
 
-[../../STUDY_JOURNAL.md](../../STUDY_JOURNAL.md) に、次を書いてください。
+[../../STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md) に、次を書いてください。
 
 ```text
 final_kvs_server で自分が最も納得した設計判断

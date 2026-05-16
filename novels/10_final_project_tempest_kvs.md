@@ -1,6 +1,6 @@
 # 10: 魔国連邦テンペスト中核 KVS 建設計画
 
-対応教材: [最終課題: Production-grade KVS](../TUTORIAL.md#最終課題)
+対応教材: [最終課題: Production-grade KVS](../docs/guide/TUTORIAL.md#最終課題)
 
 ## 物語パート
 

@@ -1,6 +1,6 @@
 # Final Mission: Rescue Plan KVS
 
-対応教材: [TUTORIAL.md の最終課題](../TUTORIAL.md#最終課題)
+対応教材: [TUTORIAL.md の最終課題](../docs/guide/TUTORIAL.md#最終課題)
 
 ## 状況
 

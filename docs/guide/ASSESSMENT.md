@@ -94,7 +94,7 @@ projects/kvs_std と projects/kvs_ecosystem を比較し、どの責任を crate
 
 ## Advanced Track へ進む条件
 
-[ADVANCED_TRACK.md](ADVANCED_TRACK.md) へ進む前に、次を 1 つ選んで理由を書いてください。
+[ADVANCED_TRACK.md](../tracks/ADVANCED_TRACK.md) へ進む前に、次を 1 つ選んで理由を書いてください。
 
 ```text
 async Web service へ進む

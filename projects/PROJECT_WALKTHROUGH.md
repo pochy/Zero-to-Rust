@@ -163,7 +163,7 @@ projects/final_kvs_server/EXERCISES.md
 
 ## 5. 学習記録に書くこと
 
-[STUDY_JOURNAL.md](../STUDY_JOURNAL.md) に、次を書いてください。
+[STUDY_JOURNAL.md](../docs/guide/STUDY_JOURNAL.md) に、次を書いてください。
 
 ```text
 kvs_std:

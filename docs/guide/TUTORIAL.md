@@ -14,12 +14,12 @@
 | 目的 | 正本 |
 | --- | --- |
 | 今日なにをするか | [START_HERE.md](START_HERE.md) |
-| 目的別に場所を探す | [INDEX.md](INDEX.md) |
+| 目的別に場所を探す | [INDEX.md](../INDEX.md) |
 | Level ごとの学習 | `levels/level_*/README.md` と `levels/level_*/exercises.md` |
 | 進級判断 | [CHECKPOINTS.md](CHECKPOINTS.md) |
 | 学習記録 | [STUDY_JOURNAL.md](STUDY_JOURNAL.md) |
-| Rust 全体の補講 | [appendices/README.md](appendices/README.md) |
-| Cargo project の読み方 | [projects/PROJECT_WALKTHROUGH.md](projects/PROJECT_WALKTHROUGH.md) |
+| Rust 全体の補講 | [appendices/README.md](../../appendices/README.md) |
+| Cargo project の読み方 | [projects/PROJECT_WALKTHROUGH.md](../../projects/PROJECT_WALKTHROUGH.md) |
 | 最終課題 | [FINAL_PROJECT_SPEC.md](FINAL_PROJECT_SPEC.md) |
 
 この文書は、次のタイミングで読むと役に立ちます。
@@ -58,7 +58,7 @@ projects/:
 実務に近い crate 構成で責任境界を読む場所。
 ```
 
-矛盾して見える場合は、より具体的なファイルを優先します。たとえば、Level の手順は `levels/level_*/README.md`、最終課題の仕様は [FINAL_PROJECT_SPEC.md](FINAL_PROJECT_SPEC.md)、実装の読み方は [projects/PROJECT_WALKTHROUGH.md](projects/PROJECT_WALKTHROUGH.md) を優先してください。
+矛盾して見える場合は、より具体的なファイルを優先します。たとえば、Level の手順は `levels/level_*/README.md`、最終課題の仕様は [FINAL_PROJECT_SPEC.md](FINAL_PROJECT_SPEC.md)、実装の読み方は [projects/PROJECT_WALKTHROUGH.md](../../projects/PROJECT_WALKTHROUGH.md) を優先してください。
 
 ---
 

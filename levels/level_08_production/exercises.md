@@ -54,9 +54,9 @@ Store は更新し WARNING を出す
 
 ## 学習記録
 
-[CHECKPOINTS.md](../../CHECKPOINTS.md) の Level 8 を A/B/C で自己評価してください。
+[CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md) の Level 8 を A/B/C で自己評価してください。
 
-[STUDY_JOURNAL.md](../../STUDY_JOURNAL.md) には、次を書きます。
+[STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md) には、次を書きます。
 
 ```text
 WAL 書き込み失敗時の方針

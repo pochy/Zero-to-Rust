@@ -1,8 +1,8 @@
 # START HERE
 
-このファイルは、今日なにから始めればよいかを示す入口です。Rust が完全に初めてでも、順番に進めれば Level 9、補講、Cargo project の実務演習までつながるように構成しています。Rust のあとに Computer Science を体系的に学ぶ入口は [COMPUTER_SCIENCE_TRACK.md](COMPUTER_SCIENCE_TRACK.md) です。
+このファイルは、今日なにから始めればよいかを示す入口です。Rust が完全に初めてでも、順番に進めれば Level 9、補講、Cargo project の実務演習までつながるように構成しています。Rust のあとに Computer Science を体系的に学ぶ入口は [COMPUTER_SCIENCE_TRACK.md](../tracks/COMPUTER_SCIENCE_TRACK.md) です。
 
-学習途中で目的別に場所を探したい場合は [INDEX.md](INDEX.md) を使ってください。
+学習途中で目的別に場所を探したい場合は [INDEX.md](../INDEX.md) を使ってください。
 
 ## 今日やること
 
@@ -75,7 +75,7 @@ Rust 本編を進めると、所有権、借用、失敗、共有、復旧の判
 なぜ DB index は read を速くし write を重くし得るのか
 ```
 
-CS Track は [COMPUTER_SCIENCE_TRACK.md](COMPUTER_SCIENCE_TRACK.md) から始めます。最初の 3 か月だけを見たい場合は [computer_science/THREE_MONTH_PLAN.md](computer_science/THREE_MONTH_PLAN.md)、外部教材の使い分けを見たい場合は [computer_science/RESOURCE_GUIDE.md](computer_science/RESOURCE_GUIDE.md) を使ってください。
+CS Track は [COMPUTER_SCIENCE_TRACK.md](../tracks/COMPUTER_SCIENCE_TRACK.md) から始めます。最初の 3 か月だけを見たい場合は [computer_science/THREE_MONTH_PLAN.md](../../computer_science/THREE_MONTH_PLAN.md)、外部教材の使い分けを見たい場合は [computer_science/RESOURCE_GUIDE.md](../../computer_science/RESOURCE_GUIDE.md) を使ってください。
 
 Rust 本編と CS Track の接続:
 
@@ -187,13 +187,13 @@ cargo test -p final_kvs_server
 
 `kvs_std` は標準ライブラリだけで責任を抱える練習です。`kvs_ecosystem` は、同じ責任の一部を成熟した crate に任せる判断を学ぶ練習です。`final_kvs_server` は、TCP、TTL、WAL、admin HTTP、metrics を 1 つに統合する最終成果物です。
 
-コードを読む順番は [projects/PROJECT_WALKTHROUGH.md](projects/PROJECT_WALKTHROUGH.md) を使ってください。最初から `src/lib.rs` を上から読むより、`Command`、`Response`、`Store`、`AppState`、server の順に責任境界で読む方が理解しやすくなります。
+コードを読む順番は [projects/PROJECT_WALKTHROUGH.md](../../projects/PROJECT_WALKTHROUGH.md) を使ってください。最初から `src/lib.rs` を上から読むより、`Command`、`Response`、`Store`、`AppState`、server の順に責任境界で読む方が理解しやすくなります。
 
 最終課題へ入る前に、[FINAL_PROJECT_SPEC.md](FINAL_PROJECT_SPEC.md) と [REVIEW_CHECKLIST.md](REVIEW_CHECKLIST.md) を読んでください。
 
 最後に [ASSESSMENT.md](ASSESSMENT.md) の口頭試問へ答え、Rust の判断を自分の言葉で説明できるか確認します。
 
-演習に取り組んだ後は、[solutions](solutions/README.md) で回答例と比較してください。先に読まず、自分の判断を書いてから読む方が効果的です。
+演習に取り組んだ後は、[solutions](../../solutions/README.md) で回答例と比較してください。先に読まず、自分の判断を書いてから読む方が効果的です。
 
 各 Level の終わりでは [CHECKPOINTS.md](CHECKPOINTS.md) で A/B/C の自己評価をしてください。A は次へ進んでよい状態、B は迷った点を記録しながら進める状態、C は同じ Level の例をもう一度変更する状態です。
 

@@ -38,7 +38,7 @@ CS は、これらを偶然ではなく説明可能にするための基礎体�
 
 ## 3 か月の入口
 
-詳しい日程は [computer_science/THREE_MONTH_PLAN.md](computer_science/THREE_MONTH_PLAN.md) にあります。
+詳しい日程は [computer_science/THREE_MONTH_PLAN.md](../../computer_science/THREE_MONTH_PLAN.md) にあります。
 
 | 期間 | 主題 | 作るもの |
 | --- | --- | --- |
@@ -72,11 +72,11 @@ process、thread、memory の基本がわかる
 | CS 8 | Languages And Compilers | lexer、parser、AST、VM、compiler の流れを説明できる |
 | CS 9 | Capstone | URL shortener / KVS / queue を CS 観点で設計できる |
 
-教材本体は [computer_science/README.md](computer_science/README.md) から始めます。
+教材本体は [computer_science/README.md](../../computer_science/README.md) から始めます。
 
 ## 外部教材の使い方
 
-外部教材は、順番通りに全部やる対象ではなく、目的別の参考文献として使います。詳しくは [computer_science/RESOURCE_GUIDE.md](computer_science/RESOURCE_GUIDE.md) にまとめています。
+外部教材は、順番通りに全部やる対象ではなく、目的別の参考文献として使います。詳しくは [computer_science/RESOURCE_GUIDE.md](../../computer_science/RESOURCE_GUIDE.md) にまとめています。
 
 ```text
 CS50x:

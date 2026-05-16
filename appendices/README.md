@@ -93,4 +93,4 @@ Rust の全 API を知っている状態ではない。
 しかし、Rust の中核を理解し、未知の Rust 領域を自力で読みに行ける状態。
 ```
 
-完走後にさらに進む場合は、[../ADVANCED_TRACK.md](../ADVANCED_TRACK.md) を使ってください。Advanced Track では、async Web、advanced types、procedural macro、unsafe/FFI、embedded/no_std、performance、data systems、library design、compiler/language internals へ分岐します。`compiler / rustc / type system の深部` は、Advanced Track の `Track 9: Compiler And Language Internals` で扱います。
+完走後にさらに進む場合は、[../ADVANCED_TRACK.md](../docs/tracks/ADVANCED_TRACK.md) を使ってください。Advanced Track では、async Web、advanced types、procedural macro、unsafe/FFI、embedded/no_std、performance、data systems、library design、compiler/language internals へ分岐します。`compiler / rustc / type system の深部` は、Advanced Track の `Track 9: Compiler And Language Internals` で扱います。

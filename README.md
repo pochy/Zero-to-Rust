@@ -2,7 +2,7 @@
 
 Rust を `std` 中心の基礎から実務 crate の採用判断まで、Level 0 から Level 9、補講、実務プロジェクトで段階的に学ぶチュートリアルです。
 
-最初に読むファイルは [START_HERE.md](START_HERE.md) です。目的別に探す場合は [INDEX.md](INDEX.md) を使ってください。全体設計の背景は [TUTORIAL.md](TUTORIAL.md) にあります。全体の進行表は [LEARNING_PATH.md](LEARNING_PATH.md)、進級判断は [CHECKPOINTS.md](CHECKPOINTS.md)、学習記録は [STUDY_JOURNAL.md](STUDY_JOURNAL.md)、最終課題の仕様は [FINAL_PROJECT_SPEC.md](FINAL_PROJECT_SPEC.md)、完走後の発展学習は [ADVANCED_TRACK.md](ADVANCED_TRACK.md)、Computer Science の追加学習は [COMPUTER_SCIENCE_TRACK.md](COMPUTER_SCIENCE_TRACK.md)、今後注目される Rust 領域は [FUTURE_RUST_DOMAINS.md](FUTURE_RUST_DOMAINS.md) です。
+最初に読むファイルは [START_HERE.md](docs/guide/START_HERE.md) です。目的別に探す場合は [INDEX.md](docs/INDEX.md) を使ってください。全体設計の背景は [TUTORIAL.md](docs/guide/TUTORIAL.md) にあります。全体の進行表は [LEARNING_PATH.md](docs/guide/LEARNING_PATH.md)、進級判断は [CHECKPOINTS.md](docs/guide/CHECKPOINTS.md)、学習記録は [STUDY_JOURNAL.md](docs/guide/STUDY_JOURNAL.md)、最終課題の仕様は [FINAL_PROJECT_SPEC.md](docs/guide/FINAL_PROJECT_SPEC.md)、完走後の発展学習は [ADVANCED_TRACK.md](docs/tracks/ADVANCED_TRACK.md)、Computer Science の追加学習は [COMPUTER_SCIENCE_TRACK.md](docs/tracks/COMPUTER_SCIENCE_TRACK.md)、今後注目される Rust 領域は [FUTURE_RUST_DOMAINS.md](docs/tracks/FUTURE_RUST_DOMAINS.md) です。
 
 ## このチュートリアルの目的
 
@@ -25,6 +25,7 @@ Rust を `std` 中心の基礎から実務 crate の採用判断まで、Level 0
 levels/      まず進める本編。小さく動かし、設計判断を言語化する。
 appendices/  Rust 全体を補完する深掘り。trait、async、unsafe、Cargo など。
 projects/    Cargo workspace で作る実務演習。std-only 版と ecosystem 版を比較する。
+docs/        学習導線、評価表、発展トラック、用語集、性能ラボなどの補助文書。
 ```
 
 Rust の基礎を CS に広げる追加トラックとして、`computer_science/` もあります。ここでは data structure、algorithm、computer systems、OS、network、database、compiler、capstone を Rust 主軸で学びます。
@@ -58,13 +59,13 @@ Level 9 まで終えたら、Cargo workspace の実務演習へ進みます。
 
 project の読む順番と本編 Level との対応は [projects/PROJECT_WALKTHROUGH.md](projects/PROJECT_WALKTHROUGH.md) にまとめています。
 
-各 Level の終わりでは [CHECKPOINTS.md](CHECKPOINTS.md) を使って、次へ進んでよいかを判断します。迷った点は [STUDY_JOURNAL.md](STUDY_JOURNAL.md) に残してください。
+各 Level の終わりでは [CHECKPOINTS.md](docs/guide/CHECKPOINTS.md) を使って、次へ進んでよいかを判断します。迷った点は [STUDY_JOURNAL.md](docs/guide/STUDY_JOURNAL.md) に残してください。
 
-最終課題の自己レビューには [REVIEW_CHECKLIST.md](REVIEW_CHECKLIST.md) を使います。
+最終課題の自己レビューには [REVIEW_CHECKLIST.md](docs/guide/REVIEW_CHECKLIST.md) を使います。
 
-完走後の理解確認には [ASSESSMENT.md](ASSESSMENT.md) を使います。
+完走後の理解確認には [ASSESSMENT.md](docs/guide/ASSESSMENT.md) を使います。
 
-演習後の比較には [solutions](solutions/README.md) を使います。教える側、レビューする側の観点は [TEACHER_GUIDE.md](TEACHER_GUIDE.md) にまとめています。
+演習後の比較には [solutions](solutions/README.md) を使います。教える側、レビューする側の観点は [TEACHER_GUIDE.md](docs/guide/TEACHER_GUIDE.md) にまとめています。
 
 ローカル Markdown リンクの確認は次で実行できます。
 
@@ -144,10 +145,10 @@ thread、channel、Arc/Mutex、async runtime の選択理由を説明できる
 unsafe、FFI、no_std、性能改善の責任を説明できる
 ```
 
-完走後にさらに進む場合は [ADVANCED_TRACK.md](ADVANCED_TRACK.md) を使います。async Web、advanced types、procedural macro、unsafe/FFI、no_std、performance、data systems、library design、compiler / language internals へ分岐できます。
+完走後にさらに進む場合は [ADVANCED_TRACK.md](docs/tracks/ADVANCED_TRACK.md) を使います。async Web、advanced types、procedural macro、unsafe/FFI、no_std、performance、data systems、library design、compiler / language internals へ分岐できます。
 
-どの領域へ進むか迷う場合は [FUTURE_RUST_DOMAINS.md](FUTURE_RUST_DOMAINS.md) を読んでください。Cloud Native、Data Systems、WebAssembly / Edge、Systems / Security、Embedded、CLI、AI / ML infrastructure と Rust の相性を整理しています。
+どの領域へ進むか迷う場合は [FUTURE_RUST_DOMAINS.md](docs/tracks/FUTURE_RUST_DOMAINS.md) を読んでください。Cloud Native、Data Systems、WebAssembly / Edge、Systems / Security、Embedded、CLI、AI / ML infrastructure と Rust の相性を整理しています。
 
-Rust の速度やメモリ効率を Python と比較して体感したい場合は [PERFORMANCE_LAB.md](PERFORMANCE_LAB.md) を使ってください。大量 JSONL ログ処理を Python と Rust で実装し、実行時間、最大 RSS、処理行数/秒を測ります。
+Rust の速度やメモリ効率を Python と比較して体感したい場合は [PERFORMANCE_LAB.md](docs/labs/PERFORMANCE_LAB.md) を使ってください。大量 JSONL ログ処理を Python と Rust で実装し、実行時間、最大 RSS、処理行数/秒を測ります。
 
-Rust を使って Computer Science の基礎を固めたい場合は [COMPUTER_SCIENCE_TRACK.md](COMPUTER_SCIENCE_TRACK.md) を使ってください。大学 CS をそのままなぞるのではなく、エンジニアとして効く順に data structure、algorithm、低レイヤ、OS、network、DB、compiler を学ぶ構成です。
+Rust を使って Computer Science の基礎を固めたい場合は [COMPUTER_SCIENCE_TRACK.md](docs/tracks/COMPUTER_SCIENCE_TRACK.md) を使ってください。大学 CS をそのままなぞるのではなく、エンジニアとして効く順に data structure、algorithm、低レイヤ、OS、network、DB、compiler を学ぶ構成です。

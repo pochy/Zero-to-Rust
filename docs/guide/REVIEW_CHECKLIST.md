@@ -73,7 +73,7 @@ solutions が先回りした暗記ではなく、比較材料として機能し�
 
 ## Solution Review
 
-演習回答を確認するときは [solutions](solutions/README.md) と [TEACHER_GUIDE.md](TEACHER_GUIDE.md) を使います。
+演習回答を確認するときは [solutions](../../solutions/README.md) と [TEACHER_GUIDE.md](TEACHER_GUIDE.md) を使います。
 
 ```text
 模範回答と一致しているかではなく、責任分担を説明できているかを見る。

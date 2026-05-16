@@ -44,9 +44,9 @@ fn load(path: &str) -> Result<String, String>
 
 ## 学習記録
 
-[CHECKPOINTS.md](../../CHECKPOINTS.md) の Level 2 を A/B/C で自己評価してください。
+[CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md) の Level 2 を A/B/C で自己評価してください。
 
-[STUDY_JOURNAL.md](../../STUDY_JOURNAL.md) には、次を書きます。
+[STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md) には、次を書きます。
 
 ```text
 Result で返した失敗
