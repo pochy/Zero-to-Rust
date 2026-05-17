@@ -128,3 +128,9 @@ WAL に書く前に OK を返すと、どの障害で説明できなくなるか
 設定読み込み失敗は起動前に止めるべきか、既定値で進むべきか
 std-only で学ぶ部分と crate に任せる部分はどこか
 ```
+
+## 次に読む
+
+- 前へ: [levels/level_07_integration/exercises.md](../level_07_integration/exercises.md)
+- 次へ: [levels/level_08_production/exercises.md](exercises.md)
+- 関連: [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md)

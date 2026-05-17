@@ -279,3 +279,9 @@ Rust の主な哲学として、以下を意識すると資料が読みやすく
 [nomicon]: https://doc.rust-lang.org/nomicon/ "The Rustonomicon"
 [polonius]: https://rust-lang.github.io/polonius/ "Polonius"
 [withoutboats-ownership]: https://without.boats/blog/ownership/ "Ownership"
+
+## 次に読む
+
+- 前へ: [docs/INDEX.md](INDEX.md)
+- 次へ: [docs/guide/START_HERE.md](guide/START_HERE.md)
+- 関連: [docs/guide/LEARNING_PATH.md](guide/LEARNING_PATH.md), [docs/tracks/COMPUTER_SCIENCE_TRACK.md](tracks/COMPUTER_SCIENCE_TRACK.md)

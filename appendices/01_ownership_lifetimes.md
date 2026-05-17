@@ -114,3 +114,9 @@ clone をコストと責任の判断として説明できるか
 - https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html
 - https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html
 - https://doc.rust-lang.org/nomicon/ownership.html
+
+## 次に読む
+
+- 前へ: [appendices/README.md](README.md)
+- 次へ: [appendices/02_traits_generics.md](02_traits_generics.md)
+- 関連: [docs/guide/LEARNING_PATH.md](../docs/guide/LEARNING_PATH.md)

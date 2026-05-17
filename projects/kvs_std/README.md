@@ -55,3 +55,9 @@ tests:
 ## std-only の限界
 
 標準ライブラリだけでも、所有権、TTL、WAL、テストは学べます。一方で、実務 CLI、JSON、構造化ログ、非同期 TCP、堅牢 HTTP は外部クレートを検討する領域です。次の `kvs_ecosystem` は、その採用判断を学ぶための対比です。
+
+## 次に読む
+
+- 前へ: [projects/PROJECT_WALKTHROUGH.md](../PROJECT_WALKTHROUGH.md)
+- 次へ: [projects/kvs_ecosystem/README.md](../kvs_ecosystem/README.md)
+- 関連: [docs/guide/FINAL_PROJECT_SPEC.md](../../docs/guide/FINAL_PROJECT_SPEC.md)

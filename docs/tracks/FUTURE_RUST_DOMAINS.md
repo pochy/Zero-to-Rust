@@ -476,3 +476,9 @@ load test で限界を説明できる
 - CNCF Dapr 2025 report: https://www.cncf.io/announcements/2025/04/01/cloud-native-computing-foundation-releases-2025-state-of-dapr-report-highlighting-adoption-trends-and-ai-innovations/
 - Akamai WebAssembly edge/serverless: https://www.akamai.com/blog/cloud/unlocking-next-wave-edge-computing-serverless-webassembly
 - OxidOS Automotive: https://oxidos.io/
+
+## 次に読む
+
+- 前へ: [docs/tracks/ADVANCED_TRACK.md](ADVANCED_TRACK.md)
+- 次へ: [docs/tracks/COMPUTER_SCIENCE_TRACK.md](COMPUTER_SCIENCE_TRACK.md)
+- 関連: [docs/INDEX.md](../INDEX.md), [docs/guide/ASSESSMENT.md](../guide/ASSESSMENT.md)

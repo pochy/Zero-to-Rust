@@ -53,3 +53,8 @@ HashMap だけで LRU を作ると何が足りないか説明できるか
 Vec の強みと弱みを memory layout と結びつけて説明できるか
 ```
 
+## 次に読む
+
+- 前へ: [computer_science/levels/cs_01_data_structures/README.md](README.md)
+- 次へ: [computer_science/levels/cs_02_algorithms/README.md](../cs_02_algorithms/README.md)
+- 関連: [computer_science/CHECKPOINTS.md](../../CHECKPOINTS.md), [computer_science/SOLUTIONS.md](../../SOLUTIONS.md), [computer_science/glossary.md](../../glossary.md)

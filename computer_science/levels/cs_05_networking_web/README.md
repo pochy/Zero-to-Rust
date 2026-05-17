@@ -175,3 +175,9 @@ std::net::TcpStream
 std::io::Read
 std::io::Write
 ```
+
+## 次に読む
+
+- 前へ: [computer_science/levels/cs_04_os_cli_io/exercises.md](../cs_04_os_cli_io/exercises.md)
+- 次へ: [computer_science/levels/cs_05_networking_web/exercises.md](exercises.md)
+- 関連: [computer_science/CHECKPOINTS.md](../../CHECKPOINTS.md), [computer_science/SOLUTIONS.md](../../SOLUTIONS.md), [computer_science/glossary.md](../../glossary.md)

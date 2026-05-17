@@ -101,3 +101,9 @@ associated type が必要な場面を説明できるか
 - https://doc.rust-lang.org/book/ch10-00-generics.html
 - https://doc.rust-lang.org/book/ch10-02-traits.html
 - https://doc.rust-lang.org/book/ch17-02-trait-objects.html
+
+## 次に読む
+
+- 前へ: [appendices/01_ownership_lifetimes.md](01_ownership_lifetimes.md)
+- 次へ: [appendices/03_iterators_patterns_macros.md](03_iterators_patterns_macros.md)
+- 関連: [appendices/README.md](README.md), [docs/guide/LEARNING_PATH.md](../docs/guide/LEARNING_PATH.md)

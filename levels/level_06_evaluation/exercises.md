@@ -58,3 +58,9 @@ cargo clippy --workspace --all-targets
 ```
 
 それぞれが何を守り、何を守らないかを書いてください。
+
+## 次に読む
+
+- 前へ: [levels/level_06_evaluation/README.md](README.md)
+- 次へ: [levels/level_07_integration/README.md](../level_07_integration/README.md)
+- 関連: [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md), [solutions/levels_05_09.md](../../solutions/levels_05_09.md)

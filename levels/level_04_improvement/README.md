@@ -141,3 +141,9 @@ read_to_string はどの規模や入力で限界になるか
 Path と PathBuf の違いは所有権でどう説明できるか
 検索結果 0 件を Result::Err にしない理由は何か
 ```
+
+## 次に読む
+
+- 前へ: [levels/level_03_design/exercises.md](../level_03_design/exercises.md)
+- 次へ: [levels/level_04_improvement/exercises.md](exercises.md)
+- 関連: [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md)

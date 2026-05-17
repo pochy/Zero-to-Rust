@@ -98,3 +98,9 @@ macro を導入する前に関数で足りるか判断できるか
 - https://doc.rust-lang.org/book/ch13-00-functional-features.html
 - https://doc.rust-lang.org/book/ch18-00-patterns.html
 - https://doc.rust-lang.org/book/ch20-05-macros.html
+
+## 次に読む
+
+- 前へ: [appendices/02_traits_generics.md](02_traits_generics.md)
+- 次へ: [appendices/04_error_testing_quality.md](04_error_testing_quality.md)
+- 関連: [appendices/README.md](README.md), [docs/guide/LEARNING_PATH.md](../docs/guide/LEARNING_PATH.md)

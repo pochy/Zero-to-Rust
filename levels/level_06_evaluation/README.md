@@ -119,3 +119,9 @@ panic すべき失敗と Result で返す失敗は何が違うか
 String エラーから enum エラーへ変えるタイミングはいつか
 テスト名は仕様として読めるか
 ```
+
+## 次に読む
+
+- 前へ: [levels/level_05_application_workflow/exercises.md](../level_05_application_workflow/exercises.md)
+- 次へ: [levels/level_06_evaluation/exercises.md](exercises.md)
+- 関連: [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md)

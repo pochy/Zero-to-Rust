@@ -54,3 +54,9 @@ clap、anyhow、tracing、tokio を binary の入口で統合する場所。
 ```
 
 `kvs_std` と行単位で比較するより、責任単位で比較してください。詳しい比較観点は [../PROJECT_WALKTHROUGH.md](../PROJECT_WALKTHROUGH.md) にあります。
+
+## 次に読む
+
+- 前へ: [projects/kvs_std/README.md](../kvs_std/README.md)
+- 次へ: [projects/final_kvs_server/README.md](../final_kvs_server/README.md)
+- 関連: [projects/PROJECT_WALKTHROUGH.md](../PROJECT_WALKTHROUGH.md), [docs/guide/FINAL_PROJECT_SPEC.md](../../docs/guide/FINAL_PROJECT_SPEC.md)

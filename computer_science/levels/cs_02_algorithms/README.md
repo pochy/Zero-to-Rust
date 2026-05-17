@@ -143,3 +143,9 @@ slice::sort
 Vec
 VecDeque
 ```
+
+## 次に読む
+
+- 前へ: [computer_science/levels/cs_01_data_structures/exercises.md](../cs_01_data_structures/exercises.md)
+- 次へ: [computer_science/levels/cs_02_algorithms/exercises.md](exercises.md)
+- 関連: [computer_science/CHECKPOINTS.md](../../CHECKPOINTS.md), [computer_science/SOLUTIONS.md](../../SOLUTIONS.md), [computer_science/glossary.md](../../glossary.md)

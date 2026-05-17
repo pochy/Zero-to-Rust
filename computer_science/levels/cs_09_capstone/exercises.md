@@ -124,3 +124,9 @@ review_notes.md
 失敗時に何が保存され、何が失われるか説明できるか
 測定結果から bottleneck の仮説を立てられるか
 ```
+
+## 次に読む
+
+- 前へ: [computer_science/levels/cs_09_capstone/README.md](README.md)
+- 次へ: [computer_science/CHECKPOINTS.md](../../CHECKPOINTS.md)
+- 関連: [computer_science/SOLUTIONS.md](../../SOLUTIONS.md), [computer_science/glossary.md](../../glossary.md)

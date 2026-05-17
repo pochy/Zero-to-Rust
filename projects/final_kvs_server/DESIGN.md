@@ -180,3 +180,9 @@ admin HTTP の制限を README に明記しているか
 | std-only scope | Level 9 | 自作する責任と crate に任せる責任を判断する |
 
 コードレビューでは、行数や機能数よりも、この対応が崩れていないかを確認してください。
+
+## 次に読む
+
+- 前へ: [projects/final_kvs_server/README.md](README.md)
+- 次へ: [projects/final_kvs_server/RUNBOOK.md](RUNBOOK.md)
+- 関連: [projects/PROJECT_WALKTHROUGH.md](../PROJECT_WALKTHROUGH.md), [docs/guide/FINAL_PROJECT_SPEC.md](../../docs/guide/FINAL_PROJECT_SPEC.md)

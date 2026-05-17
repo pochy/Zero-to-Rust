@@ -79,3 +79,9 @@ solutions が先回りした暗記ではなく、比較材料として機能し�
 模範回答と一致しているかではなく、責任分担を説明できているかを見る。
 異なる設計でも、所有、失敗、共有、復旧の説明が一貫していれば採用可能。
 ```
+
+## 次に読む
+
+- 前へ: [docs/guide/FINAL_PROJECT_SPEC.md](FINAL_PROJECT_SPEC.md)
+- 次へ: [projects/PROJECT_WALKTHROUGH.md](../../projects/PROJECT_WALKTHROUGH.md)
+- 関連: [docs/INDEX.md](../INDEX.md), [solutions/final_project.md](../../solutions/final_project.md)

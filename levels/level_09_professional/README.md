@@ -181,3 +181,9 @@ cargo test -p kvs_ecosystem
 ```
 
 `kvs_std` では自分で責任を持つ範囲を確認します。`kvs_ecosystem` では、どこから crate に任せるべきかを確認します。
+
+## 次に読む
+
+- 前へ: [levels/level_08_production/exercises.md](../level_08_production/exercises.md)
+- 次へ: [levels/level_09_professional/exercises.md](exercises.md)
+- 関連: [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md)

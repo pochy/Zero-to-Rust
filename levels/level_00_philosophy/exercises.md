@@ -64,3 +64,9 @@ Rust を他の言語と同じように書こうとすると、どの責任が曖
 復旧:
 将来の保守:
 ```
+
+## 次に読む
+
+- 前へ: [levels/level_00_philosophy/examples/ownership_canvas.md](examples/ownership_canvas.md)
+- 次へ: [levels/level_01_intro/README.md](../level_01_intro/README.md)
+- 関連: [levels/level_00_philosophy/README.md](README.md), [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md)

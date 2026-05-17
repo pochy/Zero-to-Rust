@@ -147,3 +147,9 @@ borrow_name はなぜ &str でよいか
 take_name が String を受け取る設計は本当に必要か
 move した値を使えないことは、どの事故を防いでいるか
 ```
+
+## 次に読む
+
+- 前へ: [levels/level_00_philosophy/exercises.md](../level_00_philosophy/exercises.md)
+- 次へ: [levels/level_01_intro/exercises.md](exercises.md)
+- 関連: [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md)

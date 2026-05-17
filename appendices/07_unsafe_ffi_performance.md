@@ -95,3 +95,9 @@ std / core / alloc の違いを説明できるか
 - https://doc.rust-lang.org/book/ch20-01-unsafe-rust.html
 - https://doc.rust-lang.org/nomicon/
 - https://doc.rust-lang.org/reference/items/external-blocks.html
+
+## 次に読む
+
+- 前へ: [appendices/06_async_concurrency.md](06_async_concurrency.md)
+- 次へ: [appendices/08_professional_rust_map.md](08_professional_rust_map.md)
+- 関連: [appendices/README.md](README.md), [docs/guide/LEARNING_PATH.md](../docs/guide/LEARNING_PATH.md)

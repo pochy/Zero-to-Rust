@@ -108,3 +108,9 @@ TLS
 CLI parser
 WAL compaction
 ```
+
+## 次に読む
+
+- 前へ: [projects/kvs_ecosystem/README.md](../kvs_ecosystem/README.md)
+- 次へ: [projects/final_kvs_server/DESIGN.md](DESIGN.md)
+- 関連: [projects/PROJECT_WALKTHROUGH.md](../PROJECT_WALKTHROUGH.md), [docs/guide/FINAL_PROJECT_SPEC.md](../../docs/guide/FINAL_PROJECT_SPEC.md)

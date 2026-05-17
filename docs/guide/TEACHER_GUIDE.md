@@ -170,3 +170,9 @@ std-only で本番 HTTP を抱える責任を説明できますか。
 ```
 
 この発表ができれば、Rust の知識が単語ではなく設計判断として身についています。
+
+## 次に読む
+
+- 前へ: [docs/guide/ASSESSMENT.md](ASSESSMENT.md)
+- 次へ: [docs/guide/REVIEW_CHECKLIST.md](REVIEW_CHECKLIST.md)
+- 関連: [docs/guide/CHECKPOINTS.md](CHECKPOINTS.md), [solutions/README.md](../../solutions/README.md), [docs/INDEX.md](../INDEX.md)

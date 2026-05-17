@@ -80,3 +80,9 @@ WAL が壊れている
 ```
 
 Rust の型で守る範囲と、運用手順で守る範囲を分けてください。
+
+## 次に読む
+
+- 前へ: [levels/level_08_production/README.md](README.md)
+- 次へ: [levels/level_09_professional/README.md](../level_09_professional/README.md)
+- 関連: [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md), [solutions/levels_05_09.md](../../solutions/levels_05_09.md)

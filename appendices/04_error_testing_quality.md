@@ -102,3 +102,9 @@ clippy や fmt を品質ゲートとして扱えるか
 - https://doc.rust-lang.org/book/ch09-00-error-handling.html
 - https://doc.rust-lang.org/book/ch11-00-testing.html
 - https://doc.rust-lang.org/clippy/
+
+## 次に読む
+
+- 前へ: [appendices/03_iterators_patterns_macros.md](03_iterators_patterns_macros.md)
+- 次へ: [appendices/05_cargo_ecosystem.md](05_cargo_ecosystem.md)
+- 関連: [appendices/README.md](README.md), [docs/guide/LEARNING_PATH.md](../docs/guide/LEARNING_PATH.md)

@@ -157,3 +157,9 @@ std::io::BufReader
 std::process::Command
 std::thread
 ```
+
+## 次に読む
+
+- 前へ: [computer_science/levels/cs_03_computer_systems/exercises.md](../cs_03_computer_systems/exercises.md)
+- 次へ: [computer_science/levels/cs_04_os_cli_io/exercises.md](exercises.md)
+- 関連: [computer_science/CHECKPOINTS.md](../../CHECKPOINTS.md), [computer_science/SOLUTIONS.md](../../SOLUTIONS.md), [computer_science/glossary.md](../../glossary.md)

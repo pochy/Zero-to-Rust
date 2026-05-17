@@ -122,3 +122,9 @@ Rust らしい判断:
 CHECKPOINTS.md の自己評価:
 A。ただし、壊れた WAL 行を skip するか停止するかは運用方針次第なので runbook に書く。
 ```
+
+## 次に読む
+
+- 前へ: [docs/guide/START_HERE.md](START_HERE.md)
+- 次へ: [docs/guide/CHECKPOINTS.md](CHECKPOINTS.md)
+- 関連: [docs/INDEX.md](../INDEX.md)

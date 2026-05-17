@@ -142,3 +142,9 @@ Job に `Send + 'static` が必要な理由は何か。分からなければ、�
 Arc は共有所有、Mutex は排他制御だと分けて説明できるか
 channel で所有権を渡す設計に変えると何が単純になるか
 ```
+
+## 次に読む
+
+- 前へ: [levels/level_06_evaluation/exercises.md](../level_06_evaluation/exercises.md)
+- 次へ: [levels/level_07_integration/exercises.md](exercises.md)
+- 関連: [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md)

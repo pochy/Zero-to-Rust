@@ -90,3 +90,9 @@ Rust 本編では「所有、失敗、共有」を学びました。CS Track で
 答えが曖昧な場合は、実装量を増やすより、同じ課題を小さく測定してください。
 
 Level ごとの具体的な合格ラインは [CHECKPOINTS.md](CHECKPOINTS.md) を使ってください。演習後の比較には [SOLUTIONS.md](SOLUTIONS.md) を使います。先に回答例を読むより、自分の説明を書いてから比較する方が効果的です。
+
+## 次に読む
+
+- 前へ: [docs/tracks/COMPUTER_SCIENCE_TRACK.md](../docs/tracks/COMPUTER_SCIENCE_TRACK.md)
+- 次へ: [computer_science/THREE_MONTH_PLAN.md](THREE_MONTH_PLAN.md)
+- 関連: [computer_science/CHECKPOINTS.md](CHECKPOINTS.md), [computer_science/SOLUTIONS.md](SOLUTIONS.md)

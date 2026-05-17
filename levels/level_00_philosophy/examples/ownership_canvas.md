@@ -107,3 +107,9 @@ main はユーザー向けメッセージを表示する。
 
 後で並行処理するときに共有しそうな状態:
 ```
+
+## 次に読む
+
+- 前へ: [levels/level_00_philosophy/README.md](../README.md)
+- 次へ: [levels/level_00_philosophy/exercises.md](../exercises.md)
+- 関連: [docs/guide/CHECKPOINTS.md](../../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../../docs/guide/STUDY_JOURNAL.md)

@@ -89,3 +89,9 @@ edition と compiler version の違いを説明できるか
 - https://doc.rust-lang.org/cargo/
 - https://doc.rust-lang.org/cargo/reference/workspaces.html
 - https://doc.rust-lang.org/edition-guide/editions/creating-a-new-project.html
+
+## 次に読む
+
+- 前へ: [appendices/04_error_testing_quality.md](04_error_testing_quality.md)
+- 次へ: [appendices/06_async_concurrency.md](06_async_concurrency.md)
+- 関連: [appendices/README.md](README.md), [docs/guide/LEARNING_PATH.md](../docs/guide/LEARNING_PATH.md)

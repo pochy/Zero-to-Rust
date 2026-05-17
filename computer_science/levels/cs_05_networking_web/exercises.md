@@ -42,3 +42,8 @@ Cookie と Session を同じものとして扱っていないか
 retry してよい request と危険な request を区別できるか
 ```
 
+## 次に読む
+
+- 前へ: [computer_science/levels/cs_05_networking_web/README.md](README.md)
+- 次へ: [computer_science/levels/cs_06_databases/README.md](../cs_06_databases/README.md)
+- 関連: [computer_science/CHECKPOINTS.md](../../CHECKPOINTS.md), [computer_science/SOLUTIONS.md](../../SOLUTIONS.md), [computer_science/glossary.md](../../glossary.md)

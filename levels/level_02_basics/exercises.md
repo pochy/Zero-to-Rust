@@ -71,3 +71,9 @@ UTF-8 エラー
 ```
 
 そのうえで、今の `io::Error` のまま進む設計と、独自のエラー型を作る設計を比較してください。`enum` でエラーの種類を分ける方法は後の Level で扱うため、ここでは「種類を分ける必要があるか」だけ考えれば十分です。
+
+## 次に読む
+
+- 前へ: [levels/level_02_basics/README.md](README.md)
+- 次へ: [levels/level_03_design/README.md](../level_03_design/README.md)
+- 関連: [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md), [solutions/levels_00_04.md](../../solutions/levels_00_04.md)

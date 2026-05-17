@@ -144,3 +144,9 @@ DB index、transaction、lock、WAL の tradeoff を説明できる
 lexer、parser、AST、VM、compiler の流れを説明できる
 小さな system を CS 観点で設計、実装、測定、レビューできる
 ```
+
+## 次に読む
+
+- 前へ: [docs/guide/TUTORIAL.md](TUTORIAL.md)
+- 次へ: [levels/level_00_philosophy/README.md](../../levels/level_00_philosophy/README.md)
+- 関連: [docs/guide/START_HERE.md](START_HERE.md), [docs/guide/CHECKPOINTS.md](CHECKPOINTS.md), [docs/INDEX.md](../INDEX.md)

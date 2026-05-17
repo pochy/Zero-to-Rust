@@ -115,3 +115,9 @@ compiler / language internals へ進む
 新しく学ぶ必要がある責任は何か
 どの品質ゲートを追加すべきか
 ```
+
+## 次に読む
+
+- 前へ: [projects/final_kvs_server/EXERCISES.md](../../projects/final_kvs_server/EXERCISES.md)
+- 次へ: [appendices/README.md](../../appendices/README.md)
+- 関連: [docs/INDEX.md](../INDEX.md), [solutions/final_project.md](../../solutions/final_project.md)

@@ -82,3 +82,9 @@ Send と Sync を共有設計として説明できるか
 - https://doc.rust-lang.org/book/ch17-00-async-await.html
 - https://doc.rust-lang.org/std/marker/trait.Send.html
 - https://doc.rust-lang.org/std/marker/trait.Sync.html
+
+## 次に読む
+
+- 前へ: [appendices/05_cargo_ecosystem.md](05_cargo_ecosystem.md)
+- 次へ: [appendices/07_unsafe_ffi_performance.md](07_unsafe_ffi_performance.md)
+- 関連: [appendices/README.md](README.md), [docs/guide/LEARNING_PATH.md](../docs/guide/LEARNING_PATH.md)

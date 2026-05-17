@@ -405,3 +405,7 @@ concurrency を入れると Mutex lock 範囲が目立つ。
 機能説明だけでなく、data structure、failure、measurement をまとめて説明しているか。
 ```
 
+## 次に読む
+
+- 前へ: [computer_science/CHECKPOINTS.md](CHECKPOINTS.md)
+- 次へ: [computer_science/RESOURCE_GUIDE.md](RESOURCE_GUIDE.md)

@@ -35,3 +35,8 @@ CPU bound と I/O bound の違いを説明できるか
 virtual memory と Rust ownership を混同していないか
 ```
 
+## 次に読む
+
+- 前へ: [computer_science/levels/cs_07_operating_systems/README.md](README.md)
+- 次へ: [computer_science/levels/cs_08_languages_compilers/README.md](../cs_08_languages_compilers/README.md)
+- 関連: [computer_science/CHECKPOINTS.md](../../CHECKPOINTS.md), [computer_science/SOLUTIONS.md](../../SOLUTIONS.md), [computer_science/glossary.md](../../glossary.md)

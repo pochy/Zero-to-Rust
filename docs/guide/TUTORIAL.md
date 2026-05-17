@@ -1821,3 +1821,9 @@ FFI、no_std、性能改善を、責任境界として扱える。
 [12]: https://doc.rust-lang.org/std/sync/struct.RwLock.html?utm_source=chatgpt.com "RwLock in std::sync"
 [13]: https://doc.rust-lang.org/std/sync/struct.Condvar.html?utm_source=chatgpt.com "Condvar in std::sync"
 [14]: https://doc.rust-lang.org/std/sync/mpsc/?utm_source=chatgpt.com "Module mpsc - std::sync"
+
+## 次に読む
+
+- 前へ: [docs/guide/START_HERE.md](START_HERE.md)
+- 次へ: [docs/guide/LEARNING_PATH.md](LEARNING_PATH.md)
+- 関連: [docs/INDEX.md](../INDEX.md), [docs/guide/CHECKPOINTS.md](CHECKPOINTS.md)

@@ -261,3 +261,9 @@ Rust を学ぶ意味は、最初から完璧に書くことではありません
 `unwrap()` を使いたくなった場合は、まず「この失敗は本当に起きないと言えるか」を書いてください。言えないなら `Result` で返す設計を選びます。
 
 `cargo test -p kvs_ecosystem` で依存クレートの取得に失敗する場合は、ネットワークに接続できる環境で再実行してください。本編の `levels/` は外部クレートなしで進められるため、先に本編を完走できます。
+
+## 次に読む
+
+- 前へ: [README.md](../../README.md)
+- 次へ: [docs/guide/STUDY_JOURNAL.md](STUDY_JOURNAL.md)
+- 関連: [docs/INDEX.md](../INDEX.md)

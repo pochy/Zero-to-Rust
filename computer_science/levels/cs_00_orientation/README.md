@@ -109,3 +109,8 @@ Rust std::io
 Rust std::thread
 ```
 
+## 次に読む
+
+- 前へ: [computer_science/THREE_MONTH_PLAN.md](../../THREE_MONTH_PLAN.md)
+- 次へ: [computer_science/levels/cs_00_orientation/exercises.md](exercises.md)
+- 関連: [computer_science/CHECKPOINTS.md](../../CHECKPOINTS.md), [computer_science/SOLUTIONS.md](../../SOLUTIONS.md), [computer_science/glossary.md](../../glossary.md)

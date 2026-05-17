@@ -57,3 +57,8 @@ DFS と BFS の出力順の違いを説明できるか
 再帰を loop と stack で書き換えられるか
 ```
 
+## 次に読む
+
+- 前へ: [computer_science/levels/cs_02_algorithms/README.md](README.md)
+- 次へ: [computer_science/levels/cs_03_computer_systems/README.md](../cs_03_computer_systems/README.md)
+- 関連: [computer_science/CHECKPOINTS.md](../../CHECKPOINTS.md), [computer_science/SOLUTIONS.md](../../SOLUTIONS.md), [computer_science/glossary.md](../../glossary.md)

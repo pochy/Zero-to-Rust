@@ -192,3 +192,8 @@ transaction と lock の関係を説明できる
 
 この切り分けができると、Rust だけでなく TypeScript、Go、Python、SQL、infra の debugging がかなり楽になります。
 
+## 次に読む
+
+- 前へ: [computer_science/README.md](README.md)
+- 次へ: [computer_science/levels/cs_00_orientation/README.md](levels/cs_00_orientation/README.md)
+- 関連: [computer_science/CHECKPOINTS.md](CHECKPOINTS.md), [computer_science/SOLUTIONS.md](SOLUTIONS.md)

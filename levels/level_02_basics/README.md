@@ -120,3 +120,9 @@ io::Error を String に変換すると何を失うか
 main が Result を返すと、誰が失敗を表示するか
 expect のメッセージは復旧可能性を増やすか
 ```
+
+## 次に読む
+
+- 前へ: [levels/level_01_intro/exercises.md](../level_01_intro/exercises.md)
+- 次へ: [levels/level_02_basics/exercises.md](exercises.md)
+- 関連: [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md)

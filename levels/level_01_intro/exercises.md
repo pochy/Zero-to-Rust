@@ -80,3 +80,9 @@ fn render_user_name(/* ? */) -> String
 ```
 
 戻り値が所有型になる理由も説明してください。
+
+## 次に読む
+
+- 前へ: [levels/level_01_intro/README.md](README.md)
+- 次へ: [levels/level_02_basics/README.md](../level_02_basics/README.md)
+- 関連: [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md), [solutions/levels_00_04.md](../../solutions/levels_00_04.md)

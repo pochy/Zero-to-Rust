@@ -104,3 +104,9 @@
 | Rust で CS を学ぶ | [COMPUTER_SCIENCE_TRACK.md](tracks/COMPUTER_SCIENCE_TRACK.md) |
 | 今後注目される分野と Rust の相性を見る | [FUTURE_RUST_DOMAINS.md](tracks/FUTURE_RUST_DOMAINS.md) |
 | Python vs Rust performance lab を実行する | [PERFORMANCE_LAB.md](labs/PERFORMANCE_LAB.md) |
+
+## 次に読む
+
+- 前へ: [docs/README.md](README.md)
+- 次へ: [docs/guide/START_HERE.md](guide/START_HERE.md)
+- 関連: [docs/guide/LEARNING_PATH.md](guide/LEARNING_PATH.md), [docs/reference/glossary.md](reference/glossary.md)

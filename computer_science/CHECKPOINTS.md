@@ -287,3 +287,7 @@ computer_science/levels/cs_09_capstone/README.md
 computer_science/levels/cs_09_capstone/templates/
 ```
 
+## 次に読む
+
+- 前へ: [computer_science/levels/cs_09_capstone/exercises.md](levels/cs_09_capstone/exercises.md)
+- 次へ: [computer_science/SOLUTIONS.md](SOLUTIONS.md)

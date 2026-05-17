@@ -142,3 +142,8 @@ Virtual Machine の略です。bytecode などを実行する抽象 machine で�
 
 複数の machine が協調して動く system です。network failure、partial failure、consistency、replication が重要になります。
 
+## 次に読む
+
+- 前へ: [computer_science/RESOURCE_GUIDE.md](RESOURCE_GUIDE.md)
+- 次へ: なし
+- 関連: [computer_science/CHECKPOINTS.md](CHECKPOINTS.md), [computer_science/SOLUTIONS.md](SOLUTIONS.md)

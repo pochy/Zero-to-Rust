@@ -299,3 +299,9 @@ TCP、TTL、WAL、admin HTTP、metrics、runbook を統合する実装。
 依存を増やす利点と、依存を増やさない利点の両方を説明できる
 運用時に壊れる場所を 3 つ以上挙げ、検知方法と復旧方法を書ける
 ```
+
+## 次に読む
+
+- 前へ: [docs/guide/STUDY_JOURNAL.md](STUDY_JOURNAL.md)
+- 次へ: [levels/level_00_philosophy/README.md](../../levels/level_00_philosophy/README.md)
+- 関連: [docs/INDEX.md](../INDEX.md)

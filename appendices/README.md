@@ -94,3 +94,9 @@ Rust の全 API を知っている状態ではない。
 ```
 
 完走後にさらに進む場合は、[../ADVANCED_TRACK.md](../docs/tracks/ADVANCED_TRACK.md) を使ってください。Advanced Track では、async Web、advanced types、procedural macro、unsafe/FFI、embedded/no_std、performance、data systems、library design、compiler/language internals へ分岐します。`compiler / rustc / type system の深部` は、Advanced Track の `Track 9: Compiler And Language Internals` で扱います。
+
+## 次に読む
+
+- 前へ: [docs/guide/ASSESSMENT.md](../docs/guide/ASSESSMENT.md)
+- 次へ: [appendices/01_ownership_lifetimes.md](01_ownership_lifetimes.md)
+- 関連: [docs/guide/LEARNING_PATH.md](../docs/guide/LEARNING_PATH.md)

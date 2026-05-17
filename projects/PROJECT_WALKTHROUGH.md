@@ -192,3 +192,9 @@ WAL に書く操作と書かない操作は何か
 AppState を Mutex で守る利点と限界は何か
 serde、clap、thiserror、anyhow、tracing、tokio に任せた責任は何か
 ```
+
+## 次に読む
+
+- 前へ: [docs/guide/REVIEW_CHECKLIST.md](../docs/guide/REVIEW_CHECKLIST.md)
+- 次へ: [projects/kvs_std/README.md](kvs_std/README.md)
+- 関連: [docs/guide/FINAL_PROJECT_SPEC.md](../docs/guide/FINAL_PROJECT_SPEC.md)

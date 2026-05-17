@@ -844,3 +844,9 @@ load test の結果をもとに限界を説明できる
 ```
 
 ここまでやると、Rust の知識は教材の理解から、制約のある成果物を運用できる設計へ変わります。次にやるべきことは、学習テーマを増やすことではなく、責任ある成果物を作り、その変更と運用に向き合うことです。
+
+## 次に読む
+
+- 前へ: [appendices/09_from_std_to_production_ecosystem.md](../../appendices/09_from_std_to_production_ecosystem.md)
+- 次へ: [docs/tracks/FUTURE_RUST_DOMAINS.md](FUTURE_RUST_DOMAINS.md)
+- 関連: [docs/INDEX.md](../INDEX.md), [docs/guide/ASSESSMENT.md](../guide/ASSESSMENT.md)

@@ -51,3 +51,8 @@ parse error と runtime error を分けられるか
 enum が AST に向いている理由を説明できるか
 ```
 
+## 次に読む
+
+- 前へ: [computer_science/levels/cs_08_languages_compilers/README.md](README.md)
+- 次へ: [computer_science/levels/cs_09_capstone/README.md](../cs_09_capstone/README.md)
+- 関連: [computer_science/CHECKPOINTS.md](../../CHECKPOINTS.md), [computer_science/SOLUTIONS.md](../../SOLUTIONS.md), [computer_science/glossary.md](../../glossary.md)

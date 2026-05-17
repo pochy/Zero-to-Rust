@@ -47,3 +47,8 @@ byte と UTF-8 text を区別できるか
 clone を使う前に cost を説明できるか
 ```
 
+## 次に読む
+
+- 前へ: [computer_science/levels/cs_03_computer_systems/README.md](README.md)
+- 次へ: [computer_science/levels/cs_04_os_cli_io/README.md](../cs_04_os_cli_io/README.md)
+- 関連: [computer_science/CHECKPOINTS.md](../../CHECKPOINTS.md), [computer_science/SOLUTIONS.md](../../SOLUTIONS.md), [computer_science/glossary.md](../../glossary.md)

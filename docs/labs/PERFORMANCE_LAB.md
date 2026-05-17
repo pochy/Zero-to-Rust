@@ -251,3 +251,9 @@ Cloud Native Rust と接続する。
 image processing:
 rayon と CPU bound 並列処理を体感する。
 ```
+
+## 次に読む
+
+- 前へ: [docs/INDEX.md](../INDEX.md)
+- 次へ: [docs/labs/PERFORMANCE_RESULTS.md](PERFORMANCE_RESULTS.md)
+- 関連: [projects/perf_log_python/README.md](../../projects/perf_log_python/README.md), [projects/perf_log_rust/README.md](../../projects/perf_log_rust/README.md)

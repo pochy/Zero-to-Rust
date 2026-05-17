@@ -25,3 +25,9 @@ Zero to Rust の補助ドキュメント置き場です。
 | 進級判断をしたい | [guide/CHECKPOINTS.md](guide/CHECKPOINTS.md) |
 | 最終課題を確認したい | [guide/FINAL_PROJECT_SPEC.md](guide/FINAL_PROJECT_SPEC.md) |
 | 発展学習へ進みたい | [tracks/ADVANCED_TRACK.md](tracks/ADVANCED_TRACK.md) |
+
+## 次に読む
+
+- 前へ: [README.md](../README.md)
+- 次へ: [docs/INDEX.md](INDEX.md)
+- 関連: [docs/guide/START_HERE.md](guide/START_HERE.md), [docs/guide/LEARNING_PATH.md](guide/LEARNING_PATH.md)

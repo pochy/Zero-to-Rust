@@ -142,3 +142,9 @@ Store に &str を保存すると、誰の寿命に依存するか
 get が Option<&String> を返すと、呼び出し側は何を所有しないか
 HashMap を public にしたとき、どの不変条件が壊れやすいか
 ```
+
+## 次に読む
+
+- 前へ: [levels/level_02_basics/exercises.md](../level_02_basics/exercises.md)
+- 次へ: [levels/level_03_design/exercises.md](exercises.md)
+- 関連: [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md)

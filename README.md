@@ -154,3 +154,9 @@ Rust の速度やメモリ効率を Python と比較して体感したい場合�
 Rust を使って Computer Science の基礎を固めたい場合は [COMPUTER_SCIENCE_TRACK.md](docs/tracks/COMPUTER_SCIENCE_TRACK.md) を使ってください。大学 CS をそのままなぞるのではなく、エンジニアとして効く順に data structure、algorithm、低レイヤ、OS、network、DB、compiler を学ぶ構成です。
 
 README には全体像を示すため、後半で扱う専門語も含まれます。学習中は各 Level の README を優先し、知らない語は [glossary.md](docs/reference/glossary.md) で確認してください。
+
+## 次に読む
+
+- 前へ: なし
+- 次へ: [docs/guide/START_HERE.md](docs/guide/START_HERE.md)
+- 関連: [docs/INDEX.md](docs/INDEX.md), [docs/guide/LEARNING_PATH.md](docs/guide/LEARNING_PATH.md)

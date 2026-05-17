@@ -65,3 +65,9 @@ I/O、検索、表示を分けて説明できるか？
 ```
 
 短く書けることより、処理の責任が読めるかを優先して判断します。
+
+## 次に読む
+
+- 前へ: [levels/level_04_improvement/README.md](README.md)
+- 次へ: [levels/level_05_application_workflow/README.md](../level_05_application_workflow/README.md)
+- 関連: [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md), [solutions/levels_00_04.md](../../solutions/levels_00_04.md)

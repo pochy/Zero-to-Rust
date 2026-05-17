@@ -103,3 +103,9 @@ kvs_std / kvs_ecosystem / final_kvs_server の違い
 ```
 
 [../PROJECT_WALKTHROUGH.md](../PROJECT_WALKTHROUGH.md) の完了条件にも答えてください。
+
+## 次に読む
+
+- 前へ: [projects/final_kvs_server/RUNBOOK.md](RUNBOOK.md)
+- 次へ: [docs/guide/ASSESSMENT.md](../../docs/guide/ASSESSMENT.md)
+- 関連: [projects/PROJECT_WALKTHROUGH.md](../PROJECT_WALKTHROUGH.md), [docs/guide/FINAL_PROJECT_SPEC.md](../../docs/guide/FINAL_PROJECT_SPEC.md)

@@ -132,3 +132,8 @@ parser、compiler、VM の基本構造を説明できる
 
 これができると、Rust だけでなく TypeScript、Go、Python、SQL、infra の見え方もかなり変わります。
 
+## 次に読む
+
+- 前へ: [docs/tracks/FUTURE_RUST_DOMAINS.md](FUTURE_RUST_DOMAINS.md)
+- 次へ: [computer_science/README.md](../../computer_science/README.md)
+- 関連: [docs/INDEX.md](../INDEX.md), [docs/guide/ASSESSMENT.md](../guide/ASSESSMENT.md)

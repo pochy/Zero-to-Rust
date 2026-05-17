@@ -210,3 +210,9 @@ hyperfine \
 ```
 
 この lab の目的は、Python を否定することではありません。Python と Rust の設計上の違いを、速度・メモリ・error handling の数字として観察することです。
+
+## 次に読む
+
+- 前へ: [docs/labs/PERFORMANCE_LAB.md](PERFORMANCE_LAB.md)
+- 次へ: [docs/tracks/FUTURE_RUST_DOMAINS.md](../tracks/FUTURE_RUST_DOMAINS.md)
+- 関連: [projects/perf_log_python/README.md](../../projects/perf_log_python/README.md), [projects/perf_log_rust/README.md](../../projects/perf_log_rust/README.md)

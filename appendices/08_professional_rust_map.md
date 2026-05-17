@@ -100,3 +100,9 @@ thread と async の選択理由を説明できる
 unsafe を避ける理由、使う条件を説明できる
 外部クレートの採用理由と保守責任を説明できる
 ```
+
+## 次に読む
+
+- 前へ: [appendices/07_unsafe_ffi_performance.md](07_unsafe_ffi_performance.md)
+- 次へ: [appendices/09_from_std_to_production_ecosystem.md](09_from_std_to_production_ecosystem.md)
+- 関連: [appendices/README.md](README.md), [docs/guide/LEARNING_PATH.md](../docs/guide/LEARNING_PATH.md)

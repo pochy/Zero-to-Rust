@@ -159,3 +159,8 @@ OSSU は、online materials を使った complete education in computer science 
 
 外部教材から入ると、理解した気分になりやすいです。実装から入ると、わからないところが具体化されます。
 
+## 次に読む
+
+- 前へ: [computer_science/SOLUTIONS.md](SOLUTIONS.md)
+- 次へ: [computer_science/glossary.md](glossary.md)
+- 関連: [computer_science/CHECKPOINTS.md](CHECKPOINTS.md)

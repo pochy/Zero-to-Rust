@@ -150,3 +150,9 @@ Rust を学ぶ意味は、構文を覚えることではなく、曖昧な責任
 失敗したとき、誰がどう扱うか
 後で並行化したとき、何が共有状態になるか
 ```
+
+## 次に読む
+
+- 前へ: [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md)
+- 次へ: [levels/level_00_philosophy/examples/ownership_canvas.md](examples/ownership_canvas.md)
+- 関連: [levels/level_00_philosophy/exercises.md](exercises.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md)

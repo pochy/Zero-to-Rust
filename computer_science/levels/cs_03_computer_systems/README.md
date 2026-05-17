@@ -146,3 +146,9 @@ std::vec::Vec
 std::boxed::Box
 std::mem
 ```
+
+## 次に読む
+
+- 前へ: [computer_science/levels/cs_02_algorithms/exercises.md](../cs_02_algorithms/exercises.md)
+- 次へ: [computer_science/levels/cs_03_computer_systems/exercises.md](exercises.md)
+- 関連: [computer_science/CHECKPOINTS.md](../../CHECKPOINTS.md), [computer_science/SOLUTIONS.md](../../SOLUTIONS.md), [computer_science/glossary.md](../../glossary.md)

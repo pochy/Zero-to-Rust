@@ -203,3 +203,9 @@ std-only が学習に向く理由を説明できるか
 std-only にこだわりすぎる危険を説明できるか
 外部 crate に任せる責任と、自分のコードに残る責任を分けて説明できるか
 ```
+
+## 次に読む
+
+- 前へ: [appendices/08_professional_rust_map.md](08_professional_rust_map.md)
+- 次へ: [docs/tracks/ADVANCED_TRACK.md](../docs/tracks/ADVANCED_TRACK.md)
+- 関連: [appendices/README.md](README.md), [docs/guide/LEARNING_PATH.md](../docs/guide/LEARNING_PATH.md)

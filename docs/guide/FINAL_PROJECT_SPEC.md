@@ -94,3 +94,9 @@ cargo clippy --workspace --all-targets が通る
 WAL を削除した場合と残した場合の起動結果を説明できる
 std-only の限界と、外部クレートへ移すべき責任を説明できる
 ```
+
+## 次に読む
+
+- 前へ: [levels/level_09_professional/exercises.md](../../levels/level_09_professional/exercises.md)
+- 次へ: [docs/guide/REVIEW_CHECKLIST.md](REVIEW_CHECKLIST.md)
+- 関連: [docs/INDEX.md](../INDEX.md), [solutions/final_project.md](../../solutions/final_project.md)

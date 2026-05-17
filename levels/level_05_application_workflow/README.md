@@ -156,3 +156,9 @@ parse_command が Result<Command, E> を返す理由は何か
 Response enum を String に変換する場所はどこがよいか
 Store が TcpStream を知らないことで、何をテストしやすくなるか
 ```
+
+## 次に読む
+
+- 前へ: [levels/level_04_improvement/exercises.md](../level_04_improvement/exercises.md)
+- 次へ: [levels/level_05_application_workflow/exercises.md](exercises.md)
+- 関連: [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md)

@@ -159,3 +159,9 @@ std::thread
 std::fs
 std::net
 ```
+
+## 次に読む
+
+- 前へ: [computer_science/levels/cs_06_databases/exercises.md](../cs_06_databases/exercises.md)
+- 次へ: [computer_science/levels/cs_07_operating_systems/exercises.md](exercises.md)
+- 関連: [computer_science/CHECKPOINTS.md](../../CHECKPOINTS.md), [computer_science/SOLUTIONS.md](../../SOLUTIONS.md), [computer_science/glossary.md](../../glossary.md)

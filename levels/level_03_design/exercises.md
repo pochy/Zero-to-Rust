@@ -67,3 +67,9 @@ trait Store {
 ```
 
 今すぐ導入する場合、導入しない場合、将来 WAL や remote store が出た場合で判断を書いてください。
+
+## 次に読む
+
+- 前へ: [levels/level_03_design/README.md](README.md)
+- 次へ: [levels/level_04_improvement/README.md](../level_04_improvement/README.md)
+- 関連: [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md), [solutions/levels_00_04.md](../../solutions/levels_00_04.md)

@@ -53,3 +53,8 @@ CS を学ぶ理由を、Rust の文法とは別の言葉で説明できるか
 実務の問題を CS の層に分解できるか
 ```
 
+## 次に読む
+
+- 前へ: [computer_science/levels/cs_00_orientation/README.md](README.md)
+- 次へ: [computer_science/levels/cs_01_data_structures/README.md](../cs_01_data_structures/README.md)
+- 関連: [computer_science/CHECKPOINTS.md](../../CHECKPOINTS.md), [computer_science/SOLUTIONS.md](../../SOLUTIONS.md), [computer_science/glossary.md](../../glossary.md)

@@ -79,3 +79,9 @@ TCP 層
 ```
 
 `Store` を変更せずに済む設計になっているか確認してください。
+
+## 次に読む
+
+- 前へ: [levels/level_05_application_workflow/README.md](README.md)
+- 次へ: [levels/level_06_evaluation/README.md](../level_06_evaluation/README.md)
+- 関連: [docs/guide/CHECKPOINTS.md](../../docs/guide/CHECKPOINTS.md), [docs/guide/STUDY_JOURNAL.md](../../docs/guide/STUDY_JOURNAL.md), [solutions/levels_05_09.md](../../solutions/levels_05_09.md)
